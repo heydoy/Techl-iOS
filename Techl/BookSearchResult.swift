@@ -7,15 +7,12 @@
 
 import Foundation
 
-struct BookSearchResult: Codable {
- 
-    let lastBuildDate: String
-    let total: Int
-    let start: Int
-    let display: Int
-    let items: [BookInfo]
+struct BookResult: Codable {
     
+    let documents: [BookInfo]
+
 }
+
 
 struct BookInfo: Codable {
     let authors: [String]  // 작가들 배열
@@ -30,5 +27,6 @@ struct BookInfo: Codable {
     let title: String // 책제목
     let translators: [String] // 번역가 배열
     let url: String // 책검색결과 링크
-    
 }
+
+
