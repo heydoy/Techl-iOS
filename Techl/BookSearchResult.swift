@@ -8,21 +8,27 @@
 import Foundation
 
 struct BookSearchResult: Codable {
-    struct BookInfo: Codable {
-        let title: String
-        let link: String
-        let image: String
-        let author: String
-        let price: String
-        let publisher: String
-        let pubdate: String
-        let isbn: String
-        let description: String
-    }
+ 
     let lastBuildDate: String
     let total: Int
     let start: Int
     let display: Int
     let items: [BookInfo]
+    
+}
+
+struct BookInfo: Codable {
+    let authors: [String]  // 작가들 배열
+    let contents: String  //소개글
+    let datetime: String //출간일?
+    let isbn: String // ISBN
+    let price: Int // 정상가
+    let publisher: String // 출판사
+    let sale_price: Int // 세일가
+    let status: String // 정상판매 여부
+    let thumbnail: String // 이미지링크
+    let title: String // 책제목
+    let translators: [String] // 번역가 배열
+    let url: String // 책검색결과 링크
     
 }

@@ -18,6 +18,8 @@
 		A243F0FB287FAE0A00E46AE4 /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = A243F0FA287FAE0A00E46AE4 /* KakaoSDKTalk */; };
 		A243F0FD287FAE0A00E46AE4 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = A243F0FC287FAE0A00E46AE4 /* KakaoSDKTemplate */; };
 		A243F0FF287FAE0A00E46AE4 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = A243F0FE287FAE0A00E46AE4 /* KakaoSDKUser */; };
+		A243F10A287FB19400E46AE4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A243F109287FB19400E46AE4 /* Search.storyboard */; };
+		A243F10C287FB1D600E46AE4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243F10B287FB1D600E46AE4 /* SearchViewController.swift */; };
 		A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27228766D240091C123 /* AppDelegate.swift */; };
 		A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27428766D240091C123 /* SceneDelegate.swift */; };
 		A2AFB27728766D240091C123 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27628766D240091C123 /* ViewController.swift */; };
@@ -26,7 +28,7 @@
 		A2AFB27F28766D250091C123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB27D28766D250091C123 /* LaunchScreen.storyboard */; };
 		A2AFB28728766DB10091C123 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB28628766DB10091C123 /* Authentication.storyboard */; };
 		A2AFB28928766E620091C123 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB28828766E620091C123 /* Onboarding.storyboard */; };
-		A2D84333287F8EA1007BFF73 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2D84333287F8EA1007BFF73 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A2EF180D287AAB4A002C7D5E /* BookSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF180C287AAB4A002C7D5E /* BookSearchResult.swift */; };
 		A2EF180F287AB90F002C7D5E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF180E287AB90F002C7D5E /* Keys.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A2D84333287F8EA1007BFF73 /* (null) in Embed Frameworks */,
+				A2D84333287F8EA1007BFF73 /* BuildFile in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A243F109287FB19400E46AE4 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		A243F10B287FB1D600E46AE4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A2AFB26F28766D240091C123 /* Techl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AFB27228766D240091C123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2AFB27428766D240091C123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				A2AFB27428766D240091C123 /* SceneDelegate.swift */,
 				A2AFB27628766D240091C123 /* ViewController.swift */,
 				A2AFB27828766D240091C123 /* Main.storyboard */,
+				A243F109287FB19400E46AE4 /* Search.storyboard */,
+				A243F10B287FB1D600E46AE4 /* SearchViewController.swift */,
 				A2AFB28628766DB10091C123 /* Authentication.storyboard */,
 				A2AFB28828766E620091C123 /* Onboarding.storyboard */,
 				A2AFB27B28766D250091C123 /* Assets.xcassets */,
@@ -150,6 +156,7 @@
 				A2AFB26C28766D240091C123 /* Frameworks */,
 				A2AFB26D28766D240091C123 /* Resources */,
 				A2D84334287F8EA1007BFF73 /* Embed Frameworks */,
+				48965A21F0D27E5BB0406F9D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +224,7 @@
 				A2AFB28928766E620091C123 /* Onboarding.storyboard in Resources */,
 				A2AFB27F28766D250091C123 /* LaunchScreen.storyboard in Resources */,
 				A2AFB27C28766D250091C123 /* Assets.xcassets in Resources */,
+				A243F10A287FB19400E46AE4 /* Search.storyboard in Resources */,
 				A2AFB27A28766D240091C123 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +232,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		48965A21F0D27E5BB0406F9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Techl/Pods-Techl-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Techl/Pods-Techl-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Techl/Pods-Techl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F54DEAB19B1F96ADA30D2E99 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A243F10C287FB1D600E46AE4 /* SearchViewController.swift in Sources */,
 				A2AFB27728766D240091C123 /* ViewController.swift in Sources */,
 				A2EF180D287AAB4A002C7D5E /* BookSearchResult.swift in Sources */,
 				A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */,
