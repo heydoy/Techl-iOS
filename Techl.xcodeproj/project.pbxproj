@@ -20,6 +20,8 @@
 		A243F0FF287FAE0A00E46AE4 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = A243F0FE287FAE0A00E46AE4 /* KakaoSDKUser */; };
 		A243F10A287FB19400E46AE4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A243F109287FB19400E46AE4 /* Search.storyboard */; };
 		A243F10C287FB1D600E46AE4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243F10B287FB1D600E46AE4 /* SearchViewController.swift */; };
+		A2595382288300300065791E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = A2595381288300300065791E /* TextFieldEffects */; };
+		A2726BCA2884464C007211EC /* NSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2726BC92884464C007211EC /* NSearchViewController.swift */; };
 		A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27228766D240091C123 /* AppDelegate.swift */; };
 		A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27428766D240091C123 /* SceneDelegate.swift */; };
 		A2AFB27728766D240091C123 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27628766D240091C123 /* ViewController.swift */; };
@@ -50,6 +52,7 @@
 /* Begin PBXFileReference section */
 		A243F109287FB19400E46AE4 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		A243F10B287FB1D600E46AE4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A2726BC92884464C007211EC /* NSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSearchViewController.swift; sourceTree = "<group>"; };
 		A2AFB26F28766D240091C123 /* Techl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AFB27228766D240091C123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2AFB27428766D240091C123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 				A243F0FD287FAE0A00E46AE4 /* KakaoSDKTemplate in Frameworks */,
 				A243F0F5287FAE0A00E46AE4 /* KakaoSDKNavi in Frameworks */,
 				A243F0F3287FAE0A00E46AE4 /* KakaoSDKCommonCore in Frameworks */,
+				A2595382288300300065791E /* TextFieldEffects in Frameworks */,
 				A243F0EF287FAE0A00E46AE4 /* KakaoSDKAuth in Frameworks */,
 				A243F0F9287FAE0A00E46AE4 /* KakaoSDKStory in Frameworks */,
 			);
@@ -124,6 +128,7 @@
 				A2AFB27628766D240091C123 /* ViewController.swift */,
 				A2AFB27828766D240091C123 /* Main.storyboard */,
 				A243F109287FB19400E46AE4 /* Search.storyboard */,
+				A2726BC92884464C007211EC /* NSearchViewController.swift */,
 				A243F10B287FB1D600E46AE4 /* SearchViewController.swift */,
 				A2AFB28628766DB10091C123 /* Authentication.storyboard */,
 				A2AFB28828766E620091C123 /* Onboarding.storyboard */,
@@ -174,6 +179,7 @@
 				A243F0FA287FAE0A00E46AE4 /* KakaoSDKTalk */,
 				A243F0FC287FAE0A00E46AE4 /* KakaoSDKTemplate */,
 				A243F0FE287FAE0A00E46AE4 /* KakaoSDKUser */,
+				A2595381288300300065791E /* TextFieldEffects */,
 			);
 			productName = Techl;
 			productReference = A2AFB26F28766D240091C123 /* Techl.app */;
@@ -205,6 +211,7 @@
 			mainGroup = A2AFB26628766D240091C123;
 			packageReferences = (
 				A243F0EB287FAE0A00E46AE4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+				A2595380288300300065791E /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 			);
 			productRefGroup = A2AFB27028766D240091C123 /* Products */;
 			projectDirPath = "";
@@ -279,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A243F10C287FB1D600E46AE4 /* SearchViewController.swift in Sources */,
+				A2726BCA2884464C007211EC /* NSearchViewController.swift in Sources */,
 				A2AFB27728766D240091C123 /* ViewController.swift in Sources */,
 				A2EF180D287AAB4A002C7D5E /* BookSearchResult.swift in Sources */,
 				A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */,
@@ -515,6 +523,14 @@
 				kind = branch;
 			};
 		};
+		A2595380288300300065791E /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -567,6 +583,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A243F0EB287FAE0A00E46AE4 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
 			productName = KakaoSDKUser;
+		};
+		A2595381288300300065791E /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2595380288300300065791E /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

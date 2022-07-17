@@ -10,7 +10,6 @@ import Foundation
 struct BookResult: Codable {
     
     let documents: [BookInfo]
-
 }
 
 
