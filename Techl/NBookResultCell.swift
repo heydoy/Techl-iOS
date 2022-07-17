@@ -31,11 +31,24 @@ class NBookResultCell: UICollectionViewCell {
             }
         }
         
-        bookTitleLabel.text = result.title
         authorsLabel.text = result.author
-        bookContentsLabel.text = result.description
-
         bookmarkButton.setTitle("", for: .normal)
+        
+        // HTML 태그 지우고 입력
+        bookTitleLabel.text = result.title.replacingOccurrences(
+            of: #"<[^>]+>"#,
+            with: "",
+            options: .regularExpression,
+            range: nil)
+        
+        bookContentsLabel.text = result.description.replacingOccurrences(
+            of: #"<[^>]+>"#,
+            with: "",
+            options: .regularExpression,
+            range: nil)
+
+        
+        
         
     }
     
