@@ -6,16 +6,19 @@
 //
 
 import UIKit
+import Alamofire
+import TextFieldEffects
 
 class NSearchViewController: UIViewController {
     // MARK: - Properties
     
-    
+    var query: String = ""
+    let category: String = "280"
     
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var resultList = [[String]]()
+    var resultList = [NBookInfo]()
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -28,7 +31,83 @@ class NSearchViewController: UIViewController {
     
     // MARK: - Actions
     
+    @IBAction func didCloseButtonTapped(_ sender: UIButton) {
+        
+        self.dismiss(animated: true)
+    }
+    
+    
+    @IBAction func didTextFieldEditingChanged(_ sender: TextFieldEffects) {
+        
+        let text = sender.text ?? ""
+        
+        self.query = text
+    }
+    
+    @IBAction func didSearchButtonTapped(_ sender: UIButton) {
+        
+        // doing sth with query
+        print("쿼리--->\(query)")
+        searchHelper()
+        
+    }
+    
+    
     // MARK: - Helpers
+    func searchHelper() {
+        self.fetchSearchResult ( completionHandler: {[weak self] result in
+            guard let self = self else { return } // 일시적으로 self가 strong reference로 만들게 하는 작업
+               switch result {
+               case let .success(result) :
+                   debugPrint("success \(result)")
+                   self.resultList = result.items
+               case let .failure(error) :
+                   debugPrint("error \(error)")
+           }
+            
+        })
+        
+        collectionView.reloadData()
+    }
+    
+    func fetchSearchResult(
+        completionHandler: @escaping (Result<NBookSearchResult, Error>)-> Void
+    ) {
+        let url = "https://openapi.naver.com/v1/search/book.json"
+        let headers: HTTPHeaders = [
+            "X-Naver-Client-Id" : "nqIJjtpTJwWwgPHVGkQa",
+            "X-Naver-Client-Secret" : "xIgNbrd5qc"
+        ]
+        let body: Parameters = [
+            "query" : self.query,
+            "d_titl": self.query,
+            "d_catg" : self.category
+        ]
+        
+        AF.request(url,
+                   method: .get,
+                   parameters: body,
+                   headers: headers)
+        .responseData(completionHandler: { response in
+            switch response.result {
+            case let .success(data) :
+                do {
+                    let decoder = JSONDecoder()
+                    let result = try decoder.decode(NBookSearchResult.self, from: data)
+                    completionHandler(.success(result))
+                    
+                } catch {
+                    completionHandler(.failure(error))
+                }
+            case let .failure(error) :
+                completionHandler(.failure(error))
+            }
+            
+        })
+
+    }
+
+    
 
 
 }
@@ -39,7 +118,7 @@ extension NSearchViewController: UICollectionViewDataSource {
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return resultList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -47,8 +126,8 @@ extension NSearchViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NBookResultCell", for: indexPath) as? NBookResultCell else {
             return UICollectionViewCell()
         }
-        //let result = resultList[indexPath.item]
-        //cell.configure(result)
+        let result = resultList[indexPath.item]
+        cell.configure(result)
         
         return cell
     }

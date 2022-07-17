@@ -118,6 +118,9 @@
                                                     <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system" title=" "/>
+                                                    <connections>
+                                                        <action selector="didBoomarkButtonTapped:" destination="dk5-s2-DEM" eventType="touchUpInside" id="g2Q-Qs-7G1"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -142,6 +145,13 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="175"/>
+                                        <connections>
+                                            <outlet property="authorsLabel" destination="ujR-69-90a" id="lD9-fV-XXR"/>
+                                            <outlet property="bookContentsLabel" destination="dAP-BS-KiZ" id="YGt-Pf-Cbr"/>
+                                            <outlet property="bookTitleLabel" destination="OKq-qx-ZMH" id="xPS-VC-g6B"/>
+                                            <outlet property="bookmarkButton" destination="KTn-EZ-h1h" id="znC-PZ-ep6"/>
+                                            <outlet property="thumbnailImageView" destination="BMN-r3-xNE" id="dY1-ax-VMx"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -161,12 +171,18 @@
                                         <color key="value" systemColor="systemGrayColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTextFieldEditingChanged:" destination="AZX-UB-nfR" eventType="editingChanged" id="4gH-F6-gwP"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z0k-q9-6mk">
                                 <rect key="frame" x="18" y="54" width="41" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system" title=" "/>
+                                <connections>
+                                    <action selector="didCloseButtonTapped:" destination="AZX-UB-nfR" eventType="touchUpInside" id="Zcm-Kg-kkM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znj-KS-kZe">
                                 <rect key="frame" x="360" y="93" width="34" height="31"/>
@@ -174,6 +190,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title=" "/>
+                                <connections>
+                                    <action selector="didSearchButtonTapped:" destination="AZX-UB-nfR" eventType="touchUpInside" id="XNT-rl-cVO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4rS-QK-0tq"/>
