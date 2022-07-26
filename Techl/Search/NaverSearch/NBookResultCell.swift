@@ -33,6 +33,8 @@ class NBookResultCell: UICollectionViewCell {
         
         authorsLabel.text = result.author
         bookmarkButton.setTitle("", for: .normal)
+        bookTitleLabel.text = result.title
+        bookContentsLabel.text = result.description
         
         // HTML 태그 지우고 입력
         bookTitleLabel.text = result.title.replacingOccurrences(
@@ -47,8 +49,6 @@ class NBookResultCell: UICollectionViewCell {
             options: .regularExpression,
             range: nil)
 
-        
-        
         
     }
     

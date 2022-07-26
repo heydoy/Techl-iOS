@@ -11,6 +11,7 @@ import TextFieldEffects
 
 class NSearchViewController: UIViewController {
     // MARK: - Properties
+    static let identifier = "NSearchViewController"
     
     var query: String = ""
     let category: String = "280"
@@ -126,6 +127,7 @@ extension NSearchViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NBookResultCell", for: indexPath) as? NBookResultCell else {
             return UICollectionViewCell()
         }
+        
         let result = resultList[indexPath.item]
         cell.configure(result)
         
