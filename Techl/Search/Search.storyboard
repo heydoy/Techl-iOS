@@ -223,7 +223,7 @@
                                     <inset key="sectionInset" minX="24" minY="0.0" maxX="24" maxY="24"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="v6a-Ye-6iw">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NXMLSearchCollectionViewCell" id="v6a-Ye-6iw" customClass="NXMLSearchCollectionViewCell" customModule="Techl" customModuleProvider="target">
                                         <rect key="frame" x="24" y="50" width="366" height="166"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mwT-WD-ldy">

@@ -29,10 +29,10 @@ class HomeViewController: UIViewController {
     @IBAction func searchButtonTapped(_ sender: UIBarButtonItem) {
         
         let sb = UIStoryboard(name: "Search", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: NSearchViewController.identifier) as! NSearchViewController
+        let vc = sb.instantiateViewController(withIdentifier: NXMLSearchViewController.identifier) as! NXMLSearchViewController
         
-        vc.modalPresentationStyle = .formSheet
-        self.present(vc, animated: true)
+        self.navigationItem.backButtonTitle = "홈"
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

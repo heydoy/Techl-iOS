@@ -18,6 +18,9 @@ class NXMLSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "책 검색"
+        
 
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -33,7 +36,9 @@ extension NXMLSearchViewController: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NXMLSearchCollectionViewCell.identifier, for: indexPath) as? NXMLSearchCollectionViewCell else { return UICollectionViewCell()}
+        
+        return cell
     }
     
     
