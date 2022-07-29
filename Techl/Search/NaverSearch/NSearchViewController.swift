@@ -76,8 +76,8 @@ class NSearchViewController: UIViewController {
     ) {
         let url = "https://openapi.naver.com/v1/search/book.json"
         let headers: HTTPHeaders = [
-            "X-Naver-Client-Id" : "nqIJjtpTJwWwgPHVGkQa",
-            "X-Naver-Client-Secret" : "xIgNbrd5qc"
+            "X-Naver-Client-Id" : NaverAPI.Id,
+            "X-Naver-Client-Secret" : NaverAPI.Secret
         ]
         let body: Parameters = [
             "query" : self.query,

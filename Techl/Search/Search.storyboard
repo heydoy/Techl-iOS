@@ -214,7 +214,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3nD-LQ-mpN">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r9v-Kw-ZIV">
                                     <size key="itemSize" width="366" height="166"/>
@@ -336,6 +336,12 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="366" height="166"/>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="eum-aH-yM8" id="AZJ-Gb-jKQ"/>
+                                            <outlet property="bookTitleLabel" destination="LbN-zj-QCS" id="o2e-1r-y4f"/>
+                                            <outlet property="descriptionLabel" destination="7oP-gz-Fok" id="FD0-jf-WKP"/>
+                                            <outlet property="thumbnailImageView" destination="ab5-07-8qP" id="6rA-yF-Xxu"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="5Zf-wd-s38">
                                         <rect key="frame" x="24" y="226" width="366" height="166"/>
@@ -407,7 +413,7 @@
                                         <size key="customSize" width="366" height="166"/>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="idv-HU-8UQ">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="NXMLSearchCollectionReusableView" id="idv-HU-8UQ" customClass="NXMLSearchCollectionReusableView" customModule="Techl" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -423,14 +429,21 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="필터"/>
+                                            <connections>
+                                                <action selector="searchFilterButtonTapped:" destination="idv-HU-8UQ" eventType="touchUpInside" id="mx0-rU-0HT"/>
+                                            </connections>
                                         </button>
                                     </subviews>
+                                    <connections>
+                                        <outlet property="searchFilterButton" destination="uQN-xz-P9y" id="lCe-F2-Hog"/>
+                                        <outlet property="searchResultLabel" destination="WII-WR-vpK" id="6sG-55-CwH"/>
+                                    </connections>
                                 </collectionReusableView>
                             </collectionView>
                             <searchBar contentMode="redraw" placeholder="검색어를 입력하세요" translatesAutoresizingMaskIntoConstraints="NO" id="EWs-de-7Sd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="LZk-aX-Fk7"/>
+                                    <constraint firstAttribute="height" constant="56" id="LZk-aX-Fk7"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>

@@ -13,6 +13,6 @@ struct NaverAPI {
 
 extension NaverAPI {
     static let Id: String = "nqIJjtpTJwWwgPHVGkQa"
-    static let Secret = "i8p1KcIrHS"
+    static let Secret = "xIgNbrd5qc"
     
 }
