@@ -9,13 +9,25 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    // MARK: - Properties
+    
     @IBOutlet weak var bannerCollectionView: UICollectionView!
     
     @IBOutlet weak var bookListCollectionView: UICollectionView!
     
+    @IBOutlet weak var bannerIndexView: UIView!
+    @IBOutlet weak var bannerIndexLabel: UILabel!
+    
+    
+    // 현재페이지 체크할 용도의 변수
+    var currentPage: Int = 0
+    
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //콜렉션 뷰 등록
         
         bannerCollectionView.dataSource = self
         bannerCollectionView.delegate = self
@@ -23,8 +35,16 @@ class HomeViewController: UIViewController {
         bookListCollectionView.dataSource = self
         bookListCollectionView.delegate = self
         
-
+        // 디자인
+        viewConfigure()
+        
+        
+        // 자동 슬라이드
+        bannerTimer()
+        bannerIndexChange()
     }
+    
+    // MARK: - Actions
     
     @IBAction func searchButtonTapped(_ sender: UIBarButtonItem) {
         
@@ -35,16 +55,49 @@ class HomeViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    // MARK: - Helpers
+    func viewConfigure() {
+        view.backgroundColor = .systemGray6
+        bannerCollectionView.backgroundColor = .clear
+        bookListCollectionView.backgroundColor = .clear
+        
+        bannerCollectionView.layer.cornerRadius = 16
+        bannerIndexView.layer.cornerRadius = bannerIndexView.frame.height / 2
+    }
+    
+    func bannerIndexChange() {
+        
+        let index = (currentPage % Banner.banners.count) + 1
+        
+        bannerIndexLabel.text = "\(index) / \(Banner.banners.count)"
+    }
+    
+    func bannerTimer() {
+        let _: Timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { (Timer) in
+                    self.bannerMove()
+                    self.bannerIndexChange()
+                }
+    }
+    func bannerMove() {
+        
+        currentPage += 1
+        bannerCollectionView.scrollToItem(at: IndexPath(item: currentPage, section: 0) as IndexPath,
+                                          at: .right, animated: true)
+    
+    }
+    
     
 
 }
-
+// MARK: - CollectionViews
+// Collection View 설정
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    // 셀 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch collectionView {
         case bannerCollectionView:
-            return 3
+            return Int.max // Banner.banners.count 개의 배너지만, 무한 스크롤을 위해 바꿔둠
             
         case bookListCollectionView:
             return 5
@@ -53,11 +106,12 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             assert(false, "Invalid element type")
         }
     }
-    
+    // 아이템 데이터
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch collectionView {
         case bannerCollectionView:
             guard let cell = bannerCollectionView.dequeueReusableCell(withReuseIdentifier: HomeBannerCollectionViewCell.identifier, for: indexPath) as? HomeBannerCollectionViewCell else { return UICollectionViewCell()}
+            cell.configure(Banner.banners[indexPath.item % Banner.banners.count])
             return cell
             
         case bookListCollectionView:
@@ -69,7 +123,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             assert(false, "Invalid element type")
         }
     }
-    
+    // 헤더
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if collectionView == bookListCollectionView {
             switch kind {
@@ -96,6 +150,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         return UICollectionReusableView()
     }
     
+    // 셀 선택되었을 때
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch collectionView {
         case bannerCollectionView:
@@ -111,6 +166,34 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             assert(false, "Invalid element type")
         }
     }
+    
+    // 셀의 사이즈
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let inset: CGFloat = 20
+//        let width: CGFloat = UIScreen.main.bounds.width - (inset * 2)
+//        let height: CGFloat = 140
+//
+//        let widthForBanner: CGFloat = collectionView.frame.width
+//        let heightForBanner: CGFloat = collectionView.frame.height
+//
+//        if collectionView == bookListCollectionView {
+//            return CGSize(width: width, height: height)
+//
+//        } else if collectionView == bannerCollectionView {
+//            return CGSize(width: widthForBanner, height: heightForBanner )
+//
+//        } else {
+//            assert(false, "Invalid view type")
+//        }
+//
+//    }
+    
+    // 스크롤뷰를 통한 애니메이션 (- 감속이 끝났을 때)
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        self.currentPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
+        print(currentPage)
+    }
+
     
     
 }

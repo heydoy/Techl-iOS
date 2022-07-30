@@ -20,8 +20,10 @@ class NXMLSearchCollectionViewCell: UICollectionViewCell {
     
     
     func configure(_ book: NXMLBookInfo) {
-        
+        self.backgroundColor = .white
+        self.layer.cornerRadius = 8
         bookTitleLabel.text = book.title
+        bookTitleLabel.font = .boldSystemFont(ofSize: 17)
         authorLabel.text = book.author
         descriptionLabel.text = book.description
         
@@ -32,6 +34,9 @@ class NXMLSearchCollectionViewCell: UICollectionViewCell {
                 self.thumbnailImageView.image = UIImage(data: data!)
             }
         }
+        // 디자인
+        self.thumbnailImageView.layer.cornerRadius = 4
+        self.thumbnailImageView.contentMode = .scaleAspectFill
         
     }
 }

@@ -16,7 +16,9 @@ class NXMLSearchCollectionReusableView: UICollectionReusableView {
     
     func configure(query: String, total: Int  ) {
         
-        searchResultLabel.text = "\(query) 검색결과 \(57)건"
+        searchResultLabel.text = "\(query) 검색결과 \(total)건"
+        searchFilterButton.setTitle("필터", for: .normal)
+        
     }
     
     @IBAction func searchFilterButtonTapped(_ sender: UIButton) {

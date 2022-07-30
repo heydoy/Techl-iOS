@@ -33,7 +33,15 @@ struct NXMLBookSearchResult: Codable {
     var total: Int //검색결과 총 개수
     var start: Int
     var display: Int
-    var item: [NXMLBookInfo] //XML에서는 item
+    var items: [NXMLBookInfo]
+    
+    init() {
+        lastBuildDate = ""
+        total = 0
+        start = 0
+        display = 0
+        items = [NXMLBookInfo]()
+    }
 }
 
 struct NXMLBookInfo: Codable {
@@ -41,7 +49,7 @@ struct NXMLBookInfo: Codable {
     var link: String
     var image: String
     var author: String
-    var price: String
+    //var price: String //price도 상세검색에선 없어짐
     var discount: String
     var publisher: String
     var pubdate: String
@@ -53,7 +61,7 @@ struct NXMLBookInfo: Codable {
         link = ""
         image = ""
         author = ""
-        price = ""
+       // price = ""
         discount = ""
         publisher = ""
         pubdate = ""

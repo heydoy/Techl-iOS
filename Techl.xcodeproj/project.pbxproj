@@ -30,6 +30,7 @@
 		A243F0FF287FAE0A00E46AE4 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = A243F0FE287FAE0A00E46AE4 /* KakaoSDKUser */; };
 		A243F10A287FB19400E46AE4 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A243F109287FB19400E46AE4 /* Search.storyboard */; };
 		A243F10C287FB1D600E46AE4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A243F10B287FB1D600E46AE4 /* SearchViewController.swift */; };
+		A2442EF7289547E70001ED62 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2442EF6289547E70001ED62 /* Banner.swift */; };
 		A2595382288300300065791E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = A2595381288300300065791E /* TextFieldEffects */; };
 		A2726BCA2884464C007211EC /* NSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2726BC92884464C007211EC /* NSearchViewController.swift */; };
 		A2726BCC288447ED007211EC /* NBookResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2726BCB288447ED007211EC /* NBookResultCell.swift */; };
@@ -73,6 +74,7 @@
 		A2429B93288E6F36003E3573 /* ForumListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A243F109287FB19400E46AE4 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		A243F10B287FB1D600E46AE4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A2442EF6289547E70001ED62 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		A2726BC92884464C007211EC /* NSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSearchViewController.swift; sourceTree = "<group>"; };
 		A2726BCB288447ED007211EC /* NBookResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBookResultCell.swift; sourceTree = "<group>"; };
 		A2726BCD28844D73007211EC /* NBookSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBookSearchResult.swift; sourceTree = "<group>"; };
@@ -130,6 +132,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A2442EF8289549410001ED62 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A2442EF6289547E70001ED62 /* Banner.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A2442EF928954B410001ED62 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFB28628766DB10091C123 /* Authentication.storyboard */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A2442EFA28954B490001ED62 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A2AFB27D28766D250091C123 /* LaunchScreen.storyboard */,
+				A2AFB28828766E620091C123 /* Onboarding.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		A2AFB26628766D240091C123 = {
 			isa = PBXGroup;
 			children = (
@@ -156,10 +183,10 @@
 				A2D5501C2890410F000436FC /* Forum */,
 				A2D5501B28904108000436FC /* Home */,
 				A2D55011289030AC000436FC /* Search */,
-				A2AFB28628766DB10091C123 /* Authentication.storyboard */,
-				A2AFB28828766E620091C123 /* Onboarding.storyboard */,
+				A2442EF928954B410001ED62 /* Authentication */,
+				A2442EFA28954B490001ED62 /* Onboarding */,
+				A2442EF8289549410001ED62 /* Data */,
 				A2AFB27B28766D250091C123 /* Assets.xcassets */,
-				A2AFB27D28766D250091C123 /* LaunchScreen.storyboard */,
 				A2AFB28028766D250091C123 /* Info.plist */,
 				A2EF180E287AB90F002C7D5E /* Keys.swift */,
 			);
@@ -398,6 +425,7 @@
 				A2429B92288E6F04003E3573 /* ForumViewController.swift in Sources */,
 				A2429B8E288E65F9003E3573 /* BookListCollectionViewCell.swift in Sources */,
 				A2726BCE28844D73007211EC /* NBookSearchResult.swift in Sources */,
+				A2442EF7289547E70001ED62 /* Banner.swift in Sources */,
 				A2429B8C288E65A6003E3573 /* HomeBannerCollectionViewCell.swift in Sources */,
 				A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */,
 				A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */,
