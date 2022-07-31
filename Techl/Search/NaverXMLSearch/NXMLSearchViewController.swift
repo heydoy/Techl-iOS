@@ -113,10 +113,11 @@ class NXMLSearchViewController: UIViewController{
 
 // MARK: Collection View
 extension NXMLSearchViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
+    // - 셀
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return bookList.items.count
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NXMLSearchCollectionViewCell.identifier, for: indexPath) as? NXMLSearchCollectionViewCell else { return UICollectionViewCell()}
@@ -125,6 +126,19 @@ extension NXMLSearchViewController: UICollectionViewDataSource, UICollectionView
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Search", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: BookDetailViewController.identifier) as! BookDetailViewController
+        
+        vc.book = bookList.items[indexPath.item]
+        vc.navigationItem.title = vc.book.title
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+    }
+    
+    
+    // - 헤더
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
         // NXMLSearchCollectionReusableView
