@@ -22,6 +22,10 @@
 		A246BFB92896737000BE564C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A246BFB82896737000BE564C /* Alamofire */; };
 		A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246BFBA2896827000BE564C /* ClubListCollectionViewCell.swift */; };
 		A246BFBD2896A7EE00BE564C /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246BFBC2896A7EE00BE564C /* BookDetailViewController.swift */; };
+		A246BFC02896A99C00BE564C /* Club.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A246BFBF2896A99C00BE564C /* Club.storyboard */; };
+		A246BFC22896A9DE00BE564C /* Forum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A246BFC12896A9DE00BE564C /* Forum.storyboard */; };
+		A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A246BFC42896AA1000BE564C /* MyPage.storyboard */; };
+		A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246BFC62896AB8500BE564C /* BannerDetailViewController.swift */; };
 		A2595382288300300065791E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = A2595381288300300065791E /* TextFieldEffects */; };
 		A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27228766D240091C123 /* AppDelegate.swift */; };
 		A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27428766D240091C123 /* SceneDelegate.swift */; };
@@ -63,6 +67,10 @@
 		A246BFB32896719400BE564C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A246BFBA2896827000BE564C /* ClubListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A246BFBC2896A7EE00BE564C /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		A246BFBF2896A99C00BE564C /* Club.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Club.storyboard; sourceTree = "<group>"; };
+		A246BFC12896A9DE00BE564C /* Forum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Forum.storyboard; sourceTree = "<group>"; };
+		A246BFC42896AA1000BE564C /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		A246BFC62896AB8500BE564C /* BannerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerDetailViewController.swift; sourceTree = "<group>"; };
 		A2AFB26F28766D240091C123 /* Techl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AFB27228766D240091C123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2AFB27428766D240091C123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +137,22 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		A246BFBE2896A98500BE564C /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				A246BFBF2896A99C00BE564C /* Club.storyboard */,
+			);
+			path = Club;
+			sourceTree = "<group>";
+		};
+		A246BFC32896A9FB00BE564C /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				A246BFC42896AA1000BE564C /* MyPage.storyboard */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		A2AFB26628766D240091C123 = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +177,10 @@
 				A2D5501028903064000436FC /* App */,
 				A246BFB32896719400BE564C /* Main.storyboard */,
 				A2D5501C2890410F000436FC /* Forum */,
+				A246BFBE2896A98500BE564C /* Club */,
 				A2D5501B28904108000436FC /* Home */,
 				A2D55011289030AC000436FC /* Search */,
+				A246BFC32896A9FB00BE564C /* MyPage */,
 				A2442EF928954B410001ED62 /* Authentication */,
 				A2442EFA28954B490001ED62 /* Onboarding */,
 				A2442EF8289549410001ED62 /* Data */,
@@ -199,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				A2AFB27828766D240091C123 /* Home.storyboard */,
+				A246BFC62896AB8500BE564C /* BannerDetailViewController.swift */,
 				A246BFBA2896827000BE564C /* ClubListCollectionViewCell.swift */,
 				A2429B8D288E65F9003E3573 /* BookListCollectionViewCell.swift */,
 				A2429B8F288E697B003E3573 /* BookListHeaderCollectionReusableView.swift */,
@@ -211,6 +238,7 @@
 		A2D5501C2890410F000436FC /* Forum */ = {
 			isa = PBXGroup;
 			children = (
+				A246BFC12896A9DE00BE564C /* Forum.storyboard */,
 				A2429B93288E6F36003E3573 /* ForumListCollectionViewCell.swift */,
 				A2429B91288E6F04003E3573 /* ForumViewController.swift */,
 			);
@@ -295,9 +323,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A246BFB52896732700BE564C /* Main.storyboard in Resources */,
+				A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */,
 				A246BFB62896732700BE564C /* Home.storyboard in Resources */,
 				A2AFB28728766DB10091C123 /* Authentication.storyboard in Resources */,
+				A246BFC22896A9DE00BE564C /* Forum.storyboard in Resources */,
 				A2AFB28928766E620091C123 /* Onboarding.storyboard in Resources */,
+				A246BFC02896A99C00BE564C /* Club.storyboard in Resources */,
 				A2AFB27F28766D250091C123 /* LaunchScreen.storyboard in Resources */,
 				A2AFB27C28766D250091C123 /* Assets.xcassets in Resources */,
 				A243F10A287FB19400E46AE4 /* Search.storyboard in Resources */,
@@ -357,6 +388,7 @@
 				A2429B94288E6F36003E3573 /* ForumListCollectionViewCell.swift in Sources */,
 				A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
+				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
 				A246BFBD2896A7EE00BE564C /* BookDetailViewController.swift in Sources */,

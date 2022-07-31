@@ -84,11 +84,11 @@
                                     <size key="itemSize" width="170" height="240"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="10" maxX="20" maxY="10"/>
+                                    <inset key="sectionInset" minX="20" minY="5" maxX="20" maxY="15"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClubListCollectionViewCell" id="rAA-41-UE8" customClass="ClubListCollectionViewCell" customModule="Techl" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="10" width="170" height="240"/>
+                                        <rect key="frame" x="20" y="5" width="170" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AX4-X1-Wkv">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="240"/>
@@ -477,6 +477,40 @@
             </objects>
             <point key="canvasLocation" x="76.811594202898561" y="885.9375"/>
         </scene>
+        <!--Banner Detail View Controller-->
+        <scene sceneID="9F6-Hi-JnR">
+            <objects>
+                <viewController storyboardIdentifier="BannerDetailViewController" id="LwW-Uk-N62" customClass="BannerDetailViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bu5-Tq-u0h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weV-oh-K0P">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3pE-2x-hsC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="weV-oh-K0P" firstAttribute="leading" secondItem="3pE-2x-hsC" secondAttribute="leading" id="A9g-Lt-jtA"/>
+                            <constraint firstItem="3pE-2x-hsC" firstAttribute="trailing" secondItem="weV-oh-K0P" secondAttribute="trailing" id="CMP-JL-MbU"/>
+                            <constraint firstItem="3pE-2x-hsC" firstAttribute="bottom" secondItem="weV-oh-K0P" secondAttribute="bottom" id="TlN-h4-E1S"/>
+                            <constraint firstItem="weV-oh-K0P" firstAttribute="top" secondItem="3pE-2x-hsC" secondAttribute="top" id="VgO-wk-DLw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="weV-oh-K0P" id="951-wY-WwK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IN9-Af-4nw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="886"/>
+        </scene>
         <!--Forum View Controller-->
         <scene sceneID="OI7-EN-NNX">
             <objects>
@@ -586,7 +620,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oio-Ov-Vml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="886"/>
+            <point key="canvasLocation" x="77" y="1640"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ab1-wm-gEj">
@@ -634,7 +668,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bz6-Jv-SrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786" y="873"/>
+            <point key="canvasLocation" x="870" y="1627"/>
         </scene>
     </scenes>
     <resources>
