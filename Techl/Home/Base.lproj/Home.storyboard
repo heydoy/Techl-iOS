@@ -493,6 +493,14 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1R8-h7-YYD">
+                                <rect key="frame" x="178" y="424" width="58" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="5mD-Wg-d1i"/>
+                                    <constraint firstAttribute="width" constant="58" id="jhp-Z8-TaB"/>
+                                </constraints>
+                                <color key="color" systemColor="systemOrangeColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3pE-2x-hsC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -501,15 +509,18 @@
                             <constraint firstItem="3pE-2x-hsC" firstAttribute="trailing" secondItem="weV-oh-K0P" secondAttribute="trailing" id="CMP-JL-MbU"/>
                             <constraint firstItem="3pE-2x-hsC" firstAttribute="bottom" secondItem="weV-oh-K0P" secondAttribute="bottom" id="TlN-h4-E1S"/>
                             <constraint firstItem="weV-oh-K0P" firstAttribute="top" secondItem="3pE-2x-hsC" secondAttribute="top" id="VgO-wk-DLw"/>
+                            <constraint firstItem="1R8-h7-YYD" firstAttribute="centerY" secondItem="3pE-2x-hsC" secondAttribute="centerY" id="Xzq-5I-AAz"/>
+                            <constraint firstItem="1R8-h7-YYD" firstAttribute="centerX" secondItem="3pE-2x-hsC" secondAttribute="centerX" id="jXo-xc-9Qd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="indicatorView" destination="1R8-h7-YYD" id="xrQ-Ap-CzJ"/>
                         <outlet property="webView" destination="weV-oh-K0P" id="951-wY-WwK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IN9-Af-4nw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="886"/>
+            <point key="canvasLocation" x="902.89855072463774" y="885.9375"/>
         </scene>
         <!--Forum View Controller-->
         <scene sceneID="OI7-EN-NNX">

@@ -154,6 +154,16 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         switch collectionView {
         case bannerCollectionView:
             print("배너 선택")
+            let sb = UIStoryboard(name: "Home", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: BannerDetailViewController.identifier) as! BannerDetailViewController
+            
+            let banner = Banner.banners[indexPath.item % Banner.banners.count]
+            vc.destinationURL = banner.link
+            self.navigationItem.backButtonTitle = ""
+            hidesBottomBarWhenPushed = true
+            
+            print(vc.destinationURL)
+            self.navigationController?.pushViewController(vc, animated: true)
             
         case clubListCollectionView:
             print("클럽 선택")
