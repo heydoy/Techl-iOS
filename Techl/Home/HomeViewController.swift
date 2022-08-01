@@ -75,8 +75,15 @@ class HomeViewController: UIViewController {
     }
     
     func navigationConfigure() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonTapped))
-        navigationItem.rightBarButtonItem?.tintColor = .black
+        let searchButton = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonTapped))
+        
+        let alertButton = UIBarButtonItem(image: UIImage(systemName: "bell"), style: .plain, target: self, action: #selector(searchButtonTapped))
+        
+        searchButton.tintColor = .black
+        alertButton.tintColor = .black
+        
+        navigationItem.rightBarButtonItems = [alertButton, searchButton]
+        
     }
     
     func bannerIndexChange() {
