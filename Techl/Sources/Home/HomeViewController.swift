@@ -59,8 +59,7 @@ class HomeViewController: UIViewController {
         
         let sb = UIStoryboard(name: "Search", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: NXMLSearchViewController.identifier) as! NXMLSearchViewController
-        
-        self.navigationItem.backButtonTitle = .none
+
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -84,6 +83,7 @@ class HomeViewController: UIViewController {
         
         navigationItem.rightBarButtonItems = [alertButton, searchButton]
         
+        setBackButton(.CustomColor.secondaryColor)
     }
     
     func bannerIndexChange() {

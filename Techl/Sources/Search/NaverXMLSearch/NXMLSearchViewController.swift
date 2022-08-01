@@ -38,12 +38,18 @@ class NXMLSearchViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "책 검색"
+        //navigationItem.title = "책 검색"
+        setNavigationBarClear()
+        setLeftBarButton(.CustomColor.secondaryColor)
+        setBackButton(.CustomColor.secondaryColor)
         
         collectionView.dataSource = self
         collectionView.delegate = self
         
         searchBar.delegate = self
+        searchBar.backgroundImage = UIImage()
+        searchBar.barTintColor = .CustomColor.secondaryColor
+
         
         view.backgroundColor = .systemGray6
         collectionView.backgroundColor = .clear
