@@ -12,7 +12,6 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="HomeViewController" modalTransitionStyle="crossDissolve" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -459,10 +458,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Sb-d7-GcZ">
-                        <barButtonItem key="leftBarButtonItem" image="barButtonItem:g4W-tc-sOj:image" catalog="system" id="g4W-tc-sOj">
+                        <barButtonItem key="leftBarButtonItem" image="barButtonItem:g4W-tc-sOj:image" id="g4W-tc-sOj">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="barButtonItem:IaN-Gq-uAj:image" catalog="system" id="IaN-Gq-uAj">
+                        <barButtonItem key="rightBarButtonItem" image="barButtonItem:IaN-Gq-uAj:image" id="IaN-Gq-uAj">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -474,6 +473,7 @@
                         <outlet property="clubListCollectionView" destination="sly-uk-Bcb" id="Wk5-74-uWm"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="76.811594202898561" y="885.9375"/>
         </scene>
@@ -684,7 +684,7 @@
     </scenes>
     <resources>
         <image name="banner-1" width="374" height="100"/>
-        <image name="barButtonItem:IaN-Gq-uAj:image" catalog="system" width="128" height="115">
+        <image name="barButtonItem:IaN-Gq-uAj:image" width="128" height="115">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
 S2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBELDBscIRkmKywzNjlDS0xQU1UkbnVsbNcNDg8QERITFBUW
@@ -16539,7 +16539,7 @@ b4wADm+OAA5vkAAOb5kADm+eAA5vpAAOb6wADm+uAA5vsAAOb7IADm+0AA6BVAAOgVkADoFmAA6BaQAO
 gXYADoF7AA6BgwAOgYYADoGLAA6BkwAAAAAAAAQBAAAAAAAAAFYAAAAAAAAAAAAAAAAADoGWA
 </mutableData>
         </image>
-        <image name="barButtonItem:g4W-tc-sOj:image" catalog="system" width="128" height="124">
+        <image name="barButtonItem:g4W-tc-sOj:image" width="128" height="124">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
 S2V5ZWRBcmNoaXZlctEICVRyb290gAGvEBELDBscIRkmKywzNjlDS0xQU1UkbnVsbNcNDg8QERITFBUW
