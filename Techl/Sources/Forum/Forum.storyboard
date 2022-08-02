@@ -132,21 +132,40 @@
                                     <constraint firstItem="jeK-t2-TIf" firstAttribute="centerY" secondItem="RNn-Wa-8pe" secondAttribute="centerY" id="uaw-7s-fdt"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYp-ft-4PN">
+                                <rect key="frame" x="330" y="774" width="64" height="64"/>
+                                <color key="backgroundColor" name="secondaryColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="FqC-JF-QFs"/>
+                                    <constraint firstAttribute="width" secondItem="oYp-ft-4PN" secondAttribute="height" multiplier="1:1" id="byN-If-Rt9"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil.tip" catalog="system" imagePlacement="top" title="글쓰기">
+                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forumWriteButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0wn-a3-Ufk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7GW-Ut-Aw2" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="8WA-pW-W8Q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="oYp-ft-4PN" secondAttribute="bottom" constant="24" id="API-a5-c9a"/>
                             <constraint firstItem="RNn-Wa-8pe" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="LPA-v7-OMW"/>
                             <constraint firstItem="7GW-Ut-Aw2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Vcv-FN-Oex"/>
                             <constraint firstItem="RNn-Wa-8pe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="bso-2P-6Xi"/>
                             <constraint firstItem="7GW-Ut-Aw2" firstAttribute="top" secondItem="RNn-Wa-8pe" secondAttribute="bottom" id="dFf-fM-oIE"/>
                             <constraint firstItem="RNn-Wa-8pe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fZa-Wq-BdC"/>
                             <constraint firstAttribute="bottom" secondItem="7GW-Ut-Aw2" secondAttribute="bottom" id="pCy-2Q-C6c"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oYp-ft-4PN" secondAttribute="trailing" constant="20" id="yVM-sW-4qO"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="7GW-Ut-Aw2" id="8Ji-Qx-lsi"/>
+                        <outlet property="forumWriteButton" destination="oYp-ft-4PN" id="PCN-LZ-yQT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -157,6 +176,7 @@
     <resources>
         <image name="arrowtriangle.down.circle" catalog="system" width="128" height="121"/>
         <image name="bookclub-cover-3" width="170" height="110"/>
+        <image name="pencil.tip" catalog="system" width="99" height="128"/>
         <namedColor name="secondaryColor">
             <color red="1" green="0.35686274509803922" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

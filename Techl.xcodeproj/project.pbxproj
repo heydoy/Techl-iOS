@@ -39,6 +39,12 @@
 		A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501728903F91000436FC /* NXMLBookSearchResult.swift */; };
 		A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501928903FF1000436FC /* NXMLSearchCollectionViewCell.swift */; };
 		A2D84333287F8EA1007BFF73 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2E6E18C2898D90300844770 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = A2E6E18B2898D90300844770 /* Toast */; };
+		A2E6E18F2898E80900844770 /* BookClubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */; };
+		A2E6E1902898E80900844770 /* BookClubCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E18E2898E80900844770 /* BookClubCollectionViewCell.xib */; };
+		A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */; };
+		A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E1932898EFBE00844770 /* Book.storyboard */; };
+		A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1972898F06F00844770 /* BookInfoViewController.swift */; };
 		A2EF180F287AB90F002C7D5E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF180E287AB90F002C7D5E /* Keys.swift */; };
 		A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5023E28986B8600352BFB /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -88,6 +94,11 @@
 		A2D5501528903497000436FC /* NXMLSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchViewController.swift; sourceTree = "<group>"; };
 		A2D5501728903F91000436FC /* NXMLBookSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLBookSearchResult.swift; sourceTree = "<group>"; };
 		A2D5501928903FF1000436FC /* NXMLSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClubCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2E6E18E2898E80900844770 /* BookClubCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookClubCollectionViewCell.xib; sourceTree = "<group>"; };
+		A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClubListViewController.swift; sourceTree = "<group>"; };
+		A2E6E1932898EFBE00844770 /* Book.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
+		A2E6E1972898F06F00844770 /* BookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
 		A2EF180E287AB90F002C7D5E /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		A2F5023E28986B8600352BFB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CC52AF2B4CA789A8688A12D4 /* Pods_Techl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Techl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E6E18C2898D90300844770 /* Toast in Frameworks */,
 				A246BFB92896737000BE564C /* Alamofire in Frameworks */,
 				6BC792FE6EDDE9663D08A231 /* Pods_Techl.framework in Frameworks */,
 				A2595382288300300065791E /* TextFieldEffects in Frameworks */,
@@ -148,6 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				A246BFBF2896A99C00BE564C /* Club.storyboard */,
+				A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */,
+				A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */,
+				A2E6E18E2898E80900844770 /* BookClubCollectionViewCell.xib */,
 			);
 			path = Club;
 			sourceTree = "<group>";
@@ -256,7 +271,9 @@
 			isa = PBXGroup;
 			children = (
 				A246BFC12896A9DE00BE564C /* Forum.storyboard */,
+				A2E6E1882898D7D300844770 /* Forum List */,
 				A2A809DF2898D3C30013EA6F /* Forum Detail List */,
+				A2E6E1892898D7DD00844770 /* Forum Post */,
 			);
 			path = Forum;
 			sourceTree = "<group>";
@@ -264,8 +281,24 @@
 		A2E6E1872898D77700844770 /* Book */ = {
 			isa = PBXGroup;
 			children = (
+				A2E6E1932898EFBE00844770 /* Book.storyboard */,
+				A2E6E1972898F06F00844770 /* BookInfoViewController.swift */,
 			);
 			path = Book;
+			sourceTree = "<group>";
+		};
+		A2E6E1882898D7D300844770 /* Forum List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Forum List";
+			sourceTree = "<group>";
+		};
+		A2E6E1892898D7DD00844770 /* Forum Post */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Forum Post";
 			sourceTree = "<group>";
 		};
 		A2F5023B28986AEC00352BFB /* Main */ = {
@@ -372,6 +405,7 @@
 			packageProductDependencies = (
 				A2595381288300300065791E /* TextFieldEffects */,
 				A246BFB82896737000BE564C /* Alamofire */,
+				A2E6E18B2898D90300844770 /* Toast */,
 			);
 			productName = Techl;
 			productReference = A2AFB26F28766D240091C123 /* Techl.app */;
@@ -404,6 +438,7 @@
 			packageReferences = (
 				A2595380288300300065791E /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 				A246BFB72896737000BE564C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A2E6E18A2898D90300844770 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = A2AFB27028766D240091C123 /* Products */;
 			projectDirPath = "";
@@ -420,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A246BFB52896732700BE564C /* Main.storyboard in Resources */,
+				A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */,
 				A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */,
 				A246BFB62896732700BE564C /* Home.storyboard in Resources */,
 				A2AFB28728766DB10091C123 /* Authentication.storyboard in Resources */,
@@ -427,6 +463,7 @@
 				A2AFB28928766E620091C123 /* Onboarding.storyboard in Resources */,
 				A246BFC02896A99C00BE564C /* Club.storyboard in Resources */,
 				A2AFB27F28766D250091C123 /* LaunchScreen.storyboard in Resources */,
+				A2E6E1902898E80900844770 /* BookClubCollectionViewCell.xib in Resources */,
 				A2AFB27C28766D250091C123 /* Assets.xcassets in Resources */,
 				A243F10A287FB19400E46AE4 /* Search.storyboard in Resources */,
 			);
@@ -483,13 +520,16 @@
 			files = (
 				A21BB1E6289275D600B3F325 /* NXMLSearchCollectionReusableView.swift in Sources */,
 				A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */,
+				A2E6E18F2898E80900844770 /* BookClubCollectionViewCell.swift in Sources */,
 				A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */,
+				A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */,
 				A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
 				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
 				A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */,
+				A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */,
 				A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */,
 				A246BFBD2896A7EE00BE564C /* BookDetailViewController.swift in Sources */,
 				A2429B8E288E65F9003E3573 /* BookListCollectionViewCell.swift in Sources */,
@@ -742,6 +782,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		A2E6E18A2898D90300844770 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -754,6 +802,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2595380288300300065791E /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
 			productName = TextFieldEffects;
+		};
+		A2E6E18B2898D90300844770 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2E6E18A2898D90300844770 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

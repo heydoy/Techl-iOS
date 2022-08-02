@@ -18,5 +18,11 @@ class ForumDetailListCollectionViewCell: UICollectionViewCell {
     
     func configure() {
         // cell design
+        
+        thumbnailImageView.layer.cornerRadius = thumbnailImageView.frame.size.width/6
+        thumbnailImageView.layer.borderColor = UIColor.systemGray6.cgColor
+        thumbnailImageView.layer.borderWidth = 1
+        
+        
     }
 }

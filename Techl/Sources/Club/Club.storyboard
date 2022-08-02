@@ -8,25 +8,81 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Book Club List View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookClubListViewController" id="Y6W-OH-hqX" customClass="BookClubListViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 북클럽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klk-oh-bIs">
+                                <rect key="frame" x="20" y="64" width="111" height="29"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-rM-yMx">
+                                <rect key="frame" x="0.0" y="113" width="414" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="IUa-5L-C8H"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K9O-py-GHg">
+                                    <size key="itemSize" width="170" height="240"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진행중인 북클럽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuj-dB-pGb">
+                                <rect key="frame" x="20" y="389" width="152" height="29"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Gg-La-4Uf">
+                                <rect key="frame" x="0.0" y="438" width="414" height="458"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="4gh-PU-yfO">
+                                    <size key="itemSize" width="170" height="240"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="12" maxX="20" maxY="12"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="7Gg-La-4Uf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7yH-vQ-nGf"/>
+                            <constraint firstItem="Nuj-dB-pGb" firstAttribute="leading" secondItem="Klk-oh-bIs" secondAttribute="leading" id="Ddy-qc-XOi"/>
+                            <constraint firstItem="bd9-rM-yMx" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="JTV-2D-aki"/>
+                            <constraint firstItem="Klk-oh-bIs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="LqI-hZ-W13"/>
+                            <constraint firstItem="7Gg-La-4Uf" firstAttribute="top" secondItem="Nuj-dB-pGb" secondAttribute="bottom" constant="20" id="OTu-CJ-sUg"/>
+                            <constraint firstItem="bd9-rM-yMx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="W03-bH-zgc"/>
+                            <constraint firstAttribute="bottom" secondItem="7Gg-La-4Uf" secondAttribute="bottom" id="aSr-2y-ma8"/>
+                            <constraint firstItem="Nuj-dB-pGb" firstAttribute="top" secondItem="bd9-rM-yMx" secondAttribute="bottom" constant="36" id="hfI-oS-YNa"/>
+                            <constraint firstItem="7Gg-La-4Uf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="iFi-vi-2pn"/>
+                            <constraint firstItem="bd9-rM-yMx" firstAttribute="top" secondItem="Klk-oh-bIs" secondAttribute="bottom" constant="20" id="sHq-de-OAt"/>
+                            <constraint firstItem="Klk-oh-bIs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="zMz-DQ-4LQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myClubCollectionView" destination="bd9-rM-yMx" id="1Lf-Ad-AIX"/>
+                        <outlet property="otherClubCollectionView" destination="7Gg-La-4Uf" id="8He-MG-4Dj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="76"/>
+            <point key="canvasLocation" x="121.73913043478262" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

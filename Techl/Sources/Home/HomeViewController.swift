@@ -41,6 +41,9 @@ class HomeViewController: UIViewController {
         bookListCollectionView.dataSource = self
         bookListCollectionView.delegate = self
         
+        // 셀 등록
+        clubListCollectionView.register(UINib(nibName: String(describing: BookClubCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: BookClubCollectionViewCell.self))
+        
         // 디자인
         viewConfigure()
         
@@ -139,7 +142,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             return cell
         
         case clubListCollectionView:
-            guard let cell = clubListCollectionView.dequeueReusableCell(withReuseIdentifier: ClubListCollectionViewCell.identifier, for: indexPath) as? ClubListCollectionViewCell else { return UICollectionViewCell() }
+            guard let cell = clubListCollectionView.dequeueReusableCell(withReuseIdentifier: BookClubCollectionViewCell.identifier, for: indexPath) as? BookClubCollectionViewCell else { return UICollectionViewCell() }
             
             cell.configure()
             
