@@ -179,8 +179,8 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             print("클럽 선택")
         case bookListCollectionView:
             print("책 선택")
-            let sb = UIStoryboard(name: "Forum", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: ForumDetailListViewController.identifier) as! ForumDetailListViewController
+            let sb = UIStoryboard(name: "Book", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: BookInfoViewController.identifier) as! BookInfoViewController
             
             self.navigationController?.pushViewController(vc, animated: true)
             
