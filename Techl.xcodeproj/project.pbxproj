@@ -45,7 +45,6 @@
 		A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */; };
 		A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E1932898EFBE00844770 /* Book.storyboard */; };
 		A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1972898F06F00844770 /* BookInfoViewController.swift */; };
-		A2EF180F287AB90F002C7D5E /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF180E287AB90F002C7D5E /* Keys.swift */; };
 		A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5023E28986B8600352BFB /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,7 +98,6 @@
 		A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClubListViewController.swift; sourceTree = "<group>"; };
 		A2E6E1932898EFBE00844770 /* Book.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
 		A2E6E1972898F06F00844770 /* BookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
-		A2EF180E287AB90F002C7D5E /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		A2F5023E28986B8600352BFB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		CC52AF2B4CA789A8688A12D4 /* Pods_Techl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Techl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8189617B6DC14A1A0F96365 /* Pods-Techl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techl.debug.xcconfig"; path = "Target Support Files/Pods-Techl/Pods-Techl.debug.xcconfig"; sourceTree = "<group>"; };
@@ -340,7 +338,6 @@
 		A2F5024128986C0900352BFB /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				A2EF180E287AB90F002C7D5E /* Keys.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -538,7 +535,6 @@
 				A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */,
 				A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */,
 				A2429B90288E697B003E3573 /* BookListHeaderCollectionReusableView.swift in Sources */,
-				A2EF180F287AB90F002C7D5E /* Keys.swift in Sources */,
 				A246BFD22896C43100BE564C /* Documents.swift in Sources */,
 				A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */,
 			);
