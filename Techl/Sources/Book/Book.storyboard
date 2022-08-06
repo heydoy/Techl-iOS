@@ -199,7 +199,7 @@
                                                 </cells>
                                             </collectionView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWP-cP-ENU">
-                                                <rect key="frame" x="321" y="641" width="72.5" height="31"/>
+                                                <rect key="frame" x="321.5" y="641" width="72.5" height="31"/>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="모두보기"/>
@@ -278,6 +278,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="63.616071428571423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5lV-Bn-nec">
+            <objects>
+                <viewController id="03u-Mt-RpC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Igh-EO-87e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jEF-PW-D6J">
+                                <rect key="frame" x="87" y="397" width="240" height="128"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0jj-jA-9fi"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="UP0-sb-H0r"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gob-CS-G6A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jEF-PW-D6J" firstAttribute="leading" secondItem="Gob-CS-G6A" secondAttribute="leading" id="5V5-lR-S4r"/>
+                            <constraint firstItem="Gob-CS-G6A" firstAttribute="bottom" secondItem="jEF-PW-D6J" secondAttribute="bottom" id="JYD-hW-mJ9"/>
+                            <constraint firstItem="Gob-CS-G6A" firstAttribute="trailing" secondItem="jEF-PW-D6J" secondAttribute="trailing" id="MNC-uF-cac"/>
+                            <constraint firstItem="jEF-PW-D6J" firstAttribute="top" secondItem="Gob-CS-G6A" secondAttribute="top" id="UXc-nL-L7C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Er-JB-oM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.91304347826087" y="58.928571428571423"/>
         </scene>
     </scenes>
     <resources>
