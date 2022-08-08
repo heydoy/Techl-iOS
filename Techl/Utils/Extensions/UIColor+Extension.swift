@@ -13,5 +13,9 @@ extension UIColor {
         static let secondaryColor = #colorLiteral(red: 1, green: 0.4468782544, blue: 0.09472400695, alpha: 1)
         static let tertiaryColor = #colorLiteral(red: 0.2274509804, green: 0.7725490196, blue: 0.3490196078, alpha: 1)
         static let quaternaryColor = #colorLiteral(red: 0.5098039216, green: 0.2078431373, blue: 0.8941176471, alpha: 1)
+        
+        static let backgroundColor = #colorLiteral(red: 0.9201520085, green: 0.9719336629, blue: 1, alpha: 1)
+        
+        // #colorLiteral(red:  , green: , blue: , alpha: )
     }
 }
