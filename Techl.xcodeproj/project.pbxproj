@@ -35,6 +35,9 @@
 		A2AFB27F28766D250091C123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB27D28766D250091C123 /* LaunchScreen.storyboard */; };
 		A2AFB28728766DB10091C123 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB28628766DB10091C123 /* Authentication.storyboard */; };
 		A2AFB28928766E620091C123 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB28828766E620091C123 /* Onboarding.storyboard */; };
+		A2B1389B289ECFFE004241D0 /* PreferredITFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1389A289ECFFE004241D0 /* PreferredITFieldViewController.swift */; };
+		A2B1389E289ED085004241D0 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */; };
+		A2B1389F289ED085004241D0 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */; };
 		A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501528903497000436FC /* NXMLSearchViewController.swift */; };
 		A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501728903F91000436FC /* NXMLBookSearchResult.swift */; };
 		A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501928903FF1000436FC /* NXMLSearchCollectionViewCell.swift */; };
@@ -92,6 +95,9 @@
 		A2AFB28028766D250091C123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2AFB28628766DB10091C123 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		A2AFB28828766E620091C123 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		A2B1389A289ECFFE004241D0 /* PreferredITFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredITFieldViewController.swift; sourceTree = "<group>"; };
+		A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		A2D5501528903497000436FC /* NXMLSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchViewController.swift; sourceTree = "<group>"; };
 		A2D5501728903F91000436FC /* NXMLBookSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLBookSearchResult.swift; sourceTree = "<group>"; };
 		A2D5501928903FF1000436FC /* NXMLSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -145,6 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				A2AFB28628766DB10091C123 /* Authentication.storyboard */,
+				A2B1389A289ECFFE004241D0 /* PreferredITFieldViewController.swift */,
+				A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */,
+				A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -458,6 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A246BFB52896732700BE564C /* Main.storyboard in Resources */,
+				A2B1389F289ED085004241D0 /* TagCollectionViewCell.xib in Resources */,
 				A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */,
 				A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */,
 				A246BFB62896732700BE564C /* Home.storyboard in Resources */,
@@ -524,6 +534,7 @@
 			files = (
 				A21BB1E6289275D600B3F325 /* NXMLSearchCollectionReusableView.swift in Sources */,
 				A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */,
+				A2B1389E289ED085004241D0 /* TagCollectionViewCell.swift in Sources */,
 				A2E6E18F2898E80900844770 /* BookClubCollectionViewCell.swift in Sources */,
 				A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */,
 				A2E6E1C82899F93D00844770 /* Keys.swift in Sources */,
@@ -544,6 +555,7 @@
 				A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */,
 				A2429B90288E697B003E3573 /* BookListHeaderCollectionReusableView.swift in Sources */,
 				A246BFD22896C43100BE564C /* Documents.swift in Sources */,
+				A2B1389B289ECFFE004241D0 /* PreferredITFieldViewController.swift in Sources */,
 				A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
