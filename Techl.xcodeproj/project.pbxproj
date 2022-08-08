@@ -26,9 +26,16 @@
 		A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246BFC62896AB8500BE564C /* BannerDetailViewController.swift */; };
 		A246BFD22896C43100BE564C /* Documents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246BFD12896C43100BE564C /* Documents.swift */; };
 		A2595382288300300065791E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = A2595381288300300065791E /* TextFieldEffects */; };
+		A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FA56228A1B5DE00AB46DF /* ConciergeViewController.swift */; };
+		A25FA56628A1B6B800AB46DF /* LandscapeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */; };
 		A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269EB1828986F4C00C03DDB /* UIViewController+Extension.swift */; };
 		A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A809DB2898D3410013EA6F /* ForumDetailListViewController.swift */; };
 		A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */; };
+		A2AAB89B28A1AA5C00E7774E /* CarouselPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB89A28A1AA5C00E7774E /* CarouselPageViewController.swift */; };
+		A2AAB89D28A1ACF400E7774E /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB89C28A1ACF400E7774E /* FirstPageViewController.swift */; };
+		A2AAB89F28A1AD0A00E7774E /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB89E28A1AD0A00E7774E /* SecondPageViewController.swift */; };
+		A2AAB8A128A1AD1F00E7774E /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB8A028A1AD1F00E7774E /* ThirdPageViewController.swift */; };
+		A2AAB8A328A1AF8B00E7774E /* OnboardingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB8A228A1AF8B00E7774E /* OnboardingMainViewController.swift */; };
 		A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27228766D240091C123 /* AppDelegate.swift */; };
 		A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27428766D240091C123 /* SceneDelegate.swift */; };
 		A2AFB27C28766D250091C123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB27B28766D250091C123 /* Assets.xcassets */; };
@@ -83,9 +90,16 @@
 		A246BFC42896AA1000BE564C /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		A246BFC62896AB8500BE564C /* BannerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerDetailViewController.swift; sourceTree = "<group>"; };
 		A246BFD12896C43100BE564C /* Documents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Documents.swift; sourceTree = "<group>"; };
+		A25FA56228A1B5DE00AB46DF /* ConciergeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeViewController.swift; sourceTree = "<group>"; };
+		A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeManager.swift; sourceTree = "<group>"; };
 		A269EB1828986F4C00C03DDB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A2A809DB2898D3410013EA6F /* ForumDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDetailListViewController.swift; sourceTree = "<group>"; };
 		A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDetailListCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2AAB89A28A1AA5C00E7774E /* CarouselPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPageViewController.swift; sourceTree = "<group>"; };
+		A2AAB89C28A1ACF400E7774E /* FirstPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageViewController.swift; sourceTree = "<group>"; };
+		A2AAB89E28A1AD0A00E7774E /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
+		A2AAB8A028A1AD1F00E7774E /* ThirdPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
+		A2AAB8A228A1AF8B00E7774E /* OnboardingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewController.swift; sourceTree = "<group>"; };
 		A2AFB26F28766D240091C123 /* Techl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AFB27228766D240091C123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2AFB27428766D240091C123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +177,11 @@
 			children = (
 				A2AFB27D28766D250091C123 /* LaunchScreen.storyboard */,
 				A2AFB28828766E620091C123 /* Onboarding.storyboard */,
+				A2AAB8A228A1AF8B00E7774E /* OnboardingMainViewController.swift */,
+				A2AAB8A028A1AD1F00E7774E /* ThirdPageViewController.swift */,
+				A2AAB89E28A1AD0A00E7774E /* SecondPageViewController.swift */,
+				A2AAB89C28A1ACF400E7774E /* FirstPageViewController.swift */,
+				A2AAB89A28A1AA5C00E7774E /* CarouselPageViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -184,6 +203,14 @@
 				A246BFC42896AA1000BE564C /* MyPage.storyboard */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		A25FA56428A1B6A800AB46DF /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		A269EB1728986CD200C03DDB /* Supports */ = {
@@ -225,6 +252,7 @@
 		A2AFB27128766D240091C123 /* Techl */ = {
 			isa = PBXGroup;
 			children = (
+				A25FA56428A1B6A800AB46DF /* UserDefaults */,
 				A2D5501028903064000436FC /* App */,
 				A2F5024128986C0900352BFB /* Network */,
 				A2F5024428986C8000352BFB /* Sources */,
@@ -317,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				A246BFB32896719400BE564C /* Main.storyboard */,
+				A25FA56228A1B5DE00AB46DF /* ConciergeViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -538,11 +567,14 @@
 				A2E6E18F2898E80900844770 /* BookClubCollectionViewCell.swift in Sources */,
 				A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */,
 				A2E6E1C82899F93D00844770 /* Keys.swift in Sources */,
+				A2AAB89D28A1ACF400E7774E /* FirstPageViewController.swift in Sources */,
 				A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */,
 				A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */,
+				A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
 				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
+				A2AAB8A328A1AF8B00E7774E /* OnboardingMainViewController.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
 				A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */,
 				A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */,
@@ -552,10 +584,14 @@
 				A2442EF7289547E70001ED62 /* Banner.swift in Sources */,
 				A2429B8C288E65A6003E3573 /* HomeBannerCollectionViewCell.swift in Sources */,
 				A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */,
+				A25FA56628A1B6B800AB46DF /* LandscapeManager.swift in Sources */,
 				A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */,
 				A2429B90288E697B003E3573 /* BookListHeaderCollectionReusableView.swift in Sources */,
+				A2AAB89B28A1AA5C00E7774E /* CarouselPageViewController.swift in Sources */,
 				A246BFD22896C43100BE564C /* Documents.swift in Sources */,
+				A2AAB89F28A1AD0A00E7774E /* SecondPageViewController.swift in Sources */,
 				A2B1389B289ECFFE004241D0 /* PreferredITFieldViewController.swift in Sources */,
+				A2AAB8A128A1AD1F00E7774E /* ThirdPageViewController.swift in Sources */,
 				A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,7 +745,7 @@
 				INFOPLIST_FILE = Techl/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -740,7 +776,7 @@
 				INFOPLIST_FILE = Techl/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
