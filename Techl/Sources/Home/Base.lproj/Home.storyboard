@@ -348,8 +348,13 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="140"/>
                                         <connections>
+                                            <outlet property="bookAuthorLabel" destination="K7g-bE-LYp" id="B9A-dB-rVX"/>
+                                            <outlet property="bookDescriptionLabel" destination="faC-Pd-Vgp" id="PwV-0U-Dm9"/>
                                             <outlet property="bookThumbnailImageView" destination="Ozw-B2-3MM" id="urM-ak-DBG"/>
+                                            <outlet property="bookTitleLabel" destination="RmA-x7-BTj" id="ant-8M-Cfj"/>
                                             <outlet property="bookmarkButton" destination="Kjz-eE-tAD" id="cZd-Ev-Ti4"/>
+                                            <outlet property="clubCountLabel" destination="FKF-o4-P1d" id="5pg-5P-gQ6"/>
+                                            <outlet property="forumCountLabel" destination="Exl-Ib-ghb" id="IRy-Lt-M7w"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

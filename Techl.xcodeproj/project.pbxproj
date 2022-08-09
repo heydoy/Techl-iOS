@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		6BC792FE6EDDE9663D08A231 /* Pods_Techl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC52AF2B4CA789A8688A12D4 /* Pods_Techl.framework */; };
+		A20C85CB28A1C6010012AAC8 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C85CA28A1C6010012AAC8 /* MainTabBarViewController.swift */; };
+		A20C85CD28A1D93B0012AAC8 /* ForumPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C85CC28A1D93B0012AAC8 /* ForumPostViewController.swift */; };
+		A20C85D028A1DA0B0012AAC8 /* PostArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C85CE28A1DA0B0012AAC8 /* PostArticleTableViewCell.swift */; };
+		A20C85D128A1DA0B0012AAC8 /* PostArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20C85CF28A1DA0B0012AAC8 /* PostArticleTableViewCell.xib */; };
+		A20C85DB28A1EF610012AAC8 /* PostReplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C85D928A1EF610012AAC8 /* PostReplyTableViewCell.swift */; };
+		A20C85DC28A1EF610012AAC8 /* PostReplyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20C85DA28A1EF610012AAC8 /* PostReplyTableViewCell.xib */; };
 		A21BB1E6289275D600B3F325 /* NXMLSearchCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BB1E5289275D600B3F325 /* NXMLSearchCollectionReusableView.swift */; };
 		A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2429B89288E657A003E3573 /* HomeViewController.swift */; };
 		A2429B8C288E65A6003E3573 /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2429B8B288E65A6003E3573 /* HomeBannerCollectionViewCell.swift */; };
@@ -29,6 +35,7 @@
 		A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FA56228A1B5DE00AB46DF /* ConciergeViewController.swift */; };
 		A25FA56628A1B6B800AB46DF /* LandscapeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */; };
 		A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269EB1828986F4C00C03DDB /* UIViewController+Extension.swift */; };
+		A298168428A1C283002F3EC5 /* ForumEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298168328A1C283002F3EC5 /* ForumEditorViewController.swift */; };
 		A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A809DB2898D3410013EA6F /* ForumDetailListViewController.swift */; };
 		A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */; };
 		A2AAB89B28A1AA5C00E7774E /* CarouselPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB89A28A1AA5C00E7774E /* CarouselPageViewController.swift */; };
@@ -45,6 +52,10 @@
 		A2B1389B289ECFFE004241D0 /* PreferredITFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1389A289ECFFE004241D0 /* PreferredITFieldViewController.swift */; };
 		A2B1389E289ED085004241D0 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */; };
 		A2B1389F289ED085004241D0 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */; };
+		A2C279FE28A21AB80016E150 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C279FD28A21AB80016E150 /* APIManager.swift */; };
+		A2C27A0028A21B0D0016E150 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C279FF28A21B0D0016E150 /* Endpoint.swift */; };
+		A2C27A0328A21C3A0016E150 /* ForumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C27A0228A21C3A0016E150 /* ForumModel.swift */; };
+		A2C27A0628A226D10016E150 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C27A0528A226D10016E150 /* BookModel.swift */; };
 		A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501528903497000436FC /* NXMLSearchViewController.swift */; };
 		A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501728903F91000436FC /* NXMLBookSearchResult.swift */; };
 		A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501928903FF1000436FC /* NXMLSearchCollectionViewCell.swift */; };
@@ -75,6 +86,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A20C85CA28A1C6010012AAC8 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		A20C85CC28A1D93B0012AAC8 /* ForumPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostViewController.swift; sourceTree = "<group>"; };
+		A20C85CE28A1DA0B0012AAC8 /* PostArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArticleTableViewCell.swift; sourceTree = "<group>"; };
+		A20C85CF28A1DA0B0012AAC8 /* PostArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostArticleTableViewCell.xib; sourceTree = "<group>"; };
+		A20C85D928A1EF610012AAC8 /* PostReplyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReplyTableViewCell.swift; sourceTree = "<group>"; };
+		A20C85DA28A1EF610012AAC8 /* PostReplyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostReplyTableViewCell.xib; sourceTree = "<group>"; };
 		A21BB1E5289275D600B3F325 /* NXMLSearchCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchCollectionReusableView.swift; sourceTree = "<group>"; };
 		A2429B89288E657A003E3573 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A2429B8B288E65A6003E3573 /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -93,6 +110,7 @@
 		A25FA56228A1B5DE00AB46DF /* ConciergeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeViewController.swift; sourceTree = "<group>"; };
 		A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeManager.swift; sourceTree = "<group>"; };
 		A269EB1828986F4C00C03DDB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A298168328A1C283002F3EC5 /* ForumEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumEditorViewController.swift; sourceTree = "<group>"; };
 		A2A809DB2898D3410013EA6F /* ForumDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDetailListViewController.swift; sourceTree = "<group>"; };
 		A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDetailListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2AAB89A28A1AA5C00E7774E /* CarouselPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPageViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +130,10 @@
 		A2B1389A289ECFFE004241D0 /* PreferredITFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredITFieldViewController.swift; sourceTree = "<group>"; };
 		A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		A2C279FD28A21AB80016E150 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A2C279FF28A21B0D0016E150 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A2C27A0228A21C3A0016E150 /* ForumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumModel.swift; sourceTree = "<group>"; };
+		A2C27A0528A226D10016E150 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		A2D5501528903497000436FC /* NXMLSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchViewController.swift; sourceTree = "<group>"; };
 		A2D5501728903F91000436FC /* NXMLBookSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLBookSearchResult.swift; sourceTree = "<group>"; };
 		A2D5501928903FF1000436FC /* NXMLSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -263,6 +285,23 @@
 			path = Techl;
 			sourceTree = "<group>";
 		};
+		A2C27A0128A21BCC0016E150 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2C27A0228A21C3A0016E150 /* ForumModel.swift */,
+				A2C27A0528A226D10016E150 /* BookModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2C27A0428A21D6E0016E150 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A2C279FD28A21AB80016E150 /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		A2D5501028903064000436FC /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +350,12 @@
 			isa = PBXGroup;
 			children = (
 				A246BFC12896A9DE00BE564C /* Forum.storyboard */,
+				A20C85CE28A1DA0B0012AAC8 /* PostArticleTableViewCell.swift */,
+				A20C85CF28A1DA0B0012AAC8 /* PostArticleTableViewCell.xib */,
+				A20C85D928A1EF610012AAC8 /* PostReplyTableViewCell.swift */,
+				A20C85DA28A1EF610012AAC8 /* PostReplyTableViewCell.xib */,
+				A298168328A1C283002F3EC5 /* ForumEditorViewController.swift */,
+				A20C85CC28A1D93B0012AAC8 /* ForumPostViewController.swift */,
 				A2E6E1882898D7D300844770 /* Forum List */,
 				A2A809DF2898D3C30013EA6F /* Forum Detail List */,
 				A2E6E1892898D7DD00844770 /* Forum Post */,
@@ -345,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				A246BFB32896719400BE564C /* Main.storyboard */,
+				A20C85CA28A1C6010012AAC8 /* MainTabBarViewController.swift */,
 				A25FA56228A1B5DE00AB46DF /* ConciergeViewController.swift */,
 			);
 			path = Main;
@@ -381,7 +427,10 @@
 		A2F5024128986C0900352BFB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A2C27A0128A21BCC0016E150 /* Model */,
+				A2C27A0428A21D6E0016E150 /* Manager */,
 				A2E6E1C72899F93D00844770 /* Keys.swift */,
+				A2C279FF28A21B0D0016E150 /* Endpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -495,9 +544,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20C85DC28A1EF610012AAC8 /* PostReplyTableViewCell.xib in Resources */,
 				A246BFB52896732700BE564C /* Main.storyboard in Resources */,
 				A2B1389F289ED085004241D0 /* TagCollectionViewCell.xib in Resources */,
 				A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */,
+				A20C85D128A1DA0B0012AAC8 /* PostArticleTableViewCell.xib in Resources */,
 				A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */,
 				A246BFB62896732700BE564C /* Home.storyboard in Resources */,
 				A2AFB28728766DB10091C123 /* Authentication.storyboard in Resources */,
@@ -564,26 +615,34 @@
 				A21BB1E6289275D600B3F325 /* NXMLSearchCollectionReusableView.swift in Sources */,
 				A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */,
 				A2B1389E289ED085004241D0 /* TagCollectionViewCell.swift in Sources */,
+				A2C27A0628A226D10016E150 /* BookModel.swift in Sources */,
+				A20C85CB28A1C6010012AAC8 /* MainTabBarViewController.swift in Sources */,
 				A2E6E18F2898E80900844770 /* BookClubCollectionViewCell.swift in Sources */,
+				A2C27A0328A21C3A0016E150 /* ForumModel.swift in Sources */,
+				A20C85CD28A1D93B0012AAC8 /* ForumPostViewController.swift in Sources */,
 				A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */,
 				A2E6E1C82899F93D00844770 /* Keys.swift in Sources */,
 				A2AAB89D28A1ACF400E7774E /* FirstPageViewController.swift in Sources */,
+				A298168428A1C283002F3EC5 /* ForumEditorViewController.swift in Sources */,
 				A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */,
 				A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */,
 				A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
 				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
+				A2C27A0028A21B0D0016E150 /* Endpoint.swift in Sources */,
 				A2AAB8A328A1AF8B00E7774E /* OnboardingMainViewController.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
 				A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */,
 				A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */,
+				A2C279FE28A21AB80016E150 /* APIManager.swift in Sources */,
 				A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */,
 				A246BFBD2896A7EE00BE564C /* BookDetailViewController.swift in Sources */,
 				A2429B8E288E65F9003E3573 /* BookListCollectionViewCell.swift in Sources */,
 				A2442EF7289547E70001ED62 /* Banner.swift in Sources */,
 				A2429B8C288E65A6003E3573 /* HomeBannerCollectionViewCell.swift in Sources */,
 				A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */,
+				A20C85D028A1DA0B0012AAC8 /* PostArticleTableViewCell.swift in Sources */,
 				A25FA56628A1B6B800AB46DF /* LandscapeManager.swift in Sources */,
 				A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */,
 				A2429B90288E697B003E3573 /* BookListHeaderCollectionReusableView.swift in Sources */,
@@ -591,6 +650,7 @@
 				A246BFD22896C43100BE564C /* Documents.swift in Sources */,
 				A2AAB89F28A1AD0A00E7774E /* SecondPageViewController.swift in Sources */,
 				A2B1389B289ECFFE004241D0 /* PreferredITFieldViewController.swift in Sources */,
+				A20C85DB28A1EF610012AAC8 /* PostReplyTableViewCell.swift in Sources */,
 				A2AAB8A128A1AD1F00E7774E /* ThirdPageViewController.swift in Sources */,
 				A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */,
 			);

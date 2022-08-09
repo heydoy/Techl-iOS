@@ -609,10 +609,10 @@
             </objects>
             <point key="canvasLocation" x="3692.753623188406" y="97.767857142857139"/>
         </scene>
-        <!--Main-->
+        <!--MainTabBarViewController-->
         <scene sceneID="ofk-La-hnG">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="xs9-if-gGg" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainTabBarViewController" id="xs9-if-gGg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbn-EV-J6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3757" y="834"/>

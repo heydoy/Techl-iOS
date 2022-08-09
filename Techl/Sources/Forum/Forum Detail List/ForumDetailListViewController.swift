@@ -17,6 +17,8 @@ class ForumDetailListViewController: UIViewController {
     
     static let identifier = "ForumDetailListViewController"
     
+    var forumList: [ForumArticle] = []
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +32,29 @@ class ForumDetailListViewController: UIViewController {
         item.tintColor = UIColor.darkGray
         navigationItem.rightBarButtonItems = [ item ]
         setButtonconfigure()
+        
+        callRequest()
+
+    }
+    
+    func callRequest() {
+        APIManager.shared.forumRequest { articles in
+            self.forumList = articles
+            self.collectionView.reloadData()
+            
+        }
 
     }
 
     @IBAction func forumWriteButtonTapped(_ sender: UIButton) {
-        self.view.makeToast("포럼 글쓰기를 클릭")
+        
+        
+        let storyboard = UIStoryboard(name: "Forum", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: ForumEditorViewController.identifier) as! ForumEditorViewController
+        
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
 
     }
     
@@ -50,15 +70,27 @@ class ForumDetailListViewController: UIViewController {
 extension ForumDetailListViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        20
+        forumList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ForumDetailListCollectionViewCell.identifier, for: indexPath) as? ForumDetailListCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.configure()
+        cell.configure(post: forumList[indexPath.item])
         
         return cell
+    }
+    
+    // 선택됐을 때 셀 이동
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // 글 처리는 나중에
+        let storyboard = UIStoryboard(name: "Forum", bundle: nil)
+        
+        let vc = storyboard.instantiateViewController(withIdentifier: ForumPostViewController.identifier) as! ForumPostViewController
+        
+        vc.forumIdx = forumList[indexPath.item].forumIdx
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

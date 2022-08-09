@@ -17,6 +17,9 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var bookListCollectionView: UICollectionView!
     
+    var bookList: [BookModel] = []
+    
+    
     // 배너 위의 인덱스 인디케이터
     @IBOutlet weak var bannerIndexView: UIView!
     @IBOutlet weak var bannerIndexLabel: UILabel!
@@ -56,6 +59,12 @@ class HomeViewController: UIViewController {
     }
     
     // MARK: - Actions
+    
+    func callRequest() {
+        // 데이터 가져오기
+        
+        bookListCollectionView.reloadData()
+    }
     
     @objc
     func searchButtonTapped(_ sender: UIBarButtonItem) {
@@ -151,6 +160,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         case bookListCollectionView:
             guard let cell = bookListCollectionView.dequeueReusableCell(withReuseIdentifier: BookListCollectionViewCell.identifier, for: indexPath) as? BookListCollectionViewCell else { return UICollectionViewCell() }
             cell.configure()
+            //cell.dataConfigure(book: bookList[indexPath.item])
             return cell
             
         default:

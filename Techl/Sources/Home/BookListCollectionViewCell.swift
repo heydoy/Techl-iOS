@@ -14,6 +14,16 @@ class BookListCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var bookmarkButton: UIButton!
     
+    
+    @IBOutlet weak var bookTitleLabel: UILabel!
+    @IBOutlet weak var bookAuthorLabel: UILabel!
+    
+    @IBOutlet weak var bookDescriptionLabel: UILabel!
+    
+    @IBOutlet weak var clubCountLabel: UILabel!
+    
+    @IBOutlet weak var forumCountLabel: UILabel!
+    
     func configure() {
         self.layer.cornerRadius = 12
         bookThumbnailImageView.layer.shadowOffset = CGSize(width: 2, height: 2)
@@ -31,4 +41,15 @@ class BookListCollectionViewCell: UICollectionViewCell {
         
         
     }
+    
+    func dataConfigure(book: BookModel) {
+        bookTitleLabel.text = book.title
+        bookAuthorLabel.text = book.authors
+        bookThumbnailImageView.image = UIImage(named: book.cover) ?? UIImage(systemName: "heart.fill")
+        
+        
+        
+    }
+    
+    
 }

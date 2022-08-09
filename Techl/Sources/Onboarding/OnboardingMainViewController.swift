@@ -19,6 +19,7 @@ class OnboardingMainViewController: UIViewController {
     var currentIndex: Int = 0 {
         didSet {
             decoratePageControl(currentIndex: currentIndex)
+            nextButtonFigure()
             print("--->", oldValue, currentIndex)
         }
     }
@@ -48,13 +49,31 @@ class OnboardingMainViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func pageControlValueChanged(_ sender: UIPageControl) {
-        let index = sender.currentPage
+        currentIndex = sender.currentPage
         
     }
     
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        
+        currentIndex = currentIndex == 2 ? 2 : currentIndex + 1
+
+    }
     
     
     // MARK: - Helpers
+    
+    func nextButtonFigure() {
+        // 폰트설정 해야함
+        
+        if currentIndex == 2 {
+            nextButton.setTitle("완료", for: .normal)
+            nextButton.setImage(UIImage(), for: .normal)
+            
+        } else {
+            nextButton.setTitle("다음", for: .normal)
+            nextButton.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+        }
+    }
     
     fileprivate func decoratePageControl(currentIndex: Int) {
         //let pc = UIPageControl.appearance(whenContainedInInstancesOf: [CarouselPageViewController.self])

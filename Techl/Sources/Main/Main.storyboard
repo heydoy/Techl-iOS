@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="767" y="-1282"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar View Controller-->
         <scene sceneID="N8n-vq-POF">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iWT-co-0YC" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="iWT-co-0YC" customClass="MainTabBarViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q1M-Ru-Dc8">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
