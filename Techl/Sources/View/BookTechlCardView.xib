@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookTechlCardView" customModule="Techl" customModuleProvider="target">
+            <connections>
+                <outlet property="bookAuthorLabel" destination="O8d-0a-uJ3" id="klP-Zl-UT8"/>
+                <outlet property="bookDescriptionLabel" destination="dtw-ya-ZeG" id="V17-Pw-AjJ"/>
+                <outlet property="bookImageView" destination="j8j-os-Dyr" id="cqu-5O-UFt"/>
+                <outlet property="bookTitleLabel" destination="jLa-R1-VRF" id="7H5-hn-rQr"/>
+                <outlet property="bookclubCount" destination="n5z-Qp-1La" id="PYz-jc-pdn"/>
+                <outlet property="bookmarkButton" destination="Uca-UH-4dM" id="GoH-El-Aq6"/>
+                <outlet property="forumCount" destination="6fM-Ja-sYO" id="myi-No-Szs"/>
+                <outlet property="infoButton" destination="xVE-LD-R7L" id="5N4-AQ-OLg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_thumbnail_1" translatesAutoresizingMaskIntoConstraints="NO" id="j8j-os-Dyr">
+                    <rect key="frame" x="12" y="12" width="98" height="136"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="클린 코드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="jLa-R1-VRF">
+                    <rect key="frame" x="122" y="12" width="63" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로버트 C 마틴 지음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="O8d-0a-uJ3">
+                    <rect key="frame" x="122" y="36.5" width="77" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVE-LD-R7L">
+                    <rect key="frame" x="192" y="12.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xVE-LD-R7L" secondAttribute="height" multiplier="1:1" id="Iy0-QN-p8f"/>
+                        <constraint firstAttribute="height" constant="20" id="VVo-Yo-GDx"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemGray2Color"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="info.circle.fill" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="12"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-UH-4dM">
+                    <rect key="frame" x="332" y="12.5" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.96812089589999994" green="0.80166948569999996" blue="0.72912114979999998" alpha="0.35824564749999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="sbj-dx-RDb"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system" title="" cornerStyle="dynamic"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="애자일 소프트웨어 장인 정신 | 나쁜 코드도 돌아는 간다. 하지만 코드가 깨끗하지 못하면 개발 조직은 기어간다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="dtw-ya-ZeG">
+                    <rect key="frame" x="122" y="54.5" width="240" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhD-py-U4z">
+                    <rect key="frame" x="122" y="86.5" width="240" height="61.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="FjJ-8A-tiP">
+                            <rect key="frame" x="6" y="9" width="18" height="44"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.grid.2x2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0YD-BW-4PG">
+                                    <rect key="frame" x="0.0" y="1" width="18" height="16"/>
+                                    <color key="tintColor" systemColor="systemGrayColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="18" id="mLX-HM-8Ck"/>
+                                        <constraint firstAttribute="height" constant="18" id="xYT-QR-kSp"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newspaper.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Sep-kN-9gz">
+                                    <rect key="frame" x="0.0" y="26" width="18" height="18"/>
+                                    <color key="tintColor" systemColor="systemGrayColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="18" id="fgq-V4-R6P"/>
+                                        <constraint firstAttribute="height" constant="18" id="iI6-Ja-Vd1"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TyF-Ce-F5n">
+                            <rect key="frame" x="30" y="9" width="66" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="챌린지/북클럽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIQ-qe-hOB">
+                                    <rect key="frame" x="0.0" y="0.0" width="66" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="js0-pW-Uhh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="포럼 총 글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-QC-d6k">
+                                    <rect key="frame" x="0.0" y="26" width="48.5" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="bu7-T4-XXh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstItem="FjJ-8A-tiP" firstAttribute="centerY" secondItem="VhD-py-U4z" secondAttribute="centerY" id="ALV-ao-5Xg"/>
+                        <constraint firstItem="FjJ-8A-tiP" firstAttribute="leading" secondItem="VhD-py-U4z" secondAttribute="leading" constant="6" id="V6d-k7-vY5"/>
+                        <constraint firstItem="TyF-Ce-F5n" firstAttribute="centerY" secondItem="FjJ-8A-tiP" secondAttribute="centerY" id="tIJ-em-IXx"/>
+                        <constraint firstItem="TyF-Ce-F5n" firstAttribute="leading" secondItem="FjJ-8A-tiP" secondAttribute="trailing" constant="6" id="yJQ-rx-lWH"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1oz-sd-PgN">
+                    <rect key="frame" x="333" y="97.5" width="25" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5z-Qp-1La">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="277" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fM-Ja-sYO">
+                            <rect key="frame" x="0.0" y="24" width="25" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="VhD-py-U4z" firstAttribute="leading" secondItem="dtw-ya-ZeG" secondAttribute="leading" id="1GB-wO-jMH"/>
+                <constraint firstItem="jLa-R1-VRF" firstAttribute="top" secondItem="j8j-os-Dyr" secondAttribute="top" id="7Cw-tN-dqX"/>
+                <constraint firstAttribute="trailing" secondItem="Uca-UH-4dM" secondAttribute="trailing" constant="12" id="7Dm-K1-LQY"/>
+                <constraint firstItem="O8d-0a-uJ3" firstAttribute="leading" secondItem="jLa-R1-VRF" secondAttribute="leading" id="7ol-4w-7eD"/>
+                <constraint firstItem="xVE-LD-R7L" firstAttribute="centerY" secondItem="jLa-R1-VRF" secondAttribute="centerY" id="JFz-b1-nPf"/>
+                <constraint firstItem="Uca-UH-4dM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xVE-LD-R7L" secondAttribute="trailing" constant="16" id="JpW-Sd-Q0P"/>
+                <constraint firstItem="j8j-os-Dyr" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.262032" id="MGU-TX-h8t"/>
+                <constraint firstItem="VhD-py-U4z" firstAttribute="trailing" secondItem="dtw-ya-ZeG" secondAttribute="trailing" id="NGl-Xd-ide"/>
+                <constraint firstItem="O8d-0a-uJ3" firstAttribute="top" secondItem="jLa-R1-VRF" secondAttribute="bottom" constant="4" id="PFj-t5-ov0"/>
+                <constraint firstItem="dtw-ya-ZeG" firstAttribute="leading" secondItem="O8d-0a-uJ3" secondAttribute="leading" id="U9K-wK-e3y"/>
+                <constraint firstItem="jLa-R1-VRF" firstAttribute="leading" secondItem="j8j-os-Dyr" secondAttribute="trailing" constant="12" id="UCV-wW-hKp"/>
+                <constraint firstItem="j8j-os-Dyr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="X1N-Jc-EhZ"/>
+                <constraint firstItem="dtw-ya-ZeG" firstAttribute="top" secondItem="O8d-0a-uJ3" secondAttribute="bottom" constant="6" id="XIA-Vh-4yh"/>
+                <constraint firstItem="VhD-py-U4z" firstAttribute="top" secondItem="dtw-ya-ZeG" secondAttribute="bottom" constant="6" id="a8d-6I-Ar8"/>
+                <constraint firstItem="dtw-ya-ZeG" firstAttribute="trailing" secondItem="Uca-UH-4dM" secondAttribute="trailing" id="ahD-9I-fiY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1oz-sd-PgN" secondAttribute="trailing" constant="16" id="cRM-ef-HOO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j8j-os-Dyr" secondAttribute="bottom" constant="12" id="d8T-OE-u0I"/>
+                <constraint firstItem="xVE-LD-R7L" firstAttribute="leading" secondItem="jLa-R1-VRF" secondAttribute="trailing" constant="7" id="gcM-Sx-9he"/>
+                <constraint firstItem="Uca-UH-4dM" firstAttribute="top" secondItem="xVE-LD-R7L" secondAttribute="top" id="kDw-81-xlS"/>
+                <constraint firstItem="j8j-os-Dyr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="qxZ-rm-moZ"/>
+                <constraint firstItem="1oz-sd-PgN" firstAttribute="centerY" secondItem="VhD-py-U4z" secondAttribute="centerY" id="udC-gJ-vMg"/>
+                <constraint firstItem="Uca-UH-4dM" firstAttribute="width" secondItem="Uca-UH-4dM" secondAttribute="height" multiplier="1:1" id="umM-5d-gK7"/>
+                <constraint firstItem="VhD-py-U4z" firstAttribute="bottom" secondItem="j8j-os-Dyr" secondAttribute="bottom" id="z4s-fj-tk3"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="113.16964285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="book_thumbnail_1" width="458" height="603"/>
+        <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -47,6 +47,8 @@
 		A2AE1DB328A3939B00202218 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1DB228A3939B00202218 /* SectionTitle.swift */; };
 		A2AE1DB528A3963700202218 /* ClubCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AE1DB428A3963700202218 /* ClubCardView.xib */; };
 		A2AE1DB728A398C500202218 /* ClubCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1DB628A398C500202218 /* ClubCardView.swift */; };
+		A2AE1DB928A3A71B00202218 /* BookTechlCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AE1DB828A3A71B00202218 /* BookTechlCardView.xib */; };
+		A2AE1DBB28A3B12300202218 /* BookTechlCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1DBA28A3B12300202218 /* BookTechlCardView.swift */; };
 		A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27228766D240091C123 /* AppDelegate.swift */; };
 		A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27428766D240091C123 /* SceneDelegate.swift */; };
 		A2AFB27C28766D250091C123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB27B28766D250091C123 /* Assets.xcassets */; };
@@ -126,6 +128,8 @@
 		A2AE1DB228A3939B00202218 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		A2AE1DB428A3963700202218 /* ClubCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClubCardView.xib; sourceTree = "<group>"; };
 		A2AE1DB628A398C500202218 /* ClubCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCardView.swift; sourceTree = "<group>"; };
+		A2AE1DB828A3A71B00202218 /* BookTechlCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookTechlCardView.xib; sourceTree = "<group>"; };
+		A2AE1DBA28A3B12300202218 /* BookTechlCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTechlCardView.swift; sourceTree = "<group>"; };
 		A2AFB26F28766D240091C123 /* Techl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AFB27228766D240091C123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2AFB27428766D240091C123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +269,8 @@
 				A2AE1DB228A3939B00202218 /* SectionTitle.swift */,
 				A2AE1DB428A3963700202218 /* ClubCardView.xib */,
 				A2AE1DB628A398C500202218 /* ClubCardView.swift */,
+				A2AE1DB828A3A71B00202218 /* BookTechlCardView.xib */,
+				A2AE1DBA28A3B12300202218 /* BookTechlCardView.swift */,
 				A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */,
 				A2E6E18E2898E80900844770 /* BookClubCollectionViewCell.xib */,
 			);
@@ -574,6 +580,7 @@
 				A246BFB62896732700BE564C /* Home.storyboard in Resources */,
 				A2AFB28728766DB10091C123 /* Authentication.storyboard in Resources */,
 				A246BFC22896A9DE00BE564C /* Forum.storyboard in Resources */,
+				A2AE1DB928A3A71B00202218 /* BookTechlCardView.xib in Resources */,
 				A2AE1DB528A3963700202218 /* ClubCardView.xib in Resources */,
 				A2AFB28928766E620091C123 /* Onboarding.storyboard in Resources */,
 				A246BFC02896A99C00BE564C /* Club.storyboard in Resources */,
@@ -644,6 +651,7 @@
 				A2C27A0328A21C3A0016E150 /* ForumModel.swift in Sources */,
 				A20C85CD28A1D93B0012AAC8 /* ForumPostViewController.swift in Sources */,
 				A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */,
+				A2AE1DBB28A3B12300202218 /* BookTechlCardView.swift in Sources */,
 				A2E6E1C82899F93D00844770 /* Keys.swift in Sources */,
 				A2AAB89D28A1ACF400E7774E /* FirstPageViewController.swift in Sources */,
 				A298168428A1C283002F3EC5 /* ForumEditorViewController.swift in Sources */,
@@ -827,6 +835,7 @@
 				DEVELOPMENT_TEAM = F7B353LPM3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Techl/Supports/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "테클";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -858,6 +867,7 @@
 				DEVELOPMENT_TEAM = F7B353LPM3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Techl/Supports/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "테클";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
