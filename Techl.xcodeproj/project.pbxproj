@@ -43,6 +43,10 @@
 		A2AAB89F28A1AD0A00E7774E /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB89E28A1AD0A00E7774E /* SecondPageViewController.swift */; };
 		A2AAB8A128A1AD1F00E7774E /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB8A028A1AD1F00E7774E /* ThirdPageViewController.swift */; };
 		A2AAB8A328A1AF8B00E7774E /* OnboardingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AAB8A228A1AF8B00E7774E /* OnboardingMainViewController.swift */; };
+		A2AE1DB128A392A300202218 /* SectionTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AE1DB028A392A300202218 /* SectionTitle.xib */; };
+		A2AE1DB328A3939B00202218 /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1DB228A3939B00202218 /* SectionTitle.swift */; };
+		A2AE1DB528A3963700202218 /* ClubCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AE1DB428A3963700202218 /* ClubCardView.xib */; };
+		A2AE1DB728A398C500202218 /* ClubCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AE1DB628A398C500202218 /* ClubCardView.swift */; };
 		A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27228766D240091C123 /* AppDelegate.swift */; };
 		A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AFB27428766D240091C123 /* SceneDelegate.swift */; };
 		A2AFB27C28766D250091C123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2AFB27B28766D250091C123 /* Assets.xcassets */; };
@@ -118,6 +122,10 @@
 		A2AAB89E28A1AD0A00E7774E /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 		A2AAB8A028A1AD1F00E7774E /* ThirdPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
 		A2AAB8A228A1AF8B00E7774E /* OnboardingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewController.swift; sourceTree = "<group>"; };
+		A2AE1DB028A392A300202218 /* SectionTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTitle.xib; sourceTree = "<group>"; };
+		A2AE1DB228A3939B00202218 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
+		A2AE1DB428A3963700202218 /* ClubCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClubCardView.xib; sourceTree = "<group>"; };
+		A2AE1DB628A398C500202218 /* ClubCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCardView.swift; sourceTree = "<group>"; };
 		A2AFB26F28766D240091C123 /* Techl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Techl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2AFB27228766D240091C123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2AFB27428766D240091C123 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -213,8 +221,6 @@
 			children = (
 				A246BFBF2896A99C00BE564C /* Club.storyboard */,
 				A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */,
-				A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */,
-				A2E6E18E2898E80900844770 /* BookClubCollectionViewCell.xib */,
 			);
 			path = Club;
 			sourceTree = "<group>";
@@ -250,6 +256,19 @@
 				A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */,
 			);
 			path = "Forum Detail List";
+			sourceTree = "<group>";
+		};
+		A2AE1DAF28A3924600202218 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2AE1DB028A392A300202218 /* SectionTitle.xib */,
+				A2AE1DB228A3939B00202218 /* SectionTitle.swift */,
+				A2AE1DB428A3963700202218 /* ClubCardView.xib */,
+				A2AE1DB628A398C500202218 /* ClubCardView.swift */,
+				A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */,
+				A2E6E18E2898E80900844770 /* BookClubCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A2AFB26628766D240091C123 = {
@@ -452,6 +471,7 @@
 		A2F5024428986C8000352BFB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A2AE1DAF28A3924600202218 /* View */,
 				A2E6E1872898D77700844770 /* Book */,
 				A2442EFA28954B490001ED62 /* Onboarding */,
 				A2442EF928954B410001ED62 /* Authentication */,
@@ -548,11 +568,13 @@
 				A246BFB52896732700BE564C /* Main.storyboard in Resources */,
 				A2B1389F289ED085004241D0 /* TagCollectionViewCell.xib in Resources */,
 				A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */,
+				A2AE1DB128A392A300202218 /* SectionTitle.xib in Resources */,
 				A20C85D128A1DA0B0012AAC8 /* PostArticleTableViewCell.xib in Resources */,
 				A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */,
 				A246BFB62896732700BE564C /* Home.storyboard in Resources */,
 				A2AFB28728766DB10091C123 /* Authentication.storyboard in Resources */,
 				A246BFC22896A9DE00BE564C /* Forum.storyboard in Resources */,
+				A2AE1DB528A3963700202218 /* ClubCardView.xib in Resources */,
 				A2AFB28928766E620091C123 /* Onboarding.storyboard in Resources */,
 				A246BFC02896A99C00BE564C /* Club.storyboard in Resources */,
 				A2AFB27F28766D250091C123 /* LaunchScreen.storyboard in Resources */,
@@ -613,6 +635,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21BB1E6289275D600B3F325 /* NXMLSearchCollectionReusableView.swift in Sources */,
+				A2AE1DB728A398C500202218 /* ClubCardView.swift in Sources */,
 				A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */,
 				A2B1389E289ED085004241D0 /* TagCollectionViewCell.swift in Sources */,
 				A2C27A0628A226D10016E150 /* BookModel.swift in Sources */,
@@ -626,6 +649,7 @@
 				A298168428A1C283002F3EC5 /* ForumEditorViewController.swift in Sources */,
 				A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */,
 				A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */,
+				A2AE1DB328A3939B00202218 /* SectionTitle.swift in Sources */,
 				A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
 				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,

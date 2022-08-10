@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClubCardView" customModule="Techl" customModuleProvider="target">
+            <connections>
+                <outlet property="badgeLabel" destination="SiR-Rk-Imi" id="i4n-W3-V3y"/>
+                <outlet property="clubImageView" destination="9t6-L9-Nkj" id="ve3-eZ-OAb"/>
+                <outlet property="descriptionLabel" destination="hUI-Dh-gxn" id="GeN-tK-9Kk"/>
+                <outlet property="locationIconImageView" destination="lXo-PX-HXI" id="qVO-FV-JBY"/>
+                <outlet property="locationLabel" destination="X8Z-dA-kOt" id="cPx-fV-Aih"/>
+                <outlet property="startDateLabel" destination="gSF-Iu-Jw0" id="XSj-fI-VBv"/>
+                <outlet property="statusLabel" destination="tWd-tp-HZH" id="CwX-tE-T9m"/>
+                <outlet property="titleLabel" destination="euJ-ee-qCW" id="LL6-vD-r7l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookclub-cover-1" translatesAutoresizingMaskIntoConstraints="NO" id="9t6-L9-Nkj">
+                    <rect key="frame" x="0.0" y="0.0" width="170" height="110"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="wtj-2A-S6s"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" NEW " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiR-Rk-Imi">
+                    <rect key="frame" x="8" y="8" width="43" height="18"/>
+                    <color key="backgroundColor" red="0.84003933399999997" green="0.96841138599999999" blue="0.13532046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 모집중 2/10  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWd-tp-HZH">
+                    <rect key="frame" x="95" y="85" width="67" height="17"/>
+                    <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="Ohi-lJ-RMR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Zr4-vo-FBy">
+                    <rect key="frame" x="8" y="145" width="47" height="16"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lXo-PX-HXI">
+                            <rect key="frame" x="0.0" y="1.5" width="16" height="13"/>
+                            <color key="tintColor" systemColor="systemGrayColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="088-LH-k8J"/>
+                                <constraint firstAttribute="height" constant="16" id="nKT-YC-VY7"/>
+                            </constraints>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="온라인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8Z-dA-kOt">
+                            <rect key="frame" x="18" y="0.0" width="29" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" systemColor="systemGrayColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모임 시작" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOz-yQ-qPC">
+                    <rect key="frame" x="8" y="220" width="41.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8월 16일(수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSF-Iu-Jw0">
+                    <rect key="frame" x="53.5" y="220" width="60" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" systemColor="systemGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="슬기로운 읽기 클럽🥑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euJ-ee-qCW">
+                    <rect key="frame" x="8" y="120" width="154" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQK-QB-hQg">
+                    <rect key="frame" x="0.0" y="214" width="170" height="1"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dHi-j4-b0h"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="클린코드를 읽고 줌 (Zoom) 에서 토론하는 시간을 매주 2회 가집니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUI-Dh-gxn">
+                    <rect key="frame" x="8" y="169" width="154" height="39.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gSF-Iu-Jw0" firstAttribute="centerY" secondItem="rOz-yQ-qPC" secondAttribute="centerY" id="299-cs-XE7"/>
+                <constraint firstAttribute="trailing" secondItem="oQK-QB-hQg" secondAttribute="trailing" id="55n-nr-f12"/>
+                <constraint firstItem="euJ-ee-qCW" firstAttribute="trailing" secondItem="tWd-tp-HZH" secondAttribute="trailing" id="6o8-I6-VYi"/>
+                <constraint firstItem="oQK-QB-hQg" firstAttribute="top" secondItem="hUI-Dh-gxn" secondAttribute="bottom" constant="5.5" id="BA1-Pk-vip"/>
+                <constraint firstItem="Zr4-vo-FBy" firstAttribute="leading" secondItem="euJ-ee-qCW" secondAttribute="leading" id="Hbr-ZQ-mmY"/>
+                <constraint firstItem="9t6-L9-Nkj" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="IQX-sf-WRd"/>
+                <constraint firstItem="9t6-L9-Nkj" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.458333" id="K5x-Eh-y2q"/>
+                <constraint firstItem="hUI-Dh-gxn" firstAttribute="leading" secondItem="euJ-ee-qCW" secondAttribute="leading" id="Kkz-i6-GWq"/>
+                <constraint firstItem="tWd-tp-HZH" firstAttribute="bottom" secondItem="9t6-L9-Nkj" secondAttribute="bottom" constant="-8" id="MfB-B6-tM7"/>
+                <constraint firstItem="tWd-tp-HZH" firstAttribute="trailing" secondItem="9t6-L9-Nkj" secondAttribute="trailing" constant="-8" id="Pp3-OF-4Nn"/>
+                <constraint firstItem="SiR-Rk-Imi" firstAttribute="top" secondItem="9t6-L9-Nkj" secondAttribute="top" constant="8" id="Pp7-yf-5So"/>
+                <constraint firstItem="hUI-Dh-gxn" firstAttribute="trailing" secondItem="euJ-ee-qCW" secondAttribute="trailing" id="TYJ-SV-ecb"/>
+                <constraint firstItem="euJ-ee-qCW" firstAttribute="leading" secondItem="SiR-Rk-Imi" secondAttribute="leading" id="UW9-PM-gxY"/>
+                <constraint firstItem="rOz-yQ-qPC" firstAttribute="top" secondItem="oQK-QB-hQg" secondAttribute="bottom" constant="5" id="W3t-Mt-6sB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gSF-Iu-Jw0" secondAttribute="trailing" constant="8" id="Xm9-sR-Wqj"/>
+                <constraint firstItem="gSF-Iu-Jw0" firstAttribute="leading" secondItem="rOz-yQ-qPC" secondAttribute="trailing" constant="4" id="cc3-ar-O1V"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rOz-yQ-qPC" secondAttribute="bottom" constant="3" id="de1-wN-oks"/>
+                <constraint firstItem="hUI-Dh-gxn" firstAttribute="top" secondItem="Zr4-vo-FBy" secondAttribute="bottom" constant="8" id="eu0-fp-W45"/>
+                <constraint firstItem="Zr4-vo-FBy" firstAttribute="top" secondItem="euJ-ee-qCW" secondAttribute="bottom" constant="5.5" id="fOO-hX-BnN"/>
+                <constraint firstItem="euJ-ee-qCW" firstAttribute="top" secondItem="9t6-L9-Nkj" secondAttribute="bottom" constant="10" id="mOp-WT-h35"/>
+                <constraint firstItem="SiR-Rk-Imi" firstAttribute="leading" secondItem="9t6-L9-Nkj" secondAttribute="leading" constant="8" id="o0S-7E-IVz"/>
+                <constraint firstItem="9t6-L9-Nkj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oTm-Pa-hFe"/>
+                <constraint firstItem="oQK-QB-hQg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pdT-QO-TET"/>
+                <constraint firstItem="9t6-L9-Nkj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rxC-Gk-2wP"/>
+                <constraint firstItem="rOz-yQ-qPC" firstAttribute="leading" secondItem="hUI-Dh-gxn" secondAttribute="leading" id="vcR-fI-X2S"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139" y="91"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bookclub-cover-1" width="170" height="110"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
