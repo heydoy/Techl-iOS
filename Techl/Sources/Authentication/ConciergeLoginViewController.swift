@@ -1,14 +1,16 @@
 //
-//  FirstPageViewController.swift
+//  ConciergeLoginViewController.swift
 //  Techl
 //
-//  Created by Doy Kim on 2022/08/09.
+//  Created by Doy Kim on 2022/08/11.
 //
 
 import UIKit
 
-class FirstPageViewController: UIPageViewController {
-    static let identifier = "FirstPageViewController"
+class ConciergeLoginViewController: UIViewController {
+    
+    static let identifier = "ConciergeLoginViewController"
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

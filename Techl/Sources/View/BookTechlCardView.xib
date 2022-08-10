@@ -125,7 +125,7 @@
                     </constraints>
                 </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1oz-sd-PgN">
-                    <rect key="frame" x="333" y="97.5" width="25" height="40"/>
+                    <rect key="frame" x="329" y="97.5" width="25" height="40"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5z-Qp-1La">
                             <rect key="frame" x="0.0" y="0.0" width="25" height="16"/>
@@ -160,7 +160,7 @@
                 <constraint firstItem="dtw-ya-ZeG" firstAttribute="top" secondItem="O8d-0a-uJ3" secondAttribute="bottom" constant="6" id="XIA-Vh-4yh"/>
                 <constraint firstItem="VhD-py-U4z" firstAttribute="top" secondItem="dtw-ya-ZeG" secondAttribute="bottom" constant="6" id="a8d-6I-Ar8"/>
                 <constraint firstItem="dtw-ya-ZeG" firstAttribute="trailing" secondItem="Uca-UH-4dM" secondAttribute="trailing" id="ahD-9I-fiY"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1oz-sd-PgN" secondAttribute="trailing" constant="16" id="cRM-ef-HOO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1oz-sd-PgN" secondAttribute="trailing" constant="20" id="cRM-ef-HOO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j8j-os-Dyr" secondAttribute="bottom" constant="12" id="d8T-OE-u0I"/>
                 <constraint firstItem="xVE-LD-R7L" firstAttribute="leading" secondItem="jLa-R1-VRF" secondAttribute="trailing" constant="7" id="gcM-Sx-9he"/>
                 <constraint firstItem="Uca-UH-4dM" firstAttribute="top" secondItem="xVE-LD-R7L" secondAttribute="top" id="kDw-81-xlS"/>
