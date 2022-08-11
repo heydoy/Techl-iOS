@@ -100,8 +100,8 @@ extension LoginViewController {
 //        present(alert, animated: true)
         
         var style = ToastStyle()
-        style.messageAlignment = .center
-
+        style.messageAlignment = .left
+        style.messageColor = .systemGray6
 
         self.view.makeToast("아이디 또는 비밀번호가 일치하지 않습니다.", duration: 1.2, position: .center, title: "로그인 실패", image: UIImage(named: "login-fail"), style: style, completion: nil)
     }
