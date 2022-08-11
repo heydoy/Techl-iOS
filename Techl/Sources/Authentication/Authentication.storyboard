@@ -705,29 +705,29 @@
                                 </subviews>
                             </stackView>
                             <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxF-4t-AKG">
-                                <rect key="frame" x="36" y="790.5" width="354" height="1"/>
+                                <rect key="frame" x="36" y="793" width="354" height="1"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="2U8-ga-Jx8"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dh6-7a-Gl4">
-                                <rect key="frame" x="151" y="803.5" width="112.5" height="34.5"/>
+                                <rect key="frame" x="156" y="806" width="102" height="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="회원가입하기">
-                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="15"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="JKP-ie-RTu" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="G7M-C3-eav"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdV-vw-iCh">
-                                <rect key="frame" x="134" y="744" width="146.5" height="34.5"/>
+                                <rect key="frame" x="141" y="749" width="132" height="32"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="휴대전화로 로그인">
-                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="Zjv-5Y-jHB" kind="presentation" modalPresentationStyle="overCurrentContext" id="pDB-ZR-pL0"/>
@@ -931,8 +931,8 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="N1b-WD-3S8"/>
-        <segue reference="poL-NT-USX"/>
+        <segue reference="Jxc-VJ-HLl"/>
+        <segue reference="m8k-6e-ehm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>

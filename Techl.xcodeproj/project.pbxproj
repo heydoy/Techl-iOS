@@ -199,7 +199,7 @@
 				A2AFB28628766DB10091C123 /* Authentication.storyboard */,
 				A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */,
 				A2B1389A289ECFFE004241D0 /* PreferredITFieldViewController.swift */,
-				A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */,
+				A2FBF32F28A4E0AE0076DC42 /* Tags */,
 				A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */,
 			);
 			path = Authentication;
@@ -477,7 +477,6 @@
 				A2AE1DAF28A3924600202218 /* View */,
 				A2442EFA28954B490001ED62 /* Onboarding */,
 				A2442EF928954B410001ED62 /* Authentication */,
-				A2E6E1872898D77700844770 /* Book */,
 				A2F5023B28986AEC00352BFB /* Main */,
 				A2D5501B28904108000436FC /* Home */,
 				A2D5501C2890410F000436FC /* Forum */,
@@ -486,6 +485,15 @@
 				A246BFC32896A9FB00BE564C /* MyPage */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		A2FBF32F28A4E0AE0076DC42 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */,
+				A2E6E1872898D77700844770 /* Book */,
+			);
+			path = Tags;
 			sourceTree = "<group>";
 		};
 		E8E0E6FF0D54EE7391D7B982 /* Frameworks */ = {

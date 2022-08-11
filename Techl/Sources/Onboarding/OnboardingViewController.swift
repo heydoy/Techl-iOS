@@ -89,7 +89,7 @@ class OnboardingViewController: UIViewController {
         
         
         if currentIndex < messages.count - 1 {
-            nextButton.setTitle("다음", for: .normal)
+            nextButton.setTitle("다음 ", for: .normal)
             nextButton.setImage(UIImage(systemName:  "chevron.right"), for: .normal)
             nextButton.backgroundColor = .white
             nextButton.tintColor = .darkGray
@@ -99,7 +99,7 @@ class OnboardingViewController: UIViewController {
             
         } else { // 완료일 때 화면전환
             nextButton.setTitle("완료", for: .normal)
-            nextButton.setImage(nil, for: .normal)
+            nextButton.setImage(UIImage(), for: .normal)
             nextButton.backgroundColor = .CustomColor.primaryColor
             nextButton.tintColor = .white
             nextButton.layer.borderWidth = 0
