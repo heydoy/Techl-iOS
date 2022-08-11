@@ -730,7 +730,7 @@
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Zjv-5Y-jHB" kind="presentation" modalPresentationStyle="overCurrentContext" id="pDB-ZR-pL0"/>
+                                    <segue destination="Zjv-5Y-jHB" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="pDB-ZR-pL0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -775,16 +775,16 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="hBV-Ts-BVX">
             <objects>
-                <viewController id="Zjv-5Y-jHB" sceneMemberID="viewController">
+                <viewController id="Zjv-5Y-jHB" customClass="LoginViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YuN-P5-jMR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inE-yd-Gip">
-                                <rect key="frame" x="0.0" y="576" width="414" height="320"/>
+                                <rect key="frame" x="0.0" y="536" width="414" height="360"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="휴대전화번호" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Svg-YT-Tzm" customClass="HoshiTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="24" y="46" width="366" height="78"/>
@@ -792,7 +792,7 @@
                                             <constraint firstAttribute="height" constant="78" id="J8z-mi-wA6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
                                                 <color key="value" name="primaryColor"/>
@@ -819,6 +819,9 @@
                                                 <color key="value" systemColor="systemGray2Color"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="phoneNumberTextFieldEditingChanged:" destination="Zjv-5Y-jHB" eventType="editingChanged" id="cbA-dZ-fgR"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="15" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="H6y-Gk-Gty" customClass="HoshiTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="24" y="130" width="366" height="78"/>
@@ -853,6 +856,9 @@
                                                 <color key="value" systemColor="systemGray2Color"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="passwordTextFieldEditingChanged:" destination="Zjv-5Y-jHB" eventType="editingChanged" id="xhA-G4-qmK"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRN-Tl-14x">
                                         <rect key="frame" x="24" y="232" width="366" height="58"/>
@@ -860,13 +866,13 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="58" id="XN7-A1-yao"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="로그인">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="xs9-if-gGg" kind="presentation" modalPresentationStyle="fullScreen" id="m8k-6e-ehm"/>
+                                            <action selector="loginButtonTapped:" destination="Zjv-5Y-jHB" eventType="touchUpInside" id="dR8-zg-flA"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="휴대전화번호로 로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsQ-lZ-gnU">
@@ -876,7 +882,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYV-yG-bXc">
-                                        <rect key="frame" x="359" y="18.5" width="31" height="31"/>
+                                        <rect key="frame" x="357.5" y="18" width="32.5" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="FYV-yG-bXc" secondAttribute="height" multiplier="1:1" id="vmI-yB-gPf"/>
                                         </constraints>
@@ -884,6 +890,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
                                         <connections>
+                                            <action selector="closeButtonTapped:" destination="Zjv-5Y-jHB" eventType="touchUpInside" id="y6t-43-cPy"/>
                                             <segue destination="L64-rR-YzV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Jxc-VJ-HLl"/>
                                         </connections>
                                     </button>
@@ -896,13 +903,13 @@
                                     <constraint firstItem="Svg-YT-Tzm" firstAttribute="leading" secondItem="inE-yd-Gip" secondAttribute="leading" constant="24" id="Gmq-Nw-YNl"/>
                                     <constraint firstItem="H6y-Gk-Gty" firstAttribute="leading" secondItem="inE-yd-Gip" secondAttribute="leading" constant="24" id="KJl-55-6Av"/>
                                     <constraint firstItem="RsQ-lZ-gnU" firstAttribute="top" secondItem="inE-yd-Gip" secondAttribute="top" constant="24" id="M7L-wh-iW2"/>
-                                    <constraint firstAttribute="height" constant="320" id="Mmg-bF-xUZ"/>
+                                    <constraint firstAttribute="height" constant="360" id="Mmg-bF-xUZ"/>
                                     <constraint firstItem="H6y-Gk-Gty" firstAttribute="top" secondItem="Svg-YT-Tzm" secondAttribute="bottom" constant="6" id="MqH-lK-2Ft"/>
                                     <constraint firstAttribute="trailing" secondItem="Svg-YT-Tzm" secondAttribute="trailing" constant="24" id="UEd-Gw-ZZz"/>
                                     <constraint firstAttribute="trailing" secondItem="YRN-Tl-14x" secondAttribute="trailing" constant="24" id="UhW-g5-ZwO"/>
                                     <constraint firstAttribute="trailing" secondItem="H6y-Gk-Gty" secondAttribute="trailing" constant="24" id="br0-i6-OaY"/>
-                                    <constraint firstAttribute="bottom" secondItem="YRN-Tl-14x" secondAttribute="bottom" constant="30" id="d2R-mC-kST"/>
                                     <constraint firstAttribute="trailing" secondItem="FYV-yG-bXc" secondAttribute="trailing" constant="24" id="d5T-5M-76a"/>
+                                    <constraint firstItem="YRN-Tl-14x" firstAttribute="top" secondItem="H6y-Gk-Gty" secondAttribute="bottom" constant="24" id="erJ-iE-QGl"/>
                                     <constraint firstItem="YRN-Tl-14x" firstAttribute="leading" secondItem="inE-yd-Gip" secondAttribute="leading" constant="24" id="sfB-gp-cwS"/>
                                     <constraint firstItem="RsQ-lZ-gnU" firstAttribute="leading" secondItem="inE-yd-Gip" secondAttribute="leading" constant="24" id="xw4-J0-T6O"/>
                                 </constraints>
@@ -916,6 +923,12 @@
                             <constraint firstItem="inE-yd-Gip" firstAttribute="leading" secondItem="Dfr-oM-9Xc" secondAttribute="leading" id="ra2-bP-18N"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="layupView" destination="inE-yd-Gip" id="zFQ-tP-jdU"/>
+                        <outlet property="loginButton" destination="YRN-Tl-14x" id="AtG-iM-XFO"/>
+                        <outlet property="passwordTextField" destination="H6y-Gk-Gty" id="Lnr-f6-zDf"/>
+                        <outlet property="phoneNumberTextField" destination="Svg-YT-Tzm" id="b5w-kL-Bi0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uJD-rJ-zDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -932,7 +945,6 @@
     </designables>
     <inferredMetricsTieBreakers>
         <segue reference="Jxc-VJ-HLl"/>
-        <segue reference="m8k-6e-ehm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.left" catalog="system" width="96" height="128"/>

@@ -74,6 +74,8 @@
 		A2E6E1C82899F93D00844770 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1C72899F93D00844770 /* Keys.swift */; };
 		A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5023E28986B8600352BFB /* UIColor+Extension.swift */; };
 		A2FBF32C28A46C300076DC42 /* ConciergeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */; };
+		A2FBF33228A4E6090076DC42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF33128A4E6090076DC42 /* LoginViewController.swift */; };
+		A2FBF33428A4F6DE0076DC42 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF33328A4F6DE0076DC42 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -155,6 +157,8 @@
 		A2E6E1C72899F93D00844770 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		A2F5023E28986B8600352BFB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeLoginViewController.swift; sourceTree = "<group>"; };
+		A2FBF33128A4E6090076DC42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A2FBF33328A4F6DE0076DC42 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CC52AF2B4CA789A8688A12D4 /* Pods_Techl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Techl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8189617B6DC14A1A0F96365 /* Pods-Techl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techl.debug.xcconfig"; path = "Target Support Files/Pods-Techl/Pods-Techl.debug.xcconfig"; sourceTree = "<group>"; };
 		FB279C66960B5F4E0934E49F /* Pods-Techl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Techl.release.xcconfig"; path = "Target Support Files/Pods-Techl/Pods-Techl.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				A2AFB28628766DB10091C123 /* Authentication.storyboard */,
 				A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */,
 				A2B1389A289ECFFE004241D0 /* PreferredITFieldViewController.swift */,
+				A2FBF33028A4E5F50076DC42 /* Login */,
 				A2FBF32F28A4E0AE0076DC42 /* Tags */,
 				A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */,
 			);
@@ -296,8 +301,8 @@
 		A2AFB27128766D240091C123 /* Techl */ = {
 			isa = PBXGroup;
 			children = (
-				A25FA56428A1B6A800AB46DF /* UserDefaults */,
 				A2D5501028903064000436FC /* App */,
+				A25FA56428A1B6A800AB46DF /* UserDefaults */,
 				A2F5024128986C0900352BFB /* Network */,
 				A2F5024428986C8000352BFB /* Sources */,
 				A2F5023D28986B6500352BFB /* Utils */,
@@ -423,6 +428,7 @@
 			children = (
 				A2F5023E28986B8600352BFB /* UIColor+Extension.swift */,
 				A269EB1828986F4C00C03DDB /* UIViewController+Extension.swift */,
+				A2FBF33328A4F6DE0076DC42 /* String+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -494,6 +500,14 @@
 				A2E6E1872898D77700844770 /* Book */,
 			);
 			path = Tags;
+			sourceTree = "<group>";
+		};
+		A2FBF33028A4E5F50076DC42 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A2FBF33128A4E6090076DC42 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		E8E0E6FF0D54EE7391D7B982 /* Frameworks */ = {
@@ -674,10 +688,12 @@
 				A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */,
 				A2C279FE28A21AB80016E150 /* APIManager.swift in Sources */,
 				A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */,
+				A2FBF33428A4F6DE0076DC42 /* String+Extension.swift in Sources */,
 				A246BFBD2896A7EE00BE564C /* BookDetailViewController.swift in Sources */,
 				A2AE1DBD28A402B400202218 /* OnboardingViewController.swift in Sources */,
 				A2429B8E288E65F9003E3573 /* BookListCollectionViewCell.swift in Sources */,
 				A2442EF7289547E70001ED62 /* Banner.swift in Sources */,
+				A2FBF33228A4E6090076DC42 /* LoginViewController.swift in Sources */,
 				A2429B8C288E65A6003E3573 /* HomeBannerCollectionViewCell.swift in Sources */,
 				A2AFB27328766D240091C123 /* AppDelegate.swift in Sources */,
 				A20C85D028A1DA0B0012AAC8 /* PostArticleTableViewCell.swift in Sources */,
