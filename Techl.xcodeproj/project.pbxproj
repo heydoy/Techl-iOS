@@ -36,6 +36,10 @@
 		A25FA56628A1B6B800AB46DF /* LandscapeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */; };
 		A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269EB1828986F4C00C03DDB /* UIViewController+Extension.swift */; };
 		A298168428A1C283002F3EC5 /* ForumEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298168328A1C283002F3EC5 /* ForumEditorViewController.swift */; };
+		A2A5585C28A53F11000E6F0A /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5585B28A53F11000E6F0A /* AuthenticationManager.swift */; };
+		A2A5585F28A541CB000E6F0A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A2A5585E28A541CB000E6F0A /* SwiftyJSON */; };
+		A2A5586228A541DA000E6F0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A2A5586128A541DA000E6F0A /* Kingfisher */; };
+		A2A5586428A5425C000E6F0A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5586328A5425C000E6F0A /* UserModel.swift */; };
 		A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A809DB2898D3410013EA6F /* ForumDetailListViewController.swift */; };
 		A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */; };
 		A2AE1DB128A392A300202218 /* SectionTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AE1DB028A392A300202218 /* SectionTitle.xib */; };
@@ -118,6 +122,8 @@
 		A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeManager.swift; sourceTree = "<group>"; };
 		A269EB1828986F4C00C03DDB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		A298168328A1C283002F3EC5 /* ForumEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumEditorViewController.swift; sourceTree = "<group>"; };
+		A2A5585B28A53F11000E6F0A /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		A2A5586328A5425C000E6F0A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		A2A809DB2898D3410013EA6F /* ForumDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDetailListViewController.swift; sourceTree = "<group>"; };
 		A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDetailListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2AE1DB028A392A300202218 /* SectionTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTitle.xib; sourceTree = "<group>"; };
@@ -169,9 +175,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A5586228A541DA000E6F0A /* Kingfisher in Frameworks */,
 				A2E6E18C2898D90300844770 /* Toast in Frameworks */,
 				A246BFB92896737000BE564C /* Alamofire in Frameworks */,
 				6BC792FE6EDDE9663D08A231 /* Pods_Techl.framework in Frameworks */,
+				A2A5585F28A541CB000E6F0A /* SwiftyJSON in Frameworks */,
 				A2595382288300300065791E /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +325,7 @@
 			children = (
 				A2C27A0228A21C3A0016E150 /* ForumModel.swift */,
 				A2C27A0528A226D10016E150 /* BookModel.swift */,
+				A2A5586328A5425C000E6F0A /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				A2C279FD28A21AB80016E150 /* APIManager.swift */,
+				A2A5585B28A53F11000E6F0A /* AuthenticationManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -541,6 +551,8 @@
 				A2595381288300300065791E /* TextFieldEffects */,
 				A246BFB82896737000BE564C /* Alamofire */,
 				A2E6E18B2898D90300844770 /* Toast */,
+				A2A5585E28A541CB000E6F0A /* SwiftyJSON */,
+				A2A5586128A541DA000E6F0A /* Kingfisher */,
 			);
 			productName = Techl;
 			productReference = A2AFB26F28766D240091C123 /* Techl.app */;
@@ -574,6 +586,8 @@
 				A2595380288300300065791E /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
 				A246BFB72896737000BE564C /* XCRemoteSwiftPackageReference "Alamofire" */,
 				A2E6E18A2898D90300844770 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				A2A5585D28A541CB000E6F0A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				A2A5586028A541DA000E6F0A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = A2AFB27028766D240091C123 /* Products */;
 			projectDirPath = "";
@@ -678,9 +692,11 @@
 				A2AE1DBF28A4570200202218 /* OnboardingMessage.swift in Sources */,
 				A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */,
 				A2AE1DB328A3939B00202218 /* SectionTitle.swift in Sources */,
+				A2A5586428A5425C000E6F0A /* UserModel.swift in Sources */,
 				A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
 				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,
+				A2A5585C28A53F11000E6F0A /* AuthenticationManager.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
 				A2C27A0028A21B0D0016E150 /* Endpoint.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
@@ -948,6 +964,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		A2A5585D28A541CB000E6F0A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A2A5586028A541DA000E6F0A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		A2E6E18A2898D90300844770 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift";
@@ -968,6 +1000,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2595380288300300065791E /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
 			productName = TextFieldEffects;
+		};
+		A2A5585E28A541CB000E6F0A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2A5585D28A541CB000E6F0A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		A2A5586128A541DA000E6F0A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2A5586028A541DA000E6F0A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		A2E6E18B2898D90300844770 /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;

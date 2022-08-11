@@ -20,8 +20,8 @@
                         <color key="backgroundColor" name="primaryColor"/>
                     </view>
                     <connections>
-                        <segue destination="CZr-oG-7Yt" kind="presentation" identifier="toOnboarding" modalPresentationStyle="fullScreen" id="hKn-wU-g0X"/>
-                        <segue destination="qHY-IM-zrW" kind="presentation" identifier="toAuthentication" modalPresentationStyle="fullScreen" id="h27-vh-LmV"/>
+                        <segue destination="CZr-oG-7Yt" kind="presentation" identifier="toOnboarding" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hKn-wU-g0X"/>
+                        <segue destination="qHY-IM-zrW" kind="presentation" identifier="toAuthentication" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="h27-vh-LmV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Izj-hc-ftU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
