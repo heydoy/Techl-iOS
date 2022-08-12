@@ -15,10 +15,15 @@ class PreferredITFieldViewController: UIViewController {
     let tagHeaderArray: [String] = [
         "디자인패턴", "프로그래밍언어"
     ]
+    
     let ITFieldTagArray: [[String]] = [
         ["디자인패턴", "네트워크", "UI/UX", "HCI"],
         ["자바", "알고리즘", "고양이"]
     ]
+    
+    var arrSelectedIndex = [IndexPath]()
+    var arrSelectedData = [String]()
+    
     
     var didTagClicked: Bool = false {
         didSet {
@@ -32,12 +37,22 @@ class PreferredITFieldViewController: UIViewController {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.allowsMultipleSelection = true
         
         let cell = UINib(nibName: TagCollectionViewCell.identifier, bundle: nil)
         collectionView.register(cell , forCellWithReuseIdentifier: TagCollectionViewCell.identifier)
+        
+        
+
     }
     
     // MARK: - Actions
+    
+    @IBAction func finishButtonTapped(_ sender: UIButton) {
+        // 완료 버튼 누르면 arrSelectedData userinfo로 보내주기
+        
+    }
+    
     
     // MARK: - Helpers
     
@@ -68,16 +83,34 @@ extension PreferredITFieldViewController: UICollectionViewDelegate, UICollection
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TagCollectionViewCell.identifier, for: indexPath) as? TagCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.toggleTag(didTagClicked)
         cell.labelDesign(ITFieldTagArray[indexPath.section][indexPath.item])
         
+        if arrSelectedIndex.contains(indexPath) {
+            cell.pressedConfigure()
+        } else {
+            cell.configure()
+        }
+                
+
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        let strData = ITFieldTagArray[indexPath.section][indexPath.item]
+
+        if arrSelectedIndex.contains(indexPath) {
+            arrSelectedIndex = arrSelectedIndex.filter { $0 != indexPath}
+            arrSelectedData = arrSelectedData.filter { $0 != strData}
+        }
+        else {
+            arrSelectedIndex.append(indexPath)
+            arrSelectedData.append(strData)
+        }
+
+        print(#function, arrSelectedData, arrSelectedIndex)
+        collectionView.reloadData()
         
-        didTagClicked = !didTagClicked
         
     }
         
