@@ -43,6 +43,7 @@ class LoginViewController: UIViewController {
         view.addGestureRecognizer(tapGestureRecognizer)
         
         validateUserInfo()
+        designUI()
     }
     
     // MARK: - Actions
@@ -87,12 +88,14 @@ class LoginViewController: UIViewController {
     
     func designUI() {
         // 뷰
+        print(#function)
         layupView.layer.cornerRadius = 12
         layupView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner] // Top right corner, Top left corner respectively
+        layupView.layer.masksToBounds = true
         
         //텍스트필드
         phoneNumberTextField.keyboardType = .asciiCapableNumberPad
-        
+
         // 버튼
         loginButton.layer.cornerRadius = 8
         loginButton.layer.masksToBounds = true
