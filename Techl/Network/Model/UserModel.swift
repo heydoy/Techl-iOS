@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct User {
+struct User: Codable {
     var userName: String //유저 이름(null 가능)
     var nickName: String
     var phoneNumber: String //휴대폰 번호(중복 불가능, 특수문자 불가능하고 숫자로 11자리)

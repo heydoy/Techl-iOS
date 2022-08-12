@@ -18,11 +18,12 @@ class AuthenticationManager {
     func loginRequest(phoneNumber: String, password: String, completionHandler: @escaping (String) -> Void) {
         let url = TechlURL.login.getEndPoint()
         
-        let body: Parameters = [
+        let body: [String:String] = [
             "phoneNumber" : phoneNumber,
             "password": password
         ]
-        AF.request(url, method: .post, parameters: body ).validate(statusCode: 1000...2000).responseData { response in
+        
+        AF.request(url, method: .post, parameters: body, encoder: JSONParameterEncoder.prettyPrinted ).validate().responseData { response in
             switch response.result {
             case .success(let data) :
                 print("성공")
@@ -47,17 +48,9 @@ class AuthenticationManager {
     func signupRequest(userInfo: User, completionHandler: @escaping (String) -> Void) {
         let url = TechlURL.signup.getEndPoint()
         
-        let body: Parameters = [
-            "userName": userInfo.userName ?? "",
-            "nickName": userInfo.nickName,
-            "phoneNumber": userInfo.phoneNumber,
-            "password": userInfo.password,
-            "profileImgUrl": userInfo.profileImgUrl ?? "",
-            "userJob": userInfo.userJob,
-            "postUserInterests": userInfo.postUserInterests
-        ]
+        let body: User = userInfo
         
-        AF.request(url, method: .post, parameters: body).validate(statusCode: 1000...4011).responseData { response in
+        AF.request(url, method: .post, parameters: body, encoder: JSONParameterEncoder.prettyPrinted).validate().responseData { response in
             switch response.result {
             case .success(let data) :
                 let json = JSON(data)
@@ -71,8 +64,7 @@ class AuthenticationManager {
                 print(error.localizedDescription)
             }
         }
-        
-        
+
     }
     
     
