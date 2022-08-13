@@ -12,6 +12,9 @@ class PreferredITFieldViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+    @IBOutlet weak var finishButton: UIButton!
+    
     let tagHeaderArray: [String] = [
         "디자인패턴", "프로그래밍언어"
     ]
@@ -22,7 +25,11 @@ class PreferredITFieldViewController: UIViewController {
     ]
     
     var arrSelectedIndex = [IndexPath]()
-    var arrSelectedData = [String]()
+    var arrSelectedData = [String]() {
+        didSet {
+            designButtonUI()
+        }
+    }
     
     
     var didTagClicked: Bool = false {
@@ -42,7 +49,7 @@ class PreferredITFieldViewController: UIViewController {
         let cell = UINib(nibName: TagCollectionViewCell.identifier, bundle: nil)
         collectionView.register(cell , forCellWithReuseIdentifier: TagCollectionViewCell.identifier)
         
-        
+        designButtonUI()
 
     }
     
@@ -55,7 +62,19 @@ class PreferredITFieldViewController: UIViewController {
     
     
     // MARK: - Helpers
-    
+    func designButtonUI() {
+        finishButton.layer.cornerRadius = 8
+        if arrSelectedData.count > 0 {
+            
+            finishButton.isEnabled = true
+            finishButton.backgroundColor = .CustomColor.primaryColor
+            
+        } else {
+            finishButton.isEnabled = false
+            finishButton.backgroundColor = .CustomColor.disabledButtonColor
+            
+        }
+    }
 
    
 

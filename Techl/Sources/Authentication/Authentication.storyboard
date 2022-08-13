@@ -615,6 +615,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="E1k-dD-e5H" id="Ccr-52-1BO"/>
+                        <outlet property="finishButton" destination="I5J-Cy-plv" id="Zah-7o-q0N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zp3-6T-MhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
