@@ -80,6 +80,11 @@ class AgreementViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
+        // 관심기술분야 선택화면으로 이동
+        let sb = UIStoryboard(name: "Authentication", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: PreferredITFieldViewController.identifier) as! PreferredITFieldViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
