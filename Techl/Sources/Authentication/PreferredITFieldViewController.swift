@@ -56,7 +56,23 @@ class PreferredITFieldViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func finishButtonTapped(_ sender: UIButton) {
-        // 완료 버튼 누르면 arrSelectedData userinfo로 보내주기
+        // 📌 완료 버튼 누르면 arrSelectedData userinfo로 보내주고, 서버통신
+        
+        
+        // 메인 탭바 화면으로 이동 --> 첫 화면을 바꾸기 (히스토리 날리기)
+        
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                
+        // 생명주기 관리하는 SceneDelegate 전체
+        let sceneDelegate = windowScene?.delegate as? SceneDelegate
+        
+        // 시작해서 보여줄 화면
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: MainTabBarViewController.identifier) as! MainTabBarViewController
+        
+        
+        sceneDelegate?.window?.rootViewController = vc
+        sceneDelegate?.window?.makeKeyAndVisible()
         
     }
     
