@@ -43,6 +43,8 @@
 		A2A5586C28A5C8D1000E6F0A /* BannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A5586B28A5C8D1000E6F0A /* BannerView.xib */; };
 		A2A5586E28A5CCCB000E6F0A /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5586D28A5CCCB000E6F0A /* BannerView.swift */; };
 		A2A5587528A663DA000E6F0A /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5587428A663DA000E6F0A /* AgreementViewController.swift */; };
+		A2A5587728A815CE000E6F0A /* FirstSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5587628A815CE000E6F0A /* FirstSignUpViewController.swift */; };
+		A2A5587928A816D0000E6F0A /* SecondSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5587828A816D0000E6F0A /* SecondSignupViewController.swift */; };
 		A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A809DB2898D3410013EA6F /* ForumDetailListViewController.swift */; };
 		A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */; };
 		A2AE1DB128A392A300202218 /* SectionTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2AE1DB028A392A300202218 /* SectionTitle.xib */; };
@@ -130,6 +132,8 @@
 		A2A5586B28A5C8D1000E6F0A /* BannerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerView.xib; sourceTree = "<group>"; };
 		A2A5586D28A5CCCB000E6F0A /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		A2A5587428A663DA000E6F0A /* AgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		A2A5587628A815CE000E6F0A /* FirstSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSignUpViewController.swift; sourceTree = "<group>"; };
+		A2A5587828A816D0000E6F0A /* SecondSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSignupViewController.swift; sourceTree = "<group>"; };
 		A2A809DB2898D3410013EA6F /* ForumDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDetailListViewController.swift; sourceTree = "<group>"; };
 		A2A809DD2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDetailListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2AE1DB028A392A300202218 /* SectionTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTitle.xib; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				A2AFB28628766DB10091C123 /* Authentication.storyboard */,
+				A2A5587828A816D0000E6F0A /* SecondSignupViewController.swift */,
+				A2A5587628A815CE000E6F0A /* FirstSignUpViewController.swift */,
 				A2A5587428A663DA000E6F0A /* AgreementViewController.swift */,
 				A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */,
 				A2B1389A289ECFFE004241D0 /* PreferredITFieldViewController.swift */,
@@ -707,6 +713,7 @@
 				A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
 				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,
+				A2A5587728A815CE000E6F0A /* FirstSignUpViewController.swift in Sources */,
 				A2A5585C28A53F11000E6F0A /* AuthenticationManager.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
 				A2C27A0028A21B0D0016E150 /* Endpoint.swift in Sources */,
@@ -714,6 +721,7 @@
 				A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */,
 				A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */,
 				A2C279FE28A21AB80016E150 /* APIManager.swift in Sources */,
+				A2A5587928A816D0000E6F0A /* SecondSignupViewController.swift in Sources */,
 				A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */,
 				A2FBF33428A4F6DE0076DC42 /* String+Extension.swift in Sources */,
 				A246BFBD2896A7EE00BE564C /* BookDetailViewController.swift in Sources */,
