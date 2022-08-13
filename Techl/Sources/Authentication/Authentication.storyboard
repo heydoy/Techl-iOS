@@ -220,7 +220,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZA-EJ-HWj">
                                 <rect key="frame" x="24" y="774" width="366" height="58"/>
-                                <color key="backgroundColor" red="0.32899999619999998" green="0.32400000099999998" blue="0.47799998519999998" alpha="0.33000001309999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.32941176470588235" green="0.32549019607843138" blue="0.47843137254901957" alpha="0.33000001309999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="opu-pW-cQ6"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="58" id="xDk-1U-ffy"/>

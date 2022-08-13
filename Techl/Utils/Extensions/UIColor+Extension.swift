@@ -16,6 +16,8 @@ extension UIColor {
         
         static let backgroundColor = #colorLiteral(red: 0.7764705882, green: 0.8235294118, blue: 1, alpha: 1)
         
+        static let disabledButtonColor = #colorLiteral(red: 0.3294117647, green: 0.3254901961, blue: 0.4784313725, alpha: 0.33)
+        
         // #colorLiteral(red:  , green: , blue: , alpha: )
     }
 }

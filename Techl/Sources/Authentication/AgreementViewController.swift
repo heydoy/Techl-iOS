@@ -18,7 +18,6 @@ class AgreementViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
-    
     var buttons: [UIButton] {
         return [
             fourteenCheckButton,
@@ -40,7 +39,8 @@ class AgreementViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        designUI()
+        designCheckButton()
+        nextButtonUI()
     }
     
     // MARK: - Actions
@@ -74,11 +74,9 @@ class AgreementViewController: UIViewController {
                 if numberOfselected == buttons.count {
                     allCheckButton.isSelected = true
                 }
-                
             }
         }
-        
-
+        nextButtonUI()
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
@@ -96,13 +94,28 @@ class AgreementViewController: UIViewController {
     }
     
     // MARK: - Helpers
-    func designUI() {
+    func designCheckButton() {
         allButtonList.forEach {
             
             $0.setImage(UIImage(systemName: "square"), for: .normal)
             $0.setImage(UIImage(systemName: "checkmark.square.fill"), for: .selected)
            
         }
+    }
+    
+    func nextButtonUI() {
+        nextButton.layer.cornerRadius = 8
+        if allCheckButton.isSelected {
+            // 버튼 활성화
+            print(#function)
+            nextButton.isEnabled = true
+            nextButton.backgroundColor = .CustomColor.primaryColor
+        } else {
+            // 버튼 비활성화
+            nextButton.isEnabled = false
+            nextButton.backgroundColor = .CustomColor.disabledButtonColor
+        }
+        
     }
     
 
