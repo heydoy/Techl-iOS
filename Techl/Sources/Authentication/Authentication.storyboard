@@ -43,11 +43,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WYp-DU-Lo7">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="WYp-DU-Lo7">
                                 <rect key="frame" x="24" y="145" width="366" height="4"/>
                                 <color key="progressTintColor" name="primaryColor"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2b-fB-lzF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2b-fB-lzF">
                                 <rect key="frame" x="370" y="104.5" width="20" height="20"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <color key="textColor" name="primaryColor"/>
@@ -174,13 +174,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg4-Cx-pBm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg4-Cx-pBm">
                                 <rect key="frame" x="367" y="104.5" width="23" height="20"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <color key="textColor" name="primaryColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ti1-r2-JUN">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ti1-r2-JUN">
                                 <rect key="frame" x="24" y="145" width="366" height="4"/>
                                 <color key="progressTintColor" name="primaryColor"/>
                             </progressView>
@@ -286,10 +286,10 @@
             </objects>
             <point key="canvasLocation" x="1727.536231884058" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Agreement View Controller-->
         <scene sceneID="t4e-w5-LsS">
             <objects>
-                <viewController id="nvO-q7-7gj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AgreementViewController" id="nvO-q7-7gj" customClass="AgreementViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yJP-DB-DCt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -332,6 +332,9 @@
                                         <buttonConfiguration key="configuration" style="plain" image="square" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="checkButtonsTapped:" destination="nvO-q7-7gj" eventType="touchUpInside" id="byx-AU-Jis"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체 약관 동의하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Pk-6L-zAM">
                                         <rect key="frame" x="55" y="18" width="134.5" height="22"/>
@@ -360,6 +363,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="square" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkButtonsTapped:" destination="nvO-q7-7gj" eventType="touchUpInside" id="iAJ-et-xta"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만 14세 이상입니다 (필수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYD-mr-FCU">
                                 <rect key="frame" x="79" y="312" width="162" height="19.5"/>
@@ -377,6 +383,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="square" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkButtonsTapped:" destination="nvO-q7-7gj" eventType="touchUpInside" id="WMJ-kY-Fbr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이용약관에 동의하기 (필수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX8-7a-Rge">
                                 <rect key="frame" x="79" y="360" width="171" height="19.5"/>
@@ -401,6 +410,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="">
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="viewTermsOfServiceButtonTapped:" destination="nvO-q7-7gj" eventType="touchUpInside" id="0vC-Hm-Lqs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cE-dG-w61">
                                 <rect key="frame" x="40" y="401" width="33" height="33.5"/>
@@ -412,6 +424,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="square" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="checkButtonsTapped:" destination="nvO-q7-7gj" eventType="touchUpInside" id="a5R-S9-6pq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개인정보처리방침에 동의 (필수)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCg-Zw-UJQ">
                                 <rect key="frame" x="79" y="408" width="198.5" height="19.5"/>
@@ -430,6 +445,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="">
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="viewPrivacyPolicyButtonTapped:" destination="nvO-q7-7gj" eventType="touchUpInside" id="fP8-9v-kve"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBD-Ll-1t9">
                                 <rect key="frame" x="24" y="774" width="366" height="58"/>
@@ -439,10 +457,11 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="완료">
+                                <state key="normal" title="다음">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextButtonTapped:" destination="nvO-q7-7gj" eventType="touchUpInside" id="DzO-Fe-4jY"/>
                                     <segue destination="wFe-JE-0xC" kind="show" id="8Jj-bU-mfe"/>
                                 </connections>
                             </button>
@@ -496,6 +515,13 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="RXZ-he-xS1"/>
                         <barButtonItem key="leftBarButtonItem" id="4L3-rF-POg"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="allCheckButton" destination="G4o-NS-Nfl" id="JKg-WN-Q7z"/>
+                        <outlet property="fourteenCheckButton" destination="Yie-xp-wbZ" id="CN8-5R-1Vk"/>
+                        <outlet property="nextButton" destination="mBD-Ll-1t9" id="8aQ-h5-bMu"/>
+                        <outlet property="privacyPolicyCheckButton" destination="4cE-dG-w61" id="YQK-Lj-TUy"/>
+                        <outlet property="termsOfServiceCheckButton" destination="O5O-pz-7gv" id="ufE-JA-5wb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHe-Fn-GIS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -515,17 +541,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edo-6s-1hG">
-                                <rect key="frame" x="348" y="100" width="42" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Edo-6s-1hG" secondAttribute="height" multiplier="1:1" id="kPK-C4-aEK"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
-                                </buttonConfiguration>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5J-Cy-plv">
                                 <rect key="frame" x="24" y="774" width="366" height="58"/>
                                 <color key="backgroundColor" name="primaryColor"/>
@@ -584,7 +599,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="E1k-dD-e5H" firstAttribute="leading" secondItem="1MN-iH-LtC" secondAttribute="leading" constant="24" id="9Wq-aZ-B2o"/>
-                            <constraint firstItem="Edo-6s-1hG" firstAttribute="width" secondItem="1ob-iP-EPN" secondAttribute="width" multiplier="0.101449" id="Fxv-Aq-K4v"/>
                             <constraint firstItem="E1k-dD-e5H" firstAttribute="top" secondItem="gx6-KX-tA9" secondAttribute="bottom" constant="30" id="LUb-54-y79"/>
                             <constraint firstItem="jHg-oA-iG3" firstAttribute="leading" secondItem="1MN-iH-LtC" secondAttribute="leading" constant="24" id="Ovg-cu-g7y"/>
                             <constraint firstItem="jHg-oA-iG3" firstAttribute="top" secondItem="1MN-iH-LtC" secondAttribute="top" constant="16" id="PUW-dd-OCU"/>
@@ -593,9 +607,7 @@
                             <constraint firstItem="I5J-Cy-plv" firstAttribute="leading" secondItem="1MN-iH-LtC" secondAttribute="leading" constant="24" id="jYF-eA-374"/>
                             <constraint firstItem="1MN-iH-LtC" firstAttribute="bottom" secondItem="I5J-Cy-plv" secondAttribute="bottom" constant="30" id="lcJ-uU-6bf"/>
                             <constraint firstItem="1MN-iH-LtC" firstAttribute="trailing" secondItem="E1k-dD-e5H" secondAttribute="trailing" constant="24" id="mhX-NK-MmY"/>
-                            <constraint firstItem="1MN-iH-LtC" firstAttribute="trailing" secondItem="Edo-6s-1hG" secondAttribute="trailing" constant="24" id="phd-XW-cYY"/>
                             <constraint firstItem="1MN-iH-LtC" firstAttribute="trailing" secondItem="I5J-Cy-plv" secondAttribute="trailing" constant="24" id="q4L-Cb-Av3"/>
-                            <constraint firstItem="Edo-6s-1hG" firstAttribute="centerY" secondItem="jHg-oA-iG3" secondAttribute="centerY" id="rHL-AV-Kog"/>
                             <constraint firstItem="gx6-KX-tA9" firstAttribute="leading" secondItem="jHg-oA-iG3" secondAttribute="leading" id="zGc-0N-ODm"/>
                         </constraints>
                     </view>
