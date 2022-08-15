@@ -10,6 +10,8 @@ import UIKit
 class SecondSignupViewController: UIViewController {
     // MARK: - Properties
     static let identifier = "SecondSignupViewController"
+    
+    var userInfo = User()
 
     @IBOutlet weak var nextButton: UIButton!
     
@@ -19,6 +21,7 @@ class SecondSignupViewController: UIViewController {
         super.viewDidLoad()
 
         designButtonUI()
+        print(userInfo)
     }
     
     // MARK: - Actions

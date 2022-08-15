@@ -26,3 +26,8 @@ enum TechlURL {
         }
     }
 }
+
+enum TwilioURL {
+    
+    static let base = "https://verify.twilio.com/v2/"
+}
