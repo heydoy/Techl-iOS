@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "profile_thumgnail@1x.png",
+      "filename" : "profile-01@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "profile_thumgnail@2x.png",
+      "filename" : "profile-01@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "profile_thumgnail@3x.png",
+      "filename" : "profile-01@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

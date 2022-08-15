@@ -11,6 +11,9 @@ class AgreementViewController: UIViewController {
     // MARK: - Properties
     static let identifier = "AgreementViewController"
 
+    var userInfo = User()
+    
+    
     @IBOutlet weak var allCheckButton: UIButton!
     @IBOutlet weak var fourteenCheckButton: UIButton!
     @IBOutlet weak var termsOfServiceCheckButton: UIButton!
@@ -83,6 +86,8 @@ class AgreementViewController: UIViewController {
         // 관심기술분야 선택화면으로 이동
         let sb = UIStoryboard(name: "Authentication", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: PreferredITFieldViewController.identifier) as! PreferredITFieldViewController
+        
+        vc.userInfo = self.userInfo
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

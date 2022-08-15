@@ -8,20 +8,33 @@
 import UIKit
 
 class PreferredITFieldViewController: UIViewController {
-    static let identifier = "PreferredITFieldViewController"
     // MARK: - Properties
+    static let identifier = "PreferredITFieldViewController"
+    
+    var userInfo = User()
+    
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     
     @IBOutlet weak var finishButton: UIButton!
     
     let tagHeaderArray: [String] = [
-        "디자인패턴", "프로그래밍언어"
+        "개발방법론", "프로그래밍언어",
+        "운영체제", "네트워크",
+        "데이터베이스","보안/해킹",
+        "인공지능/머신러닝"
+        
     ]
     
     let ITFieldTagArray: [[String]] = [
-        ["디자인패턴", "네트워크", "UI/UX", "HCI"],
-        ["자바", "알고리즘", "고양이"]
+        ["디자인패턴", "프로젝트 관리"],
+        ["C", "C++", "C#", "파이썬", "자바", "Swift", "Kotlin", "자바스크립트"],
+        ["윈도우", "맥 OS", "리눅스", "임베디드"],
+        ["도커", "AWS", "TCP/IP"],
+        ["오라클", "SQL"],
+        ["보안", "해킹"],
+        ["자연어처리", "이미지처리", "데이터분석"]
     ]
     
     var arrSelectedIndex = [IndexPath]()
@@ -58,6 +71,13 @@ class PreferredITFieldViewController: UIViewController {
     @IBAction func finishButtonTapped(_ sender: UIButton) {
         // 📌 완료 버튼 누르면 arrSelectedData userinfo로 보내주고, 서버통신
         
+        userInfo.postUserInterests = arrSelectedData
+        
+        print(userInfo)
+        
+        /* 여기서 통신하기 */
+        
+        /* 로그인 여부 UserDefaults에 저장하기 */
         
         // 메인 탭바 화면으로 이동 --> 첫 화면을 바꾸기 (히스토리 날리기)
         

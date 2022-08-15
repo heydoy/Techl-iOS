@@ -63,7 +63,6 @@ class FirstSignUpViewController: UIViewController {
         isVerificationButtonsEnabled()
         validateInfo()
         
-        
     }
     
     // MARK: - Actions
