@@ -15,9 +15,7 @@ class ProfileSelectionViewController: UIViewController {
     let imageArray: [String] = [
         "profile-1", "profile-2",
         "profile-3", "profile-4",
-        "profile-5", "profile-6",
-        "profile-7", "profile-8",
-        "profile-9", "profile-10"
+        "profile-5", "profile-6"
     ]
     
     var selectedImage = ""
@@ -83,7 +81,7 @@ extension ProfileSelectionViewController : UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let number: CGFloat = 5
+        let number: CGFloat = CGFloat(imageArray.count / 2)
         
         let margin: CGFloat = 8 * ( number - 1 )
         
