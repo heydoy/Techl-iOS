@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="Techl" customModuleProvider="target">
+            <connections>
+                <outlet property="alertContentLabel" destination="usB-UA-ACQ" id="M20-EB-AYx"/>
+                <outlet property="alertKindLabel" destination="BoJ-Fn-0JD" id="JhU-uA-PSK"/>
+                <outlet property="dateLabel" destination="jvL-J8-gSX" id="CNt-hU-Xjf"/>
+                <outlet property="goButton" destination="skw-MF-CSK" id="JyL-Cj-2q8"/>
+                <outlet property="imageView" destination="Abh-Ja-yot" id="ssd-E6-M3X"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookclub-cover-2" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-Ja-yot">
+                    <rect key="frame" x="20" y="16" width="68" height="68"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Abh-Ja-yot" secondAttribute="height" multiplier="1:1" id="Ksd-s2-GSE"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="oRJ-cS-pNh">
+                    <rect key="frame" x="96" y="16" width="298" height="68.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이벤트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoJ-Fn-0JD">
+                            <rect key="frame" x="0.0" y="0.0" width="31.5" height="14.5"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="12"/>
+                            <color key="textColor" name="secondaryColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="가입 이벤트가 3일 뒤에 끝나요! 지금 참여해보시는 건 어떨까요? 😄" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usB-UA-ACQ">
+                            <rect key="frame" x="0.0" y="18.5" width="298" height="31.5"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022.07.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvL-J8-gSX">
+                            <rect key="frame" x="0.0" y="54" width="59" height="14.5"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="12"/>
+                            <color key="textColor" systemColor="systemGray2Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="usB-UA-ACQ" secondAttribute="trailing" id="Jc8-9j-iWr"/>
+                        <constraint firstItem="usB-UA-ACQ" firstAttribute="leading" secondItem="oRJ-cS-pNh" secondAttribute="leading" id="zgC-ds-wgq"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skw-MF-CSK">
+                    <rect key="frame" x="324" y="70" width="70" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="7we-nP-BUK"/>
+                        <constraint firstAttribute="width" constant="70" id="Tim-JZ-4HG"/>
+                    </constraints>
+                    <color key="tintColor" name="primaryColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="참여하기">
+                        <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="10"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oRJ-cS-pNh" firstAttribute="leading" secondItem="Abh-Ja-yot" secondAttribute="trailing" constant="8" symbolic="YES" id="79I-9O-OHt"/>
+                <constraint firstItem="Abh-Ja-yot" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="8AB-58-5Oh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Abh-Ja-yot" secondAttribute="bottom" constant="16" id="DL1-IC-tYd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="skw-MF-CSK" secondAttribute="bottom" constant="6" id="EmR-XR-T2G"/>
+                <constraint firstItem="Abh-Ja-yot" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="IVG-68-6gt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oRJ-cS-pNh" secondAttribute="bottom" constant="10" id="Mj1-xq-bic"/>
+                <constraint firstItem="skw-MF-CSK" firstAttribute="top" secondItem="jvL-J8-gSX" secondAttribute="top" id="Yjr-iw-kKi"/>
+                <constraint firstItem="oRJ-cS-pNh" firstAttribute="trailing" secondItem="skw-MF-CSK" secondAttribute="trailing" id="oJ6-bZ-GYb"/>
+                <constraint firstItem="oRJ-cS-pNh" firstAttribute="top" secondItem="Abh-Ja-yot" secondAttribute="top" id="qUY-ga-PWa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="skw-MF-CSK" secondAttribute="trailing" constant="20" id="w1X-7O-3Tk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bookclub-cover-2" width="170" height="110"/>
+        <namedColor name="primaryColor">
+            <color red="0.32549019607843138" green="0.13725490196078433" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryColor">
+            <color red="1" green="0.35686274509803922" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

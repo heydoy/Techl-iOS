@@ -98,6 +98,9 @@
 		A2EF816D28ACB25C0019BA72 /* AllAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF816C28ACB25C0019BA72 /* AllAlertViewController.swift */; };
 		A2EF816F28ACB2910019BA72 /* BookmarkAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF816E28ACB2910019BA72 /* BookmarkAlertViewController.swift */; };
 		A2EF817128ACB4B80019BA72 /* AlertContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF817028ACB4B80019BA72 /* AlertContainerViewController.swift */; };
+		A2EF817328ACDD7F0019BA72 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EF817228ACDD7F0019BA72 /* AlertView.xib */; };
+		A2EF817528ACE0C60019BA72 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF817428ACE0C60019BA72 /* AlertView.swift */; };
+		A2EF817728ACE2D90019BA72 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF817628ACE2D90019BA72 /* AlertTableViewCell.swift */; };
 		A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5023E28986B8600352BFB /* UIColor+Extension.swift */; };
 		A2FBF32C28A46C300076DC42 /* ConciergeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */; };
 		A2FBF33228A4E6090076DC42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF33128A4E6090076DC42 /* LoginViewController.swift */; };
@@ -205,6 +208,9 @@
 		A2EF816C28ACB25C0019BA72 /* AllAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAlertViewController.swift; sourceTree = "<group>"; };
 		A2EF816E28ACB2910019BA72 /* BookmarkAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkAlertViewController.swift; sourceTree = "<group>"; };
 		A2EF817028ACB4B80019BA72 /* AlertContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContainerViewController.swift; sourceTree = "<group>"; };
+		A2EF817228ACDD7F0019BA72 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		A2EF817428ACE0C60019BA72 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		A2EF817628ACE2D90019BA72 /* AlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		A2F5023E28986B8600352BFB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeLoginViewController.swift; sourceTree = "<group>"; };
 		A2FBF33128A4E6090076DC42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -342,6 +348,9 @@
 				A2EF814928AB98C60019BA72 /* BannerTableViewCell.swift */,
 				A2EF814B28AB99F00019BA72 /* ClubTableViewCell.swift */,
 				A2EF814D28AB9B0C0019BA72 /* ForumTableViewCell.swift */,
+				A2EF817228ACDD7F0019BA72 /* AlertView.xib */,
+				A2EF817428ACE0C60019BA72 /* AlertView.swift */,
+				A2EF817628ACE2D90019BA72 /* AlertTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -702,6 +711,7 @@
 				A2AFB27C28766D250091C123 /* Assets.xcassets in Resources */,
 				A2E6E1C62899F91B00844770 /* .gitignore in Resources */,
 				A243F10A287FB19400E46AE4 /* Search.storyboard in Resources */,
+				A2EF817328ACDD7F0019BA72 /* AlertView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +800,7 @@
 				A2A5585C28A53F11000E6F0A /* AuthenticationManager.swift in Sources */,
 				A2EF814A28AB98C60019BA72 /* BannerTableViewCell.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
+				A2EF817728ACE2D90019BA72 /* AlertTableViewCell.swift in Sources */,
 				A2C27A0028A21B0D0016E150 /* Endpoint.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
 				A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */,
@@ -801,6 +812,7 @@
 				A246BFBD2896A7EE00BE564C /* BookDetailViewController.swift in Sources */,
 				A2AE1DBD28A402B400202218 /* OnboardingViewController.swift in Sources */,
 				A2429B8E288E65F9003E3573 /* BookListCollectionViewCell.swift in Sources */,
+				A2EF817528ACE0C60019BA72 /* AlertView.swift in Sources */,
 				A2442EF7289547E70001ED62 /* Banner.swift in Sources */,
 				A2FBF33228A4E6090076DC42 /* LoginViewController.swift in Sources */,
 				A2429B8C288E65A6003E3573 /* HomeBannerCollectionViewCell.swift in Sources */,
