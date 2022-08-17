@@ -55,7 +55,10 @@ class NewHomeViewController: UIViewController {
         
         let sb = UIStoryboard(name: "Search", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: NXMLSearchViewController.identifier) as! NXMLSearchViewController
-
+        
+        vc.navigationItem.backBarButtonItem?.tintColor = .black
+        vc.navigationItem.title = "검색"
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @objc
@@ -146,7 +149,6 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
             return 3
         } else if collectionView.tag == 1 {
             //클럽갯수만큼 반환
-            print("두번째섹션")
             return 10
         } else if collectionView.tag == 2 {
             // 북카드 갯수만큼 반환

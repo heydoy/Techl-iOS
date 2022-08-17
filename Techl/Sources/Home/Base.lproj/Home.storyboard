@@ -768,54 +768,6 @@
             </objects>
             <point key="canvasLocation" x="1771" y="886"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ab1-wm-gEj">
-            <objects>
-                <viewController id="f2o-ob-NWZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fme-9z-oGU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aXH-hv-GT6">
-                                <rect key="frame" x="0.0" y="278" width="414" height="472"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="JcV-0J-ycd"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="qL2-ga-dBm"/>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXc-P7-4hR">
-                                <rect key="frame" x="97" y="787" width="279" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="linkColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="참가하기"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSE-dW-mKb">
-                                <rect key="frame" x="23" y="787" width="61" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="북마크"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="슬기로운 읽기 클럽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPk-J6-S2B">
-                                <rect key="frame" x="119" y="56" width="177" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bookcover-sample" translatesAutoresizingMaskIntoConstraints="NO" id="8If-OH-8mt">
-                                <rect key="frame" x="129" y="107" width="156" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="FZy-Sj-AFj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bz6-Jv-SrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="870" y="1627"/>
-        </scene>
     </scenes>
     <resources>
         <image name="banner-1" width="374" height="100"/>
@@ -33760,15 +33712,11 @@ oYYAD6GLAA+hkwAAAAAAAAQBAAAAAAAAAFYAAAAAAAAAAAAAAAAAD6GWA
         </image>
         <image name="book_thumbnail_1" width="458" height="603"/>
         <image name="bookclub-cover-1" width="170" height="110"/>
-        <image name="bookcover-sample" width="180" height="270"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="circle.grid.2x2.fill" catalog="system" width="128" height="112"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
