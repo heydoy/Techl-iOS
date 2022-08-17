@@ -36,7 +36,7 @@ class BookListCollectionViewCell: UICollectionViewCell {
         bookmarkButton.layer.cornerRadius = 4
         bookmarkButton.backgroundColor = .clear
         bookmarkButton.setImage(UIImage(systemName: "heart"), for: .normal)
-        bookmarkButton.setImage(UIImage(systemName: "heart.fill"), for: .highlighted)
+        bookmarkButton.setImage(UIImage(systemName: "heart.fill"), for: .selected)
         
         
         

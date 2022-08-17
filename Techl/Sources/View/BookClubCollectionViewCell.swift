@@ -26,12 +26,28 @@ class BookClubCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        designUI()
+        
+    }
+    
+    func designUI() {
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 8
+        
+        
+        self.clubStatusLabel.layer.cornerRadius = clubStatusLabel.frame.height/3
     }
     
     func configure() {
-        clubStatusLabel.layer.cornerRadius = clubStatusLabel.frame.height/3
-    
-        self.layer.cornerRadius = 8
+        
+        badgeLabel.text = ""
+        clubStatusLabel.text = ""
+        clubTitleLabel.text = ""
+        
+        clubLocationLabel.text = ""
+        clubDescriptionLabel.text = ""
+        dateInfoLabel.text = ""
+        startDateLabel.text = ""
     }
 
 }

@@ -29,8 +29,8 @@ class SectionTitle: UIView {
     
     // UI 셋업
     func setupUI() {
-        titleLabel.textColor = .black
-        subtitleLabel.textColor = .black
+        titleLabel?.textColor = .black
+        subtitleLabel?.textColor = .black
         
     }
     

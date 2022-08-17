@@ -29,5 +29,32 @@ class ClubCardView: UIView {
         view.frame = bounds
         view.backgroundColor = .white
         self.addSubview(view)
+        
+        designUI()
+    }
+    
+    
+    func designUI() {
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 8
+        
+        self.statusLabel.layer.cornerRadius = statusLabel.frame.height/3
+    }
+    
+    func configure() {
+        clubImageView.image = UIImage()
+        badgeLabel.text = " NEW "
+        statusLabel.text = " 모집중 2/10 "
+        titleLabel.text = "슬기로운 읽기 클럽 🏜"
+        locationLabel.text = "온라인 ZOOM"
+        descriptionLabel.text =
+        """
+        클린코드를 읽고 줌(Zoom)에서
+        토론하는 시간을 매주 2회 가집니다.
+        """
+        startDateLabel.text = "8월 16일(수)"
+        
+        
+        
     }
 }

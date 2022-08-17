@@ -84,6 +84,13 @@
 		A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1972898F06F00844770 /* BookInfoViewController.swift */; };
 		A2E6E1C62899F91B00844770 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E1C52899F91B00844770 /* .gitignore */; };
 		A2E6E1C82899F93D00844770 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1C72899F93D00844770 /* Keys.swift */; };
+		A2EF814828AB90F00019BA72 /* NewHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814728AB90F00019BA72 /* NewHomeViewController.swift */; };
+		A2EF814A28AB98C60019BA72 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814928AB98C60019BA72 /* BannerTableViewCell.swift */; };
+		A2EF814C28AB99F00019BA72 /* ClubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814B28AB99F00019BA72 /* ClubTableViewCell.swift */; };
+		A2EF814E28AB9B0C0019BA72 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814D28AB9B0C0019BA72 /* ForumTableViewCell.swift */; };
+		A2EF815028ABA8320019BA72 /* BookCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814F28ABA8320019BA72 /* BookCardCollectionViewCell.swift */; };
+		A2EF815428ABABE90019BA72 /* ClubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF815128ABA9B90019BA72 /* ClubCollectionViewCell.swift */; };
+		A2EF815528ABAC2A0019BA72 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814528AB8FF00019BA72 /* BannerCollectionViewCell.swift */; };
 		A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5023E28986B8600352BFB /* UIColor+Extension.swift */; };
 		A2FBF32C28A46C300076DC42 /* ConciergeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */; };
 		A2FBF33228A4E6090076DC42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF33128A4E6090076DC42 /* LoginViewController.swift */; };
@@ -178,6 +185,13 @@
 		A2E6E1972898F06F00844770 /* BookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
 		A2E6E1C52899F91B00844770 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A2E6E1C72899F93D00844770 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		A2EF814528AB8FF00019BA72 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2EF814728AB90F00019BA72 /* NewHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHomeViewController.swift; sourceTree = "<group>"; };
+		A2EF814928AB98C60019BA72 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
+		A2EF814B28AB99F00019BA72 /* ClubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClubTableViewCell.swift; path = Techl/Sources/View/ClubTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A2EF814D28AB9B0C0019BA72 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
+		A2EF814F28ABA8320019BA72 /* BookCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2EF815128ABA9B90019BA72 /* ClubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2F5023E28986B8600352BFB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeLoginViewController.swift; sourceTree = "<group>"; };
 		A2FBF33128A4E6090076DC42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +321,12 @@
 				A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */,
 				A2A5586B28A5C8D1000E6F0A /* BannerView.xib */,
 				A2A5586D28A5CCCB000E6F0A /* BannerView.swift */,
+				A2EF814528AB8FF00019BA72 /* BannerCollectionViewCell.swift */,
+				A2EF815128ABA9B90019BA72 /* ClubCollectionViewCell.swift */,
+				A2EF814F28ABA8320019BA72 /* BookCardCollectionViewCell.swift */,
+				A2EF814928AB98C60019BA72 /* BannerTableViewCell.swift */,
+				A2EF814B28AB99F00019BA72 /* ClubTableViewCell.swift */,
+				A2EF814D28AB9B0C0019BA72 /* ForumTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				A2AFB27828766D240091C123 /* Home.storyboard */,
+				A2EF814728AB90F00019BA72 /* NewHomeViewController.swift */,
 				A246BFC62896AB8500BE564C /* BannerDetailViewController.swift */,
 				A246BFBA2896827000BE564C /* ClubListCollectionViewCell.swift */,
 				A2429B8D288E65F9003E3573 /* BookListCollectionViewCell.swift */,
@@ -702,6 +723,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2EF815528ABAC2A0019BA72 /* BannerCollectionViewCell.swift in Sources */,
+				A2EF815428ABABE90019BA72 /* ClubCollectionViewCell.swift in Sources */,
 				A21BB1E6289275D600B3F325 /* NXMLSearchCollectionReusableView.swift in Sources */,
 				A2AE1DB728A398C500202218 /* ClubCardView.swift in Sources */,
 				A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */,
@@ -722,13 +745,17 @@
 				A2AE1DBF28A4570200202218 /* OnboardingMessage.swift in Sources */,
 				A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */,
 				A2AE1DB328A3939B00202218 /* SectionTitle.swift in Sources */,
+				A2EF814C28AB99F00019BA72 /* ClubTableViewCell.swift in Sources */,
 				A2A5586428A5425C000E6F0A /* UserModel.swift in Sources */,
+				A2EF814828AB90F00019BA72 /* NewHomeViewController.swift in Sources */,
 				A2A5588028AA4B87000E6F0A /* ProfileSelectionViewController.swift in Sources */,
+				A2EF814E28AB9B0C0019BA72 /* ForumTableViewCell.swift in Sources */,
 				A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
 				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,
 				A2A5587728A815CE000E6F0A /* FirstSignUpViewController.swift in Sources */,
 				A2A5585C28A53F11000E6F0A /* AuthenticationManager.swift in Sources */,
+				A2EF814A28AB98C60019BA72 /* BannerTableViewCell.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
 				A2C27A0028A21B0D0016E150 /* Endpoint.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
@@ -750,6 +777,7 @@
 				A2AFB27528766D240091C123 /* SceneDelegate.swift in Sources */,
 				A2429B90288E697B003E3573 /* BookListHeaderCollectionReusableView.swift in Sources */,
 				A2FBF32C28A46C300076DC42 /* ConciergeLoginViewController.swift in Sources */,
+				A2EF815028ABA8320019BA72 /* BookCardCollectionViewCell.swift in Sources */,
 				A246BFD22896C43100BE564C /* Documents.swift in Sources */,
 				A2A5586E28A5CCCB000E6F0A /* BannerView.swift in Sources */,
 				A2B1389B289ECFFE004241D0 /* PreferredITFieldViewController.swift in Sources */,
