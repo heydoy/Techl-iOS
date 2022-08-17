@@ -14,6 +14,7 @@ class MyPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureNavigation()
     
     }
     
@@ -22,10 +23,19 @@ class MyPageViewController: UIViewController {
     }
     
     
-    
-    @IBAction func goSettingButtonTapped(_ sender: UIButton) {
-        print("설정창으로 연결")
+    func configureNavigation() {
+        let setting = UIBarButtonItem(image: UIImage(systemName: "gearshape.fill"), style: .plain, target: self, action: #selector(settingButtonTapped))
+        setting.tintColor = .black
+        
+        navigationItem.rightBarButtonItems = [setting]
+
     }
+    
+    @objc
+    func settingButtonTapped(_ sender: UIBarButtonItem) {
+        print("세팅 버튼 선택됨")
+    }
+    
     
 
     

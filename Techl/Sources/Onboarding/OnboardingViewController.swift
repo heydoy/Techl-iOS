@@ -17,7 +17,7 @@ class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
-    @IBOutlet weak var nextButtonWidth: NSLayoutConstraint!
+
     
     let messages: [OnboardingMessage] = OnboardingMessage.messages
     
