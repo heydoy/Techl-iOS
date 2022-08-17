@@ -12,18 +12,18 @@ class NXMLSearchCollectionReusableView: UICollectionReusableView {
     
     @IBOutlet weak var searchResultLabel: UILabel!
     
-    @IBOutlet weak var searchFilterButton: UIButton!
+//    @IBOutlet weak var searchFilterButton: UIButton!
     
     func configure(query: String, total: Int  ) {
         
         searchResultLabel.text = "\(query) 검색결과 \(total)건"
-        searchFilterButton.setTitle("필터", for: .normal)
+//        searchFilterButton.setTitle("필터", for: .normal)
         
     }
     
-    @IBAction func searchFilterButtonTapped(_ sender: UIButton) {
-        
-    }
-    
+//    @IBAction func searchFilterButtonTapped(_ sender: UIButton) {
+//
+//    }
+//
         
 }
