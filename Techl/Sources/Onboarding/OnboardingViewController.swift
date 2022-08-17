@@ -17,6 +17,8 @@ class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var nextButtonWidth: NSLayoutConstraint!
+    
     let messages: [OnboardingMessage] = OnboardingMessage.messages
     
     var isFinished: Bool = false
@@ -89,15 +91,17 @@ class OnboardingViewController: UIViewController {
         
         
         if currentIndex < messages.count - 1 {
+            skipButton.isHidden = false
             nextButton.setTitle("다음 ", for: .normal)
             nextButton.setImage(UIImage(systemName:  "chevron.right"), for: .normal)
-            nextButton.backgroundColor = .white
-            nextButton.tintColor = .darkGray
-            nextButton.layer.borderColor = UIColor.systemGray3.cgColor
-            nextButton.layer.borderWidth = 1
+            nextButton.backgroundColor = .CustomColor.primaryColor
+            nextButton.tintColor = .white
+            
             
             
         } else { // 완료일 때 화면전환
+            skipButton.isHidden = true
+            
             nextButton.setTitle("완료", for: .normal)
             nextButton.setImage(UIImage(), for: .normal)
             nextButton.backgroundColor = .CustomColor.primaryColor
