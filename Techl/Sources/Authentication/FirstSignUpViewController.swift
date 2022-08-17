@@ -322,7 +322,6 @@ extension FirstSignUpViewController: UITextFieldDelegate {
         } else {
             return true
         }
-        
     }
     
 }

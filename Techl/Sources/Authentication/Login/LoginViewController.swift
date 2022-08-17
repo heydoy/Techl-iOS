@@ -14,15 +14,22 @@ class LoginViewController: UIViewController {
     var phoneNumber = String()
     var password = String()
     
+    
+    @IBOutlet weak var phoneNumberGuideLabel: UILabel!
+    @IBOutlet weak var passwordGuideLabel: UILabel!
+    
+    
     var isValidPhoneNumber = false {
         didSet {
             self.validateUserInfo()
+            self.showPhoneNumberGuideLabel()
         }
     }
     
     var isValidPassword = false {
         didSet {
             self.validateUserInfo()
+            self.showPasswordGuideLabel()
         }
     }
     
@@ -39,8 +46,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tappedOuterSpace))
+        tapGestureRecognizer.delegate = self
         
         view.addGestureRecognizer(tapGestureRecognizer)
+        
         
         validateUserInfo()
         designUI()
@@ -82,7 +91,6 @@ class LoginViewController: UIViewController {
     
     @objc
     func tappedOuterSpace(_ sender: UITapGestureRecognizer) {
-        print("외부 클릭")
         self.dismiss(animated: true)
     }
     
@@ -95,11 +103,37 @@ class LoginViewController: UIViewController {
         
         //텍스트필드
         phoneNumberTextField.keyboardType = .asciiCapableNumberPad
+        phoneNumberTextField.clearsOnBeginEditing = false
+        passwordTextField.clearsOnBeginEditing = false
 
         // 버튼
         loginButton.layer.cornerRadius = 8
         loginButton.layer.masksToBounds = true
-
+        
+        // 가이드레이블 hidden
+        phoneNumberGuideLabel.isHidden = true
+        passwordGuideLabel.isHidden = true
+        
+    }
+    
+    private func showPhoneNumberGuideLabel() {
+        if isValidPhoneNumber {
+            phoneNumberGuideLabel.isHidden = true
+        } else {
+            phoneNumberGuideLabel.isHidden = false
+            phoneNumberGuideLabel.text = "❌ 휴대전화번호는 '-' 없이 11자리로 입력해주세요"
+            phoneNumberGuideLabel.textColor = .systemPink
+        }
+    }
+    
+    private func showPasswordGuideLabel() {
+        if isValidPassword {
+            passwordGuideLabel.isHidden = true
+        } else {
+            passwordGuideLabel.isHidden = false
+            passwordGuideLabel.text = "❌ 비밀번호는 알파벳 + 숫자 포함 8자리 이상입니다"
+            passwordGuideLabel.textColor = .systemPink
+        }
     }
     
     private func validateUserInfo() {
@@ -147,5 +181,12 @@ extension LoginViewController {
         vc.modalPresentationStyle = .fullScreen
         vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true)
+    }
+}
+
+extension LoginViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        guard touch.view?.isDescendant(of: self.layupView) == false else { return false}
+        return true
     }
 }
