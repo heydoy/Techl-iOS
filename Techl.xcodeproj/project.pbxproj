@@ -91,6 +91,13 @@
 		A2EF815028ABA8320019BA72 /* BookCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814F28ABA8320019BA72 /* BookCardCollectionViewCell.swift */; };
 		A2EF815428ABABE90019BA72 /* ClubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF815128ABA9B90019BA72 /* ClubCollectionViewCell.swift */; };
 		A2EF815528ABAC2A0019BA72 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814528AB8FF00019BA72 /* BannerCollectionViewCell.swift */; };
+		A2EF816328AC9F090019BA72 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF816228AC9F090019BA72 /* MyPageViewController.swift */; };
+		A2EF816628ACA0890019BA72 /* Alert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EF816528ACA0890019BA72 /* Alert.storyboard */; };
+		A2EF816928ACA1370019BA72 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = A2EF816828ACA1370019BA72 /* Tabman */; };
+		A2EF816B28ACA16C0019BA72 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF816A28ACA16C0019BA72 /* AlertViewController.swift */; };
+		A2EF816D28ACB25C0019BA72 /* AllAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF816C28ACB25C0019BA72 /* AllAlertViewController.swift */; };
+		A2EF816F28ACB2910019BA72 /* BookmarkAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF816E28ACB2910019BA72 /* BookmarkAlertViewController.swift */; };
+		A2EF817128ACB4B80019BA72 /* AlertContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF817028ACB4B80019BA72 /* AlertContainerViewController.swift */; };
 		A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5023E28986B8600352BFB /* UIColor+Extension.swift */; };
 		A2FBF32C28A46C300076DC42 /* ConciergeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */; };
 		A2FBF33228A4E6090076DC42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF33128A4E6090076DC42 /* LoginViewController.swift */; };
@@ -192,6 +199,12 @@
 		A2EF814D28AB9B0C0019BA72 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
 		A2EF814F28ABA8320019BA72 /* BookCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2EF815128ABA9B90019BA72 /* ClubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2EF816228AC9F090019BA72 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		A2EF816528ACA0890019BA72 /* Alert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alert.storyboard; sourceTree = "<group>"; };
+		A2EF816A28ACA16C0019BA72 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		A2EF816C28ACB25C0019BA72 /* AllAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAlertViewController.swift; sourceTree = "<group>"; };
+		A2EF816E28ACB2910019BA72 /* BookmarkAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkAlertViewController.swift; sourceTree = "<group>"; };
+		A2EF817028ACB4B80019BA72 /* AlertContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContainerViewController.swift; sourceTree = "<group>"; };
 		A2F5023E28986B8600352BFB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeLoginViewController.swift; sourceTree = "<group>"; };
 		A2FBF33128A4E6090076DC42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A5586228A541DA000E6F0A /* Kingfisher in Frameworks */,
+				A2EF816928ACA1370019BA72 /* Tabman in Frameworks */,
 				A2A5587C28A924AF000E6F0A /* AuthenticationServices.framework in Frameworks */,
 				A2E6E18C2898D90300844770 /* Toast in Frameworks */,
 				A246BFB92896737000BE564C /* Alamofire in Frameworks */,
@@ -279,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				A246BFC42896AA1000BE564C /* MyPage.storyboard */,
+				A2EF816228AC9F090019BA72 /* MyPageViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -470,6 +485,18 @@
 			path = "Forum Post";
 			sourceTree = "<group>";
 		};
+		A2EF816428ACA06C0019BA72 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				A2EF816528ACA0890019BA72 /* Alert.storyboard */,
+				A2EF817028ACB4B80019BA72 /* AlertContainerViewController.swift */,
+				A2EF816E28ACB2910019BA72 /* BookmarkAlertViewController.swift */,
+				A2EF816C28ACB25C0019BA72 /* AllAlertViewController.swift */,
+				A2EF816A28ACA16C0019BA72 /* AlertViewController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		A2F5023B28986AEC00352BFB /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +568,7 @@
 				A2442EFA28954B490001ED62 /* Onboarding */,
 				A2442EF928954B410001ED62 /* Authentication */,
 				A2F5023B28986AEC00352BFB /* Main */,
+				A2EF816428ACA06C0019BA72 /* Alert */,
 				A2D5501B28904108000436FC /* Home */,
 				A2D5501C2890410F000436FC /* Forum */,
 				A246BFBE2896A98500BE564C /* Club */,
@@ -601,6 +629,7 @@
 				A2E6E18B2898D90300844770 /* Toast */,
 				A2A5585E28A541CB000E6F0A /* SwiftyJSON */,
 				A2A5586128A541DA000E6F0A /* Kingfisher */,
+				A2EF816828ACA1370019BA72 /* Tabman */,
 			);
 			productName = Techl;
 			productReference = A2AFB26F28766D240091C123 /* Techl.app */;
@@ -636,6 +665,7 @@
 				A2E6E18A2898D90300844770 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				A2A5585D28A541CB000E6F0A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				A2A5586028A541DA000E6F0A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				A2EF816728ACA1370019BA72 /* XCRemoteSwiftPackageReference "Tabman" */,
 			);
 			productRefGroup = A2AFB27028766D240091C123 /* Products */;
 			projectDirPath = "";
@@ -656,6 +686,7 @@
 				A246BFB52896732700BE564C /* Main.storyboard in Resources */,
 				A2B1389F289ED085004241D0 /* TagCollectionViewCell.xib in Resources */,
 				A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */,
+				A2EF816628ACA0890019BA72 /* Alert.storyboard in Resources */,
 				A2AE1DB128A392A300202218 /* SectionTitle.xib in Resources */,
 				A20C85D128A1DA0B0012AAC8 /* PostArticleTableViewCell.xib in Resources */,
 				A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */,
@@ -723,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2EF816328AC9F090019BA72 /* MyPageViewController.swift in Sources */,
 				A2EF815528ABAC2A0019BA72 /* BannerCollectionViewCell.swift in Sources */,
 				A2EF815428ABABE90019BA72 /* ClubCollectionViewCell.swift in Sources */,
 				A21BB1E6289275D600B3F325 /* NXMLSearchCollectionReusableView.swift in Sources */,
@@ -749,6 +781,7 @@
 				A2A5586428A5425C000E6F0A /* UserModel.swift in Sources */,
 				A2EF814828AB90F00019BA72 /* NewHomeViewController.swift in Sources */,
 				A2A5588028AA4B87000E6F0A /* ProfileSelectionViewController.swift in Sources */,
+				A2EF817128ACB4B80019BA72 /* AlertContainerViewController.swift in Sources */,
 				A2EF814E28AB9B0C0019BA72 /* ForumTableViewCell.swift in Sources */,
 				A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
@@ -781,8 +814,11 @@
 				A246BFD22896C43100BE564C /* Documents.swift in Sources */,
 				A2A5586E28A5CCCB000E6F0A /* BannerView.swift in Sources */,
 				A2B1389B289ECFFE004241D0 /* PreferredITFieldViewController.swift in Sources */,
+				A2EF816F28ACB2910019BA72 /* BookmarkAlertViewController.swift in Sources */,
 				A20C85DB28A1EF610012AAC8 /* PostReplyTableViewCell.swift in Sources */,
+				A2EF816D28ACB25C0019BA72 /* AllAlertViewController.swift in Sources */,
 				A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */,
+				A2EF816B28ACA16C0019BA72 /* AlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,6 +1088,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		A2EF816728ACA1370019BA72 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1079,6 +1123,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A2E6E18A2898D90300844770 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
+		};
+		A2EF816828ACA1370019BA72 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2EF816728ACA1370019BA72 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

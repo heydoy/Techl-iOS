@@ -10,7 +10,7 @@ import UIKit
 class NewHomeViewController: UIViewController {
     // MARK: - Properties
     static let identifier = "NewHomeViewController"
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -19,6 +19,7 @@ class NewHomeViewController: UIViewController {
         super.viewDidLoad()
         
         designUI()
+        configureNavigation()
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -32,11 +33,40 @@ class NewHomeViewController: UIViewController {
     // MARK: - Helpers
     func designUI() {
         self.view.backgroundColor = .systemGray6
-    
+        
     }
+    
+    func configureNavigation() {
+        let searchButton = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonTapped))
+        
+        let alertButton = UIBarButtonItem(image: UIImage(systemName: "bell"), style: .plain, target: self, action: #selector(alertButtonTapped))
+        
+        searchButton.tintColor = .black
+        alertButton.tintColor = .black
+        
+        navigationItem.rightBarButtonItems = [alertButton, searchButton]
+        
+        setBackButton(.CustomColor.secondaryColor)
+        
+    }
+    
+    @objc
+    func searchButtonTapped(_ sender: UIBarButtonItem) {
+        
+        let sb = UIStoryboard(name: "Search", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: NXMLSearchViewController.identifier) as! NXMLSearchViewController
 
-
-
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    @objc
+    func alertButtonTapped(_ sender: UIBarButtonItem) {
+        let sb = UIStoryboard(name: "Alert", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: AlertContainerViewController.identifier) as! AlertContainerViewController
+        
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
+    
 }
 
 // MARK: - TableView Delegate, Datasource
@@ -70,7 +100,7 @@ extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.clubContentCollectionView.delegate = self
             cell.clubContentCollectionView.dataSource = self
             
-
+            
             cell.clubContentCollectionView.tag = indexPath.row
             
             //반환
@@ -83,7 +113,7 @@ extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource {
             // 콜렉션 뷰 위임
             cell.forumContentCollectionView.delegate = self
             cell.forumContentCollectionView.dataSource = self
-
+            
             cell.forumContentCollectionView.tag = indexPath.row
             // 반환
             return cell
@@ -150,6 +180,6 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
         }
         
     }
-
+    
 }
 

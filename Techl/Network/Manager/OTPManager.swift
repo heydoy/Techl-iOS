@@ -64,8 +64,6 @@ class OTPManager {
                 print(error.localizedDescription)
             }
         }
-        
-        
     }
     
     
