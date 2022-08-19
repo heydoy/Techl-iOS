@@ -274,6 +274,12 @@
                             <constraint firstItem="uXd-LM-5IY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="tLu-ju-WOM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="V2S-f9-3md" id="B3u-y2-PQH"/>
+                        <outlet property="coverImageView" destination="wbj-rJ-a8s" id="6Ud-Mp-8NU"/>
+                        <outlet property="descriptionLabel" destination="lpD-JW-y1F" id="3VO-UY-9cH"/>
+                        <outlet property="titleLabel" destination="0Nh-Oi-HnF" id="K2N-UR-LAe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
