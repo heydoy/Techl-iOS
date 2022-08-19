@@ -14,7 +14,7 @@ class LandscapeManager {
         get {
             !UserDefaults.standard.bool(forKey: #function)
         } set {
-            UserDefaults.standard.setValue(newValue, forKey: #function)
+            UserDefaults.standard.setValue(!newValue, forKey: #function)
         }
     }
  
@@ -32,7 +32,7 @@ class LoginManager {
             UserDefaults.standard.setValue(newValue, forKey: #function)
         }
     }
-    // 로그인 유지상태일 경우 jwt 저장
+    // jwt가 있으면 로그인상태로 보고 바꿈
     var jwt: String? {
         get {
             UserDefaults.standard.string(forKey: "jwt")
