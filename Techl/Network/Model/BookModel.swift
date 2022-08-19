@@ -12,3 +12,12 @@ struct BookModel: Codable {
     var title: String
     var authors: String
 }
+
+struct HomeBookModel {
+    var bookIdx: Int
+    var cover: String
+    var title: String
+    var author: String
+    var countPost: Int
+    var countForum: Int
+}
