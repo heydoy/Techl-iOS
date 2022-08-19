@@ -18,33 +18,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gm-rK-buf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="313.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-6" translatesAutoresizingMaskIntoConstraints="NO" id="dn1-mX-aTw">
-                                        <rect key="frame" x="142" y="104.5" width="130" height="129.5"/>
+                                        <rect key="frame" x="150.5" y="90" width="113" height="113.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="dn1-mX-aTw" secondAttribute="height" multiplier="1:1" id="ylx-E8-JFw"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개발자 | iOS, 디자인패턴" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nny-1P-XPQ">
-                                        <rect key="frame" x="135" y="282" width="144.5" height="18"/>
+                                        <rect key="frame" x="135" y="245.5" width="144.5" height="18"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="15"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QQ0-Km-Frm">
-                                        <rect key="frame" x="164" y="246" width="120.5" height="30"/>
+                                        <rect key="frame" x="171" y="215.5" width="106" height="24"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테클닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg9-bP-yDp">
-                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="30"/>
-                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="24"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="18"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-T7-RlR">
-                                                <rect key="frame" x="90.5" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="82" y="0.0" width="24" height="24"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="hS8-OP-7Wb"/>
+                                                    <constraint firstAttribute="height" constant="24" id="hS8-OP-7Wb"/>
                                                     <constraint firstAttribute="width" secondItem="cLN-T7-RlR" secondAttribute="height" multiplier="1:1" id="pec-py-QAe"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,13 +71,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 활동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDE-Gk-roT">
-                                <rect key="frame" x="20" y="382.5" width="63" height="26.5"/>
+                                <rect key="frame" x="20" y="337.5" width="63" height="26.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="22"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Mq5-UW-8nw">
-                                <rect key="frame" x="20" y="425" width="374" height="264"/>
+                                <rect key="frame" x="20" y="380" width="374" height="264"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m68-4x-dM2">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
@@ -317,16 +317,30 @@
                                     <constraint firstItem="iLe-no-FTr" firstAttribute="leading" secondItem="Mq5-UW-8nw" secondAttribute="leading" id="ujM-oA-73u"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mL-V9-kgb">
+                                <rect key="frame" x="174" y="813.5" width="66" height="28.5"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그아웃">
+                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4nU-HW-VVN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gDE-Gk-roT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="6Y1-jI-AnS"/>
                             <constraint firstItem="Mq5-UW-8nw" firstAttribute="top" secondItem="gDE-Gk-roT" secondAttribute="bottom" constant="16" id="ANd-iM-b93"/>
+                            <constraint firstItem="7mL-V9-kgb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Mq5-UW-8nw" secondAttribute="bottom" constant="20" id="SvE-mm-3LB"/>
                             <constraint firstItem="6Gm-rK-buf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="dv2-2l-qH1"/>
                             <constraint firstItem="6Gm-rK-buf" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="eEQ-qq-Uyh"/>
                             <constraint firstItem="Mq5-UW-8nw" firstAttribute="leading" secondItem="gDE-Gk-roT" secondAttribute="leading" id="f9D-qQ-01G"/>
-                            <constraint firstItem="6Gm-rK-buf" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="fqw-Wr-e05"/>
+                            <constraint firstItem="6Gm-rK-buf" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.35" id="fqw-Wr-e05"/>
+                            <constraint firstItem="7mL-V9-kgb" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="h5k-3x-stT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7mL-V9-kgb" secondAttribute="bottom" constant="20" id="jAO-GR-eDA"/>
                             <constraint firstItem="gDE-Gk-roT" firstAttribute="top" secondItem="6Gm-rK-buf" secondAttribute="bottom" constant="24" id="lEq-UR-bJg"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Mq5-UW-8nw" secondAttribute="bottom" constant="20" id="mEO-wu-CSs"/>
                             <constraint firstItem="Mq5-UW-8nw" firstAttribute="centerX" secondItem="6Gm-rK-buf" secondAttribute="centerX" id="rCk-GF-BeH"/>
