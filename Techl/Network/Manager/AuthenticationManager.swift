@@ -15,8 +15,8 @@ class AuthenticationManager {
     static let shared = AuthenticationManager()
     
     // 로그인 요청
-    func loginRequest(phoneNumber: String, password: String, completionHandler: @escaping (String) -> Void) {
-        let url = TechlURL.login.getEndPoint()
+    func loginRequest(phoneNumber: String, password: String, completionHandler: @escaping (Result <(Int, String), Error>) -> Void ) {
+        let url = Endpoint.login.getURL()
         
         let body: [String:String] = [
             "phoneNumber" : phoneNumber,
@@ -26,18 +26,17 @@ class AuthenticationManager {
         AF.request(url, method: .post, parameters: body, encoder: JSONParameterEncoder.prettyPrinted ).validate().responseData { response in
             switch response.result {
             case .success(let data) :
-                print("성공")
+                print("통신 성공")
                 
                 let json = JSON(data)
-                if let statusCode = response.response?.statusCode{
-                    print(json, statusCode )
-                }
-                
-                let message = "요청에 성공하였습니다." // enum?
-                completionHandler(message)
+                let jwt = json["result"]["jwt"].stringValue
+                let code = json["code"].intValue
+                    
+                completionHandler( .success((code, jwt)) )
                 
             case .failure(let error) :
                 print("실패", error.localizedDescription)
+                completionHandler(.failure(error))
                 
             }
         }
@@ -46,7 +45,7 @@ class AuthenticationManager {
     
     // 회원가입 요청
     func signupRequest(userInfo: User, completionHandler: @escaping (String) -> Void) {
-        let url = TechlURL.signup.getEndPoint()
+        let url = Endpoint.signup.getURL()
         
         let body: User = userInfo
         
