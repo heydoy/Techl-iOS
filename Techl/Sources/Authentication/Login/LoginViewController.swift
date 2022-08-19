@@ -13,8 +13,7 @@ class LoginViewController: UIViewController {
     // MARK: - Properties
     var phoneNumber = String()
     var password = String()
-    
-    
+
     @IBOutlet weak var phoneNumberGuideLabel: UILabel!
     @IBOutlet weak var passwordGuideLabel: UILabel!
     
@@ -73,12 +72,29 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         // 서버통신 후 결과에 따라서 성공/실패 분기
-        let success = true //서버통신 결과를 여기서 받기 
         
-        if success {
-            loginSuccess()
-        } else {
-            loginFailure()
+        AuthenticationManager.shared.loginRequest(phoneNumber: phoneNumber, password: password) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case let .success(result) :
+                debugPrint("통신 성공 : \(result)")
+                if result.0 == 1000 {
+                    
+                    self.loginSuccess()
+                    LoginManager.shared.jwt = result.1
+                    
+                    
+                    
+                } else {
+                    self.loginFailure()
+                    
+                }
+                
+            case let .failure(error) :
+                debugPrint("통신 에러: \(error)")
+                self.loginFailure()
+            }
         }
     }
     
@@ -166,21 +182,30 @@ extension LoginViewController {
         style.messageAlignment = .left
         style.messageColor = .systemGray6
         
-        let message = "아이디 또는 비밀번호가 일치하지 않습니다."
+        let message = "아이디나 비밀번호가 일치하지 않습니다."
 
         self.view.makeToast(message, duration: 1.2, position: .center, title: "로그인 실패", image: UIImage(named: "login-fail"), style: style, completion: nil)
     }
     
     // 회원정보가 일치해서 로그인 성공했을때
     func loginSuccess() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarViewController") as! MainTabBarViewController
+        var style = ToastStyle()
+        style.messageAlignment = .left
+        style.messageColor = .systemGray6
         
-        // 이전 뷰를 다 날리는 작업을 해주어야함
-        vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .crossDissolve
-        self.present(vc, animated: true)
+
+        self.view.makeToast("로그인 성공!", duration: 0.6, position: .center, title: nil, image: nil, style: style) { didTap in
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = storyboard.instantiateViewController(withIdentifier: "MainTabBarViewController") as! MainTabBarViewController
+            
+            // 이전 뷰를 다 날리는 작업을 해주어야함
+            vc.modalPresentationStyle = .fullScreen
+            vc.modalTransitionStyle = .crossDissolve
+            self.present(vc, animated: true)
+        }
+        
     }
 }
 

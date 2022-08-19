@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast
 
 class PreferredITFieldViewController: UIViewController {
     // MARK: - Properties
@@ -77,26 +78,70 @@ class PreferredITFieldViewController: UIViewController {
         
         /* 여기서 통신하기 */
         
-        /* 로그인 여부 UserDefaults에 저장하기 */
-        
-        // 메인 탭바 화면으로 이동 --> 첫 화면을 바꾸기 (히스토리 날리기)
-        
-        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        AuthenticationManager.shared.signupRequest(userInfo: userInfo) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case let .success(result) :
+                debugPrint("통신 성공 : \(result)")
+                if result.0 == 1000 {
+                    /* 로그인 여부 UserDefaults에 저장 */
+                    LoginManager.shared.jwt = result.1
+                    
+                    // 메인 탭바 화면으로 이동 --> 첫 화면을 바꾸기 (히스토리 날리기)
+                    let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                            
+                    // 생명주기 관리하는 SceneDelegate 전체
+                    let sceneDelegate = windowScene?.delegate as? SceneDelegate
+                    
+                    // 시작해서 보여줄 화면
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let vc = storyboard.instantiateViewController(withIdentifier: MainTabBarViewController.identifier) as! MainTabBarViewController
+                    
+                    sceneDelegate?.window?.rootViewController = vc
+                    sceneDelegate?.window?.makeKeyAndVisible()
+                    
+                } else {
+                    self.alertToast(code: result.0)
+                    
+                }
                 
-        // 생명주기 관리하는 SceneDelegate 전체
-        let sceneDelegate = windowScene?.delegate as? SceneDelegate
+            case let .failure(error) :
+                
+                debugPrint("통신 에러: \(error)")
+                self.alertToast()
+                
+            }
+        }
         
-        // 시작해서 보여줄 화면
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: MainTabBarViewController.identifier) as! MainTabBarViewController
         
-        sceneDelegate?.window?.rootViewController = vc
-        sceneDelegate?.window?.makeKeyAndVisible()
+        
+        
         
     }
     
     
     // MARK: - Helpers
+    func alertToast(code: Int = -1) {
+        
+        var message = ""
+        switch code {
+        case 2018 :
+            message = "중복된 전화번호입니다."
+            
+        default :
+            message = "연결에 실패하였습니다."
+        }
+        
+        var style = ToastStyle()
+        style.messageAlignment = .left
+        style.messageColor = .systemGray6
+        
+        
+
+        self.view.makeToast(message, duration: 1.2, position: .center, title: nil, image: nil, style: style, completion: nil)
+    }
+    
     func designButtonUI() {
         finishButton.layer.cornerRadius = 8
         if arrSelectedData.count > 0 {
@@ -110,9 +155,6 @@ class PreferredITFieldViewController: UIViewController {
             
         }
     }
-
-   
-
 }
 
 extension PreferredITFieldViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -130,8 +172,6 @@ extension PreferredITFieldViewController: UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return ITFieldTagArray[section].count
     }
-    
-
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -164,8 +204,6 @@ extension PreferredITFieldViewController: UICollectionViewDelegate, UICollection
 
         print(#function, arrSelectedData, arrSelectedIndex)
         collectionView.reloadData()
-        
-        
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -175,7 +213,4 @@ extension PreferredITFieldViewController: UICollectionViewDelegate, UICollection
         
         return CGSize(width: width, height: height)
     }
-
-    
-    
 }
