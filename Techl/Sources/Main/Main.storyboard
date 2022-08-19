@@ -12,21 +12,110 @@
         <!--Concierge View Controller-->
         <scene sceneID="e2I-5k-yj5">
             <objects>
-                <viewController storyboardIdentifier="ConciergeViewController" id="6Kc-qq-guO" customClass="ConciergeViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConciergeViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="6Kc-qq-guO" customClass="ConciergeViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1tk-mf-ES6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-0q-Ah9">
+                                <rect key="frame" x="36" y="168.5" width="116" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0ht-0q-Ah9" secondAttribute="height" multiplier="1:1" id="plA-Le-X90"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A32-2j-hWP">
+                                <rect key="frame" x="36" y="308.5" width="221" height="88"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="5Ie-Gl-obY">
+                                        <rect key="frame" x="0.0" y="0.0" width="221" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="책마다의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKG-7G-XkM">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7E-cc-p38">
+                                                <rect key="frame" x="75.5" y="0.0" width="52.5" height="24"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="포럼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ab-rm-ZIe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="24"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="과" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uza-IP-Edn">
+                                                        <rect key="frame" x="35" y="0.0" width="17.5" height="24"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9d-x8-SiR">
+                                                <rect key="frame" x="134" y="0.0" width="87" height="24"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="북클럽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNg-mA-B4L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="24"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="으로" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cY6-Ox-Q2v">
+                                                        <rect key="frame" x="52" y="0.0" width="35" height="24"/>
+                                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7h-4r-a6n">
+                                        <rect key="frame" x="0.0" y="32" width="189" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="액티브리딩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od6-xK-Vbz">
+                                                <rect key="frame" x="0.0" y="0.0" width="86.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="을 할 수 있는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-wS-RSz">
+                                                <rect key="frame" x="86.5" y="0.0" width="102.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기술서적 커뮤니티, 테클" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGk-Z8-Qj8">
+                                        <rect key="frame" x="0.0" y="64" width="189" height="24"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NCR-tE-bQS"/>
                         <color key="backgroundColor" name="primaryColor"/>
+                        <constraints>
+                            <constraint firstItem="A32-2j-hWP" firstAttribute="leading" secondItem="0ht-0q-Ah9" secondAttribute="leading" id="IeT-vd-Zwb"/>
+                            <constraint firstItem="0ht-0q-Ah9" firstAttribute="width" secondItem="1tk-mf-ES6" secondAttribute="width" multiplier="0.28" id="Pyx-JF-5Ae"/>
+                            <constraint firstItem="0ht-0q-Ah9" firstAttribute="centerY" secondItem="NCR-tE-bQS" secondAttribute="centerY" multiplier="1/2" id="ebZ-oy-O3N"/>
+                            <constraint firstItem="A32-2j-hWP" firstAttribute="top" secondItem="0ht-0q-Ah9" secondAttribute="bottom" constant="24" id="nAm-VD-YRT"/>
+                            <constraint firstItem="0ht-0q-Ah9" firstAttribute="leading" secondItem="NCR-tE-bQS" secondAttribute="leading" constant="36" id="plw-0t-QhD"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="CZr-oG-7Yt" kind="presentation" identifier="toOnboarding" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hKn-wU-g0X"/>
                         <segue destination="qHY-IM-zrW" kind="presentation" identifier="toAuthentication" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="h27-vh-LmV"/>
+                        <segue destination="lJw-VC-5mq" kind="presentation" identifier="toMain" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="0Xl-xy-7xC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Izj-hc-ftU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-1084"/>
+            <point key="canvasLocation" x="131.8840579710145" y="-1084.1517857142856"/>
         </scene>
         <!--Authentication-->
         <scene sceneID="mLm-iC-x22">
@@ -34,7 +123,15 @@
                 <viewControllerPlaceholder storyboardName="Authentication" id="qHY-IM-zrW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1b-IH-L9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="-883"/>
+            <point key="canvasLocation" x="765" y="-1084"/>
+        </scene>
+        <!--MainTabBarViewController-->
+        <scene sceneID="Fkc-f5-C4R">
+            <objects>
+                <viewControllerPlaceholder referencedIdentifier="MainTabBarViewController" id="lJw-VC-5mq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bR1-7a-nix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="-931"/>
         </scene>
         <!--Onboarding-->
         <scene sceneID="SVg-Mx-BCV">
@@ -191,6 +288,7 @@
         <image name="face.smiling.fill" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="logo" width="100" height="100"/>
         <image name="person.2.circle" catalog="system" width="128" height="121"/>
         <image name="person.2.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="primaryColor">
