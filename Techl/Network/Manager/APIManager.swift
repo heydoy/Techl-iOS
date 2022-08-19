@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 
 class APIManager {
@@ -19,9 +20,40 @@ class APIManager {
     typealias bookCompletionHandler = ([BookModel]) -> Void
     
     
+    
+    func homeRequest(completionHandler: @escaping ([HomeBookModel])-> Void) {
+        let url = Endpoint.home.getURL()
+        
+        AF.request(url, method: .get).validate().responseData { response in
+            switch response.result {
+            case .success(let value) :
+                let json = JSON(value)
+                print(json)
+                
+                var booklist: [HomeBookModel] = []
+                
+                var count = 0
+                for item in json["result"].arrayValue {
+                    
+                    if count < 10 {
+                    booklist.append(HomeBookModel(bookIdx: item["bookIdx"].intValue, cover: item["cover"].stringValue, title: item["title"].stringValue, author: item["author"].stringValue, countPost: item["countPost"].intValue, countForum: item["countForum"].intValue))
+                    }
+                    else { break }
+                    count += 1
+                    
+                }
+                
+                completionHandler(booklist)
+                
+            case.failure(let error) :
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
     func forumRequest(
         completionHandler: @escaping forumCompletionHandler) {
-            let url = Endpoint.forum
+            let url = Endpoint.forum.getURL()
             
             let header: HTTPHeaders = [
                 
@@ -47,7 +79,7 @@ class APIManager {
     
     func forumDetailRequest(forumIdx: Int, completionHandler: @escaping forumDetailCompletionHandler ) {
         print(forumIdx)
-        let url = "http://118.36.217.243:8080/forum/2"
+        let url = "\(Endpoint.forum.getURL())/2"
         
         let header: HTTPHeaders = [
             
@@ -67,6 +99,65 @@ class APIManager {
             case .failure(let error) :
                 print("실패")
                 print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func forumNewPostRequest(title: String, content: String, completionHandler: @escaping () -> Void) {
+        let url = "\(Endpoint.forum.getURL())/new-forum/create?bookIdx=2"
+        
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json",
+            "X-ACCESS-TOKEN": "eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWR4Ijo2LCJpYXQiOjE2NjA3NDU1ODMsImV4cCI6MTY2MjIxNjgxMn0.kNqh9zwH3LF3H1xvzTD_hgGy6hiB5YM2FM0RVltB2-4"
+        ]
+        
+        let body: [String:String] = [
+            "title" : title,
+            "content": content
+        ]
+        
+        AF.request(url, method: .post, parameters: body, encoder: JSONParameterEncoder.prettyPrinted, headers: header).validate().responseData { response in
+            switch response.result {
+            case .success(let data) :
+                print("성공")
+                
+                let json = JSON(data)
+                print("포럼 작성 글 성공", json["message"])
+                
+                completionHandler()
+                
+            case .failure(let error) :
+                print("실패", error.localizedDescription)
+                
+            }
+        }
+    }
+    
+    func forumNewReplyRequest(content: String, completionHandler: @escaping () -> Void) {
+        let url = "\(Endpoint.forum.getURL())/2/new-forum-comment"
+        
+        let header: HTTPHeaders = [
+            "Content-Type" : "application/json",
+            "X-ACCESS-TOKEN": "eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWR4Ijo2LCJpYXQiOjE2NjA3NDU1ODMsImV4cCI6MTY2MjIxNjgxMn0.kNqh9zwH3LF3H1xvzTD_hgGy6hiB5YM2FM0RVltB2-4"
+        ]
+        
+        let body: [String:String] = [
+            "content": content
+        ]
+        
+        AF.request(url, method: .post, parameters: body, encoder: JSONParameterEncoder.prettyPrinted, headers: header).validate().responseData { response in
+            switch response.result {
+            case .success(let data) :
+                print("성공")
+                
+                let json = JSON(data)
+                print("포럼 댓글 성공", json["message"])
+                
+                completionHandler()
+                
+            case .failure(let error) :
+                print("실패", error.localizedDescription)
+                
             }
         }
     }
