@@ -26,7 +26,7 @@ class ForumDetailListViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        navigationItem.title = "클린코드"
+        navigationItem.title = "이펙티브 자바"
         
         let item = UIBarButtonItem(image: UIImage(systemName: "heart"), style: .plain, target: self, action: nil)
         item.tintColor = UIColor.darkGray
@@ -35,6 +35,12 @@ class ForumDetailListViewController: UIViewController {
         
         callRequest()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        callRequest()
     }
     
     func callRequest() {

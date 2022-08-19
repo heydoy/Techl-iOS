@@ -43,6 +43,12 @@ class ForumPostViewController: UIViewController {
         callRequest()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(#function)
+        callRequest()
+    }
+    
     // MARK: - Actions
     func callRequest(){
         APIManager.shared.forumDetailRequest(forumIdx: self.forumIdx) { post in
@@ -77,9 +83,16 @@ class ForumPostViewController: UIViewController {
            self.view.makeToast("내용을 입력해주세요")
         } else {
             // 댓글 내용 추가하고 tableView.relooadData
-            self.view.makeToast("댓글을 입력하셨습니다")
-            userTextField.text = nil
-            userText = ""
+            APIManager.shared.forumNewReplyRequest(content: userText) {
+                self.view.makeToast("댓글을 입력하셨습니다")
+                self.callRequest()
+                
+                self.userTextField.text = nil
+                self.userText = ""
+                
+                
+            }
+           
             
         }
 

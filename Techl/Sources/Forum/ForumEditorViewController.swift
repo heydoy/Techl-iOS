@@ -31,6 +31,8 @@ class ForumEditorViewController: UIViewController {
     
     
     @IBAction func cameraButtonTapped(_ sender: UIButton) {
+        
+        // 카메라 없앨 수도 있음
     }
     
     
@@ -43,9 +45,14 @@ class ForumEditorViewController: UIViewController {
         // 완료버튼 눌렀을 때 동작
         var style = ToastStyle()
         style.messageColor = .systemGray6
-        self.view.makeToast("글쓰기가 완료되었습니다.", duration: 0.7, position: .bottom, title: nil, image: nil, style: style) { didTap in
-            self.dismiss(animated: true)
+        
+        APIManager.shared.forumNewPostRequest(title: userTextView.text , content: userTextView.text) {
+            print("---> 글 작성 중 ")
+            self.view.makeToast("글쓰기가 완료되었습니다.", duration: 0.7, position: .bottom, title: nil, image: nil, style: style) { didTap in
+                self.dismiss(animated: true)
+            }
         }
+        
         
         
         
