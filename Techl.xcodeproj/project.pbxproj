@@ -36,6 +36,8 @@
 		A25FA56628A1B6B800AB46DF /* LandscapeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */; };
 		A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A269EB1828986F4C00C03DDB /* UIViewController+Extension.swift */; };
 		A298168428A1C283002F3EC5 /* ForumEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A298168328A1C283002F3EC5 /* ForumEditorViewController.swift */; };
+		A2A0AFE228AD26D4000771A4 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E1932898EFBE00844770 /* Book.storyboard */; };
+		A2A0AFE328AD2725000771A4 /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1972898F06F00844770 /* BookInfoViewController.swift */; };
 		A2A5585C28A53F11000E6F0A /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A5585B28A53F11000E6F0A /* AuthenticationManager.swift */; };
 		A2A5585F28A541CB000E6F0A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A2A5585E28A541CB000E6F0A /* SwiftyJSON */; };
 		A2A5586228A541DA000E6F0A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A2A5586128A541DA000E6F0A /* Kingfisher */; };
@@ -69,7 +71,6 @@
 		A2B1389E289ED085004241D0 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */; };
 		A2B1389F289ED085004241D0 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */; };
 		A2C279FE28A21AB80016E150 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C279FD28A21AB80016E150 /* APIManager.swift */; };
-		A2C27A0028A21B0D0016E150 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C279FF28A21B0D0016E150 /* Endpoint.swift */; };
 		A2C27A0328A21C3A0016E150 /* ForumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C27A0228A21C3A0016E150 /* ForumModel.swift */; };
 		A2C27A0628A226D10016E150 /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C27A0528A226D10016E150 /* BookModel.swift */; };
 		A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501528903497000436FC /* NXMLSearchViewController.swift */; };
@@ -80,8 +81,6 @@
 		A2E6E18F2898E80900844770 /* BookClubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */; };
 		A2E6E1902898E80900844770 /* BookClubCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E18E2898E80900844770 /* BookClubCollectionViewCell.xib */; };
 		A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */; };
-		A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E1932898EFBE00844770 /* Book.storyboard */; };
-		A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1972898F06F00844770 /* BookInfoViewController.swift */; };
 		A2E6E1C62899F91B00844770 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A2E6E1C52899F91B00844770 /* .gitignore */; };
 		A2E6E1C82899F93D00844770 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E1C72899F93D00844770 /* Keys.swift */; };
 		A2EF814828AB90F00019BA72 /* NewHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF814728AB90F00019BA72 /* NewHomeViewController.swift */; };
@@ -101,6 +100,8 @@
 		A2EF817328ACDD7F0019BA72 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EF817228ACDD7F0019BA72 /* AlertView.xib */; };
 		A2EF817528ACE0C60019BA72 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF817428ACE0C60019BA72 /* AlertView.swift */; };
 		A2EF817728ACE2D90019BA72 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF817628ACE2D90019BA72 /* AlertTableViewCell.swift */; };
+		A2EF817928AD03800019BA72 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2EF817828AD03800019BA72 /* EmptyView.xib */; };
+		A2EF817B28AD04310019BA72 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EF817A28AD04310019BA72 /* EmptyView.swift */; };
 		A2F5023F28986B8600352BFB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5023E28986B8600352BFB /* UIColor+Extension.swift */; };
 		A2FBF32C28A46C300076DC42 /* ConciergeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */; };
 		A2FBF33228A4E6090076DC42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FBF33128A4E6090076DC42 /* LoginViewController.swift */; };
@@ -182,7 +183,6 @@
 		A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2B1389D289ED085004241D0 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		A2C279FD28A21AB80016E150 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		A2C279FF28A21B0D0016E150 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		A2C27A0228A21C3A0016E150 /* ForumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumModel.swift; sourceTree = "<group>"; };
 		A2C27A0528A226D10016E150 /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		A2D5501528903497000436FC /* NXMLSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchViewController.swift; sourceTree = "<group>"; };
@@ -211,6 +211,8 @@
 		A2EF817228ACDD7F0019BA72 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		A2EF817428ACE0C60019BA72 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		A2EF817628ACE2D90019BA72 /* AlertTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
+		A2EF817828AD03800019BA72 /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		A2EF817A28AD04310019BA72 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		A2F5023E28986B8600352BFB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A2FBF32B28A46C300076DC42 /* ConciergeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConciergeLoginViewController.swift; sourceTree = "<group>"; };
 		A2FBF33128A4E6090076DC42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -351,6 +353,8 @@
 				A2EF817228ACDD7F0019BA72 /* AlertView.xib */,
 				A2EF817428ACE0C60019BA72 /* AlertView.swift */,
 				A2EF817628ACE2D90019BA72 /* AlertTableViewCell.swift */,
+				A2EF817828AD03800019BA72 /* EmptyView.xib */,
+				A2EF817A28AD04310019BA72 /* EmptyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -551,7 +555,6 @@
 				A2C27A0128A21BCC0016E150 /* Model */,
 				A2C27A0428A21D6E0016E150 /* Manager */,
 				A2E6E1C72899F93D00844770 /* Keys.swift */,
-				A2C279FF28A21B0D0016E150 /* Endpoint.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				A2AE1DAF28A3924600202218 /* View */,
 				A2442EFA28954B490001ED62 /* Onboarding */,
 				A2442EF928954B410001ED62 /* Authentication */,
+				A2E6E1872898D77700844770 /* Book */,
 				A2F5023B28986AEC00352BFB /* Main */,
 				A2EF816428ACA06C0019BA72 /* Alert */,
 				A2D5501B28904108000436FC /* Home */,
@@ -591,7 +595,6 @@
 			isa = PBXGroup;
 			children = (
 				A2B1389C289ED085004241D0 /* TagCollectionViewCell.swift */,
-				A2E6E1872898D77700844770 /* Book */,
 			);
 			path = Tags;
 			sourceTree = "<group>";
@@ -690,11 +693,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A0AFE228AD26D4000771A4 /* Book.storyboard in Resources */,
+				A2EF817928AD03800019BA72 /* EmptyView.xib in Resources */,
 				A2A5586C28A5C8D1000E6F0A /* BannerView.xib in Resources */,
 				A20C85DC28A1EF610012AAC8 /* PostReplyTableViewCell.xib in Resources */,
 				A246BFB52896732700BE564C /* Main.storyboard in Resources */,
 				A2B1389F289ED085004241D0 /* TagCollectionViewCell.xib in Resources */,
-				A2E6E1942898EFBE00844770 /* Book.storyboard in Resources */,
 				A2EF816628ACA0890019BA72 /* Alert.storyboard in Resources */,
 				A2AE1DB128A392A300202218 /* SectionTitle.xib in Resources */,
 				A20C85D128A1DA0B0012AAC8 /* PostArticleTableViewCell.xib in Resources */,
@@ -764,6 +768,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A0AFE328AD2725000771A4 /* BookInfoViewController.swift in Sources */,
 				A2EF816328AC9F090019BA72 /* MyPageViewController.swift in Sources */,
 				A2EF815528ABAC2A0019BA72 /* BannerCollectionViewCell.swift in Sources */,
 				A2EF815428ABABE90019BA72 /* ClubCollectionViewCell.swift in Sources */,
@@ -783,11 +788,11 @@
 				A2A5587E28A92825000E6F0A /* OTPManager.swift in Sources */,
 				A2E6E1C82899F93D00844770 /* Keys.swift in Sources */,
 				A298168428A1C283002F3EC5 /* ForumEditorViewController.swift in Sources */,
-				A2E6E1982898F06F00844770 /* BookInfoViewController.swift in Sources */,
 				A2AE1DBF28A4570200202218 /* OnboardingMessage.swift in Sources */,
 				A2A809DC2898D3410013EA6F /* ForumDetailListViewController.swift in Sources */,
 				A2AE1DB328A3939B00202218 /* SectionTitle.swift in Sources */,
 				A2EF814C28AB99F00019BA72 /* ClubTableViewCell.swift in Sources */,
+				A2EF817B28AD04310019BA72 /* EmptyView.swift in Sources */,
 				A2A5586428A5425C000E6F0A /* UserModel.swift in Sources */,
 				A2EF814828AB90F00019BA72 /* NewHomeViewController.swift in Sources */,
 				A2A5588028AA4B87000E6F0A /* ProfileSelectionViewController.swift in Sources */,
@@ -801,7 +806,6 @@
 				A2EF814A28AB98C60019BA72 /* BannerTableViewCell.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
 				A2EF817728ACE2D90019BA72 /* AlertTableViewCell.swift in Sources */,
-				A2C27A0028A21B0D0016E150 /* Endpoint.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
 				A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */,
 				A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */,
@@ -984,11 +988,12 @@
 				INFOPLIST_FILE = Techl/Supports/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "테클";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1017,11 +1022,12 @@
 				INFOPLIST_FILE = Techl/Supports/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "테클";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
