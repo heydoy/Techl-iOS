@@ -13,6 +13,7 @@ class NewHomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var bookList: [HomeBookModel] = []
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -25,16 +26,28 @@ class NewHomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.backgroundColor = .clear
         
+        callRequest()
     }
     
     // MARK: - Actions
     
     
     // MARK: - Helpers
+    
+    func callRequest() {
+        APIManager.shared.homeRequest { booklist in
+            self.bookList = booklist
+            self.tableView.reloadData()
+            print(#function, "책리스트", self.bookList)
+            
+        }
+    }
+    
     func designUI() {
         self.view.backgroundColor = .systemGray6
         
     }
+
     
     func configureNavigation() {
         let searchButton = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(searchButtonTapped))
@@ -49,6 +62,8 @@ class NewHomeViewController: UIViewController {
         setBackButton(.CustomColor.secondaryColor)
         
     }
+    
+ 
     
     @objc
     func searchButtonTapped(_ sender: UIBarButtonItem) {
@@ -92,6 +107,10 @@ extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.bannerContentCollectionView.tag = indexPath.row
             
+            cell.bannerContentCollectionView.layer.cornerRadius = 12
+            
+//            cell.bannerContentCollectionView.reloadData()
+            
             // 반환
             return cell
             
@@ -106,6 +125,8 @@ extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.clubContentCollectionView.tag = indexPath.row
             
+            cell.clubContentCollectionView.reloadData()
+            
             //반환
             return cell
             
@@ -118,6 +139,9 @@ extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.forumContentCollectionView.dataSource = self
             
             cell.forumContentCollectionView.tag = indexPath.row
+            
+            cell.forumContentCollectionView.reloadData()
+            
             // 반환
             return cell
         }
@@ -146,13 +170,13 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if collectionView.tag == 0 {
-            return 3
+            return Int.max // Banner.banners.count 개의 배너지만, 무한 스크롤을 위해 바꿔둠
         } else if collectionView.tag == 1 {
             //클럽갯수만큼 반환
             return 10
         } else if collectionView.tag == 2 {
             // 북카드 갯수만큼 반환
-            return 5
+            return bookList.count
         } else {
             return 0
         }
@@ -163,6 +187,8 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
         if collectionView.tag == 0 {
             // 배너
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCollectionViewCell.identifier, for: indexPath) as? BannerCollectionViewCell else { return UICollectionViewCell() }
+            
+            cell.configure(Banner.banners[indexPath.item % Banner.banners.count])
             
             return cell
             
@@ -176,11 +202,46 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
         } else if collectionView.tag == 2 {
             // 북카드
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BookCardCollectionViewCell.identifier, for: indexPath) as? BookCardCollectionViewCell else { return UICollectionViewCell() }
+            
+            cell.dataConfigure(bookList[indexPath.item])
+            
+            
+            
             return cell
         } else {
             return UICollectionViewCell()
         }
         
+        
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.tag == 0 {
+            print("배너클릭")
+            let sb = UIStoryboard(name: "Home", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: BannerDetailViewController.identifier) as! BannerDetailViewController
+            
+            let banner = Banner.banners[indexPath.item % Banner.banners.count]
+            vc.destinationURL = banner.link
+            self.navigationItem.backButtonTitle = ""
+            hidesBottomBarWhenPushed = true
+            
+            print(vc.destinationURL)
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        } else if collectionView.tag == 1 {
+            print("클럽 클릭")
+        } else if collectionView.tag == 2 {
+            print("책카드 클릭")
+            print("책 선택")
+            let sb = UIStoryboard(name: "Book", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: BookInfoViewController.identifier) as! BookInfoViewController
+            
+            vc.booklist = [ bookList[indexPath.item] ]
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }

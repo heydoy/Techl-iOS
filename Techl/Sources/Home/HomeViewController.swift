@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var bookListCollectionView: UICollectionView!
     
-    var bookList: [BookModel] = []
+    var bookList: [HomeBookModel] = []
     
     
     // 배너 위의 인덱스 인디케이터
@@ -56,14 +56,22 @@ class HomeViewController: UIViewController {
         // 자동 슬라이드
         bannerTimer()
         bannerIndexChange()
+        
+        // 데이터통신 요청
+        callRequest()
     }
     
     // MARK: - Actions
     
     func callRequest() {
         // 데이터 가져오기
+        APIManager.shared.homeRequest { booklist in
+            
+            self.bookList = booklist
+            print(#function, "책리스트 데이터", booklist)
+            self.bookListCollectionView.reloadData()
+        }
         
-        bookListCollectionView.reloadData()
     }
     
     @objc
@@ -136,7 +144,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             return 5
             
         case bookListCollectionView:
-            return 5
+            return bookList.count
             
         default:
             assert(false, "Invalid element type")
@@ -153,13 +161,13 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         case clubListCollectionView:
             guard let cell = clubListCollectionView.dequeueReusableCell(withReuseIdentifier: BookClubCollectionViewCell.identifier, for: indexPath) as? BookClubCollectionViewCell else { return UICollectionViewCell() }
             
-            cell.configure()
+            //cell.configure()
             
             return cell
             
         case bookListCollectionView:
             guard let cell = bookListCollectionView.dequeueReusableCell(withReuseIdentifier: BookListCollectionViewCell.identifier, for: indexPath) as? BookListCollectionViewCell else { return UICollectionViewCell() }
-            cell.configure()
+            cell.dataConfigure(bookList[indexPath.item])
             //cell.dataConfigure(book: bookList[indexPath.item])
             return cell
             

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BookListCollectionViewCell: UICollectionViewCell {
     static let identifier = "BookListCollectionViewCell"
@@ -42,11 +43,16 @@ class BookListCollectionViewCell: UICollectionViewCell {
         
     }
     
-    func dataConfigure(book: BookModel) {
+    func dataConfigure(_ book: HomeBookModel) {
+        print("북리스트콜렉션뷰셀", #function, book)
         bookTitleLabel.text = book.title
-        bookAuthorLabel.text = book.authors
-        bookThumbnailImageView.image = UIImage(named: book.cover) ?? UIImage(systemName: "heart.fill")
+        bookAuthorLabel.text = book.author
         
+        let url = URL(string: book.cover)
+        bookThumbnailImageView.kf.setImage(with: url)
+        
+        clubCountLabel.text = "\(book.countPost)"
+        forumCountLabel.text = "\(book.countForum)"
         
         
     }

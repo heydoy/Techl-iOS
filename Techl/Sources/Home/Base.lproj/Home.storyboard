@@ -200,6 +200,10 @@
                                         <size key="customSize" width="170" height="240"/>
                                         <connections>
                                             <outlet property="badgeLabel" destination="KKW-X5-zWh" id="rH4-IN-guB"/>
+                                            <outlet property="clubDescription" destination="BRJ-IX-hJr" id="Trm-NE-dcO"/>
+                                            <outlet property="clubTitleLabel" destination="EJn-32-N8b" id="6sC-aA-aXK"/>
+                                            <outlet property="locationLabel" destination="WsS-gY-3Ui" id="KXQ-6y-sv0"/>
+                                            <outlet property="starDateLabel" destination="Z8F-Xc-HPZ" id="bIQ-Y8-Ofo"/>
                                             <outlet property="thumbnailImageView" destination="Tan-bj-fvF" id="3j4-fM-I3B"/>
                                         </connections>
                                     </collectionViewCell>
@@ -480,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76.811594202898561" y="885.9375"/>
+            <point key="canvasLocation" x="-19" y="886"/>
         </scene>
         <!--New Home View Controller-->
         <scene sceneID="i84-56-z7T">
@@ -683,6 +687,9 @@
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <size key="customSize" width="374" height="160"/>
+                                                            <connections>
+                                                                <outlet property="bookCardView" destination="KRQ-tj-rMP" id="bkL-yU-RSF"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
@@ -721,7 +728,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCZ-fq-scv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886.95652173913049" y="885.9375"/>
+            <point key="canvasLocation" x="833" y="886"/>
         </scene>
         <!--Banner Detail View Controller-->
         <scene sceneID="9F6-Hi-JnR">

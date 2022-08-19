@@ -14,6 +14,12 @@ class ClubListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var clubTitleLabel: UILabel!
     
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    
+    @IBOutlet weak var clubDescription: UILabel!
+    
+    @IBOutlet weak var starDateLabel: UILabel!
     
     func configure() {
         self.layer.cornerRadius = 8
