@@ -38,16 +38,16 @@ class BookClubCollectionViewCell: UICollectionViewCell {
         self.clubStatusLabel.layer.cornerRadius = clubStatusLabel.frame.height/3
     }
     
-    func configure() {
-        
-        badgeLabel.text = ""
-        clubStatusLabel.text = ""
-        clubTitleLabel.text = ""
-        
-        clubLocationLabel.text = ""
-        clubDescriptionLabel.text = ""
-        dateInfoLabel.text = ""
-        startDateLabel.text = ""
-    }
+//    func configure() {
+//
+//        badgeLabel.text = ""
+//        clubStatusLabel.text = ""
+//        clubTitleLabel.text = ""
+//
+//        clubLocationLabel.text = ""
+//        clubDescriptionLabel.text = ""
+//        dateInfoLabel.text = ""
+//        startDateLabel.text = ""
+//    }
 
 }
