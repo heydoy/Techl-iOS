@@ -10,7 +10,7 @@ import Alamofire
 import SwiftyJSON
 
 class AuthenticationManager {
-    private init() {}
+    private init () {}
     
     static let shared = AuthenticationManager()
     
@@ -44,7 +44,7 @@ class AuthenticationManager {
     }
     
     // 회원가입 요청
-    func signupRequest(userInfo: User, completionHandler: @escaping (String) -> Void) {
+    func signupRequest(userInfo: User, completionHandler: @escaping (Result <(Int, String), Error>) -> Void ) {
         let url = Endpoint.signup.getURL()
         
         let body: User = userInfo
@@ -52,15 +52,19 @@ class AuthenticationManager {
         AF.request(url, method: .post, parameters: body, encoder: JSONParameterEncoder.prettyPrinted).validate().responseData { response in
             switch response.result {
             case .success(let data) :
+                print("통신 성공")
+                
                 let json = JSON(data)
-                print(json)
-                
-                // jwt 쿠키를 이용해 로그인여부 체크 가능
-                completionHandler(json["jwt"].stringValue)
-                
+                let jwt = json["result"]["jwt"].stringValue
+                let code = json["code"].intValue
+                    
+                completionHandler( .success((code, jwt)) )
                 
             case .failure(let error) :
-                print(error.localizedDescription)
+                print("실패", error.localizedDescription)
+                completionHandler(.failure(error))
+                
+                
             }
         }
 

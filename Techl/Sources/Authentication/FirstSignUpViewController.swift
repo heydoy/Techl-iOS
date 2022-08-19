@@ -63,9 +63,6 @@ class FirstSignUpViewController: UIViewController {
         isVerificationButtonsEnabled()
         validateInfo()
         
-        // 테스트를 위해 열어둠
-        nextButton.isEnabled = true
-        
     }
     
     // MARK: - Actions
