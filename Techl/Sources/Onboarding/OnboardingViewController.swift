@@ -60,7 +60,6 @@ class OnboardingViewController: UIViewController {
         currentIndex = index
         
         collectionView.scrollToItem(at: [0, currentIndex], at: .right, animated: true)
-        print(index)
         
         pageControl.currentPage = currentIndex
         
@@ -109,13 +108,7 @@ class OnboardingViewController: UIViewController {
             nextButton.layer.borderWidth = 0
             
         }
-        
-        
     }
-    
-    
-
-
 }
 
 extension OnboardingViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -158,8 +151,6 @@ extension OnboardingViewController: UIScrollViewDelegate {
         let index = Int(scrollView.contentOffset.x/scrollView.bounds.width)
         pageControl.currentPage = index
         currentIndex = index
-        
-        
-        
+
     }
 }
