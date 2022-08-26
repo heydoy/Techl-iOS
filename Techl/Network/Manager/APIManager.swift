@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import UIKit
 
 
 class APIManager {
@@ -18,8 +19,6 @@ class APIManager {
     typealias forumCompletionHandler = ([ForumArticle]) -> Void
     typealias forumDetailCompletionHandler = (ForumPost) -> Void
     typealias bookCompletionHandler = ([BookModel]) -> Void
-    
-    
     
     func homeRequest(completionHandler: @escaping ([HomeBookModel])-> Void) {
         let url = Endpoint.home.getURL()
@@ -133,6 +132,59 @@ class APIManager {
         }
     }
     
+    func forumNewPostWithImageRequest(title: String, content: String, image: UIImage, completionHandler: @escaping () -> Void) {
+        
+        guard let imageData = image.jpegData(compressionQuality: 0.2) else { return }
+        let url = "\(Endpoint.forum.getURL())/new-forum/create?bookIdx=2"
+        let boundary = " "
+        let header: HTTPHeaders = [
+            "Content-Type" : "multipart/form-data ; boundary={boundary-text} ; type=application/json",
+            
+            "X-ACCESS-TOKEN": "eyJ0eXBlIjoiand0IiwiYWxnIjoiSFMyNTYifQ.eyJ1c2VySWR4Ijo2LCJpYXQiOjE2NjA3NDU1ODMsImV4cCI6MTY2MjIxNjgxMn0.kNqh9zwH3LF3H1xvzTD_hgGy6hiB5YM2FM0RVltB2-4"
+        ]
+        
+        let body: [String:String] = [
+            "title" : title,
+            "content": content
+        ]
+        
+        let title: [String:String] = [
+            "title" : title,
+        ]
+        
+        let content: [String:String] = [
+            "content": content
+        ]
+        guard let titleData = try? JSONEncoder().encode(title) else { return }
+        guard let contentData = try? JSONEncoder().encode(content) else { return}
+        
+        AF.upload(multipartFormData: { multipartFormData in
+            multipartFormData.append(titleData, withName: "title")
+            multipartFormData.append(contentData, withName: "content")
+            //multipartFormData.append(Data(bodyData), withName: "postForumContentsReq")
+//            for (key, value) in body {
+//                            multipartFormData.append("\(value)".data(using: .utf8)!, withName: key)
+//                        }
+            multipartFormData.append(Data(imageData), withName: "multipartFile")
+            
+            
+        }, to: url, method: .post ,headers: header).validate().responseData { response in
+            switch response.result {
+            case .success(let data) :
+                print("성공")
+                
+                let json = JSON(data)
+                print("포럼 작성 글 성공", json["message"])
+                
+                completionHandler()
+                
+            case .failure(let error) :
+                print("실패", error)
+                
+            }
+        }
+    }
+    
     func forumNewReplyRequest(content: String, completionHandler: @escaping () -> Void) {
         let url = "\(Endpoint.forum.getURL())/2/new-forum-comment"
         
@@ -157,12 +209,8 @@ class APIManager {
                 
             case .failure(let error) :
                 print("실패", error.localizedDescription)
-                
             }
         }
     }
-    
-    
-   
 }
 

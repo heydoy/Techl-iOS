@@ -67,3 +67,14 @@ struct ForumReply: Codable {
     var content: String
     var countUpvote: Int
 }
+
+extension ForumPost {
+    static let list: [ForumPost] =
+    [
+        ForumPost(bookTitle: "", nickName: "디디", countComment: 3, createdDate: "2022.08.04", title: "네이밍 컨벤션 중에 귀여워지지 말라는 게 있어요", content: "너무 귀엽지 않나요", contentsImage: "", getForumCommentRes: []),
+        ForumPost(bookTitle: "", nickName: "밍", countComment: 5, createdDate: "2022.08.01", title: "어제 슬모 북클럽 후기 올립니다", content: "신사역 카페주에서 모였습니다", contentsImage: "", getForumCommentRes: []),
+        ForumPost(bookTitle: "", nickName: "마크", countComment: 5, createdDate: "2022.07.28", title: "챕터 7에 이거 무슨 뜻인가요?", content: "직접 해봤는데 잘 이해가 되질 않네요", contentsImage: "", getForumCommentRes: []),
+        ForumPost(bookTitle: "", nickName: "김산", countComment: 0, createdDate: "2022.07.28", title: "같이 스터디하실분~ 북클럽 신청해주세요", content: "슬모 새로 또 엽니다", contentsImage: "", getForumCommentRes: [])
+
+    ]
+}
