@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClubDetailHeadTableViewCell" id="KGk-i7-Jjw" customClass="ClubDetailHeadTableViewCell" customModule="Techl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="488"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="488"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="슬기로운 읽기 클럽 🥑" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpn-dS-phV">
+                        <rect key="frame" x="118.5" y="20" width="177.5" height="24"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8월 31일(수)부터 4주간 | 온라인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrd-Tk-JD4">
+                        <rect key="frame" x="125" y="48" width="164.5" height="16"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_thumbnail_1" translatesAutoresizingMaskIntoConstraints="NO" id="hK0-pD-rep">
+                        <rect key="frame" x="141.5" y="81" width="131" height="161"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hK0-pD-rep" secondAttribute="height" multiplier="13:16" id="JxD-Ww-C0c"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hY-de-WXS">
+                        <rect key="frame" x="0.0" y="476" width="414" height="12"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="Br0-A1-RW8"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="uuV-Ni-hjI"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyR-02-nwP">
+                        <rect key="frame" x="61" y="262" width="292.5" height="185"/>
+                        <string key="text">클린 코드를 읽고 줌(Zoom)에서 토론하는 시간을 
+수요일,  토요일 매주 2회 가집니다.
+
+모이는 시간은 멤버들이 모이고 나서 함께 결정합니다!
+
+모일 때 마다 최소 50페이지씩 읽고 
+읽은 내용을 바탕으로 토론합니다. 
+
+모임 후 꼭!!!
+포럼에 후기 쓰시고 댓글로 남겨주어야
+완료인증됩니다</string>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lrd-Tk-JD4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6eJ-EH-vf9"/>
+                    <constraint firstItem="hK0-pD-rep" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8c5-Jb-jPV"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AyR-02-nwP" secondAttribute="trailing" constant="20" id="CsN-2G-oky"/>
+                    <constraint firstItem="hK0-pD-rep" firstAttribute="top" secondItem="Lrd-Tk-JD4" secondAttribute="bottom" constant="17" id="DqC-az-Td0"/>
+                    <constraint firstItem="2hY-de-WXS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FqK-8s-bRV"/>
+                    <constraint firstAttribute="trailing" secondItem="2hY-de-WXS" secondAttribute="trailing" id="Nwg-e0-u3f"/>
+                    <constraint firstAttribute="bottom" secondItem="2hY-de-WXS" secondAttribute="bottom" id="Od2-vk-e02"/>
+                    <constraint firstItem="Lrd-Tk-JD4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Rhs-Gw-fpb"/>
+                    <constraint firstItem="Zpn-dS-phV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="T7j-a8-bOV"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zpn-dS-phV" secondAttribute="trailing" constant="20" id="a5E-sM-sVN"/>
+                    <constraint firstItem="Zpn-dS-phV" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cXm-wN-84W"/>
+                    <constraint firstItem="AyR-02-nwP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="dBl-V4-GDI"/>
+                    <constraint firstItem="2hY-de-WXS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AyR-02-nwP" secondAttribute="bottom" constant="12" id="fnp-j2-KTb"/>
+                    <constraint firstItem="Zpn-dS-phV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="j3C-4U-wJ5"/>
+                    <constraint firstItem="Lrd-Tk-JD4" firstAttribute="top" secondItem="Zpn-dS-phV" secondAttribute="bottom" constant="4" id="ofy-CK-DkU"/>
+                    <constraint firstItem="AyR-02-nwP" firstAttribute="top" secondItem="hK0-pD-rep" secondAttribute="bottom" constant="20" id="pcq-4X-hYq"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Lrd-Tk-JD4" secondAttribute="trailing" constant="20" id="qAY-Lm-DBa"/>
+                    <constraint firstItem="hK0-pD-rep" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.316425" id="wJZ-Of-K5o"/>
+                    <constraint firstItem="AyR-02-nwP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wz0-N2-aLp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="AyR-02-nwP" id="eTP-ht-A5T"/>
+                <outlet property="coverImageView" destination="hK0-pD-rep" id="vmU-QL-Z0T"/>
+                <outlet property="dateAndLocationLabel" destination="Lrd-Tk-JD4" id="hqL-PN-sk7"/>
+                <outlet property="titleLabel" destination="Zpn-dS-phV" id="LzG-Ss-M7F"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="102"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="book_thumbnail_1" width="458" height="603"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ClubDetailBodyTableViewCell" customModule="Techl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zL7-n4-xCG">
+                        <rect key="frame" x="20" y="12" width="374" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="- 운영방식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO8-za-dAK">
+                                <rect key="frame" x="16" y="19.5" width="58" height="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khZ-UB-6JM">
+                                <rect key="frame" x="86" y="12.5" width="272" height="31.5"/>
+                                <string key="text">매주 수, 토요일 1시간~2시간 Zoom으로
+모여서 읽은 내용을 자유롭게 공유</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="uO8-za-dAK" firstAttribute="leading" secondItem="zL7-n4-xCG" secondAttribute="leading" constant="16" id="5lf-4s-nN8"/>
+                            <constraint firstAttribute="height" constant="56" id="AYV-DN-jqg"/>
+                            <constraint firstItem="khZ-UB-6JM" firstAttribute="centerY" secondItem="uO8-za-dAK" secondAttribute="centerY" id="OFo-CJ-3TE"/>
+                            <constraint firstAttribute="trailing" secondItem="khZ-UB-6JM" secondAttribute="trailing" constant="16" id="f9K-F3-GNU"/>
+                            <constraint firstItem="uO8-za-dAK" firstAttribute="centerY" secondItem="zL7-n4-xCG" secondAttribute="centerY" id="uhW-ds-1Ar"/>
+                            <constraint firstItem="khZ-UB-6JM" firstAttribute="leading" secondItem="uO8-za-dAK" secondAttribute="trailing" constant="12" id="umt-Q9-9Ap"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="zL7-n4-xCG" secondAttribute="bottom" constant="12" id="2JQ-Zf-26R"/>
+                    <constraint firstItem="zL7-n4-xCG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2jp-KT-jex"/>
+                    <constraint firstAttribute="trailing" secondItem="zL7-n4-xCG" secondAttribute="trailing" constant="20" id="LKw-4q-69C"/>
+                    <constraint firstItem="zL7-n4-xCG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="gPx-ht-Qj2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="baseView" destination="zL7-n4-xCG" id="hMZ-q2-eLU"/>
+                <outlet property="contentLabel" destination="khZ-UB-6JM" id="FqZ-5x-K0D"/>
+                <outlet property="titleLabel" destination="uO8-za-dAK" id="jCG-As-f3i"/>
+            </connections>
+            <point key="canvasLocation" x="135" y="102"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
