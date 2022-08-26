@@ -14,6 +14,7 @@ class AllAlertViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var list: [AlertModel] = AlertModel.list
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -38,13 +39,18 @@ class AllAlertViewController: UIViewController {
 extension AllAlertViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: AlertTableViewCell.identifier, for: indexPath) as? AlertTableViewCell else { return UITableViewCell() }
         
+        cell.configureContent(alert: list[indexPath.row])
+        
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 124
     }
 }
