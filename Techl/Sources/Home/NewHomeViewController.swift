@@ -13,7 +13,10 @@ class NewHomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var bookList: [HomeBookModel] = []
+    //var bookList: [HomeBookModel] = []
+    var bookList: [HomeBookModel] = HomeBookModel.list
+    var clubList: [ClubModel] = ClubModel.list
+    
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -26,7 +29,7 @@ class NewHomeViewController: UIViewController {
         tableView.dataSource = self
         tableView.backgroundColor = .clear
         
-        callRequest()
+        //callRequest()
     }
     
     // MARK: - Actions
@@ -154,9 +157,9 @@ extension NewHomeViewController: UITableViewDelegate, UITableViewDataSource {
         else if indexPath.row == 1 { return 240+72+10}
         else {
             let height: CGFloat = 140
-            let number: CGFloat = 5
+            let number: CGFloat = CGFloat(clubList.count)
             let margin: CGFloat = 12
-            return (height+margin) * number + 92
+            return (height+margin) * number + 92 - margin
         }
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -171,12 +174,15 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         if collectionView.tag == 0 {
             return Int.max // Banner.banners.count 개의 배너지만, 무한 스크롤을 위해 바꿔둠
+            
         } else if collectionView.tag == 1 {
             //클럽갯수만큼 반환
-            return 10
+            return clubList.count
+            
         } else if collectionView.tag == 2 {
             // 북카드 갯수만큼 반환
             return bookList.count
+            
         } else {
             return 0
         }
@@ -196,6 +202,7 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
             //클럽
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ClubCollectionViewCell.identifier, for: indexPath) as? ClubCollectionViewCell else { return UICollectionViewCell() }
             
+            cell.configureData(club: clubList[indexPath.item])
             
             return cell
             
@@ -218,7 +225,7 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView.tag == 0 {
-            print("배너클릭")
+
             let sb = UIStoryboard(name: "Home", bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: BannerDetailViewController.identifier) as! BannerDetailViewController
             
@@ -232,6 +239,11 @@ extension NewHomeViewController: UICollectionViewDelegate, UICollectionViewDataS
             
         } else if collectionView.tag == 1 {
             print("클럽 클릭")
+            let sb = UIStoryboard(name: "Club", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: ClubDetailViewController.identifier) as! ClubDetailViewController
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         } else if collectionView.tag == 2 {
             print("책카드 클릭")
             print("책 선택")
