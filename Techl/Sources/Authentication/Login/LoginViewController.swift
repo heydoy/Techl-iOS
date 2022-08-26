@@ -73,29 +73,31 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         // 서버통신 후 결과에 따라서 성공/실패 분기
         
-        AuthenticationManager.shared.loginRequest(phoneNumber: phoneNumber, password: password) { [weak self] result in
-            guard let self = self else { return }
-            
-            switch result {
-            case let .success(result) :
-                debugPrint("통신 성공 : \(result)")
-                if result.0 == 1000 {
-                    
-                    self.loginSuccess()
-                    LoginManager.shared.jwt = result.1
-                    
-                    
-                    
-                } else {
-                    self.loginFailure()
-                    
-                }
-                
-            case let .failure(error) :
-                debugPrint("통신 에러: \(error)")
-                self.loginFailure()
-            }
-        }
+       loginSuccess() // test용 코드
+        
+//        AuthenticationManager.shared.loginRequest(phoneNumber: phoneNumber, password: password) { [weak self] result in
+//            guard let self = self else { return }
+//
+//            switch result {
+//            case let .success(result) :
+//                debugPrint("통신 성공 : \(result)")
+//                if result.0 == 1000 {
+//
+//                    self.loginSuccess()
+//                    LoginManager.shared.jwt = result.1
+//
+//
+//
+//                } else {
+//                    self.loginFailure()
+//
+//                }
+//
+//            case let .failure(error) :
+//                debugPrint("통신 에러: \(error)")
+//                self.loginFailure()
+//            }
+//        }
     }
     
     
