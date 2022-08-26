@@ -19,8 +19,16 @@ class AlertTableViewCell: UITableViewCell {
         self.backgroundColor = .clear
     }
     
-    func configureContent() {
+    func configureContent(alert: AlertModel) {
         // 내용 받아서 넣는 메서드
+        
+        alertView.imageView.image = UIImage(named: alert.image)
+        alertView.alertKindLabel.text = alert.kind
+        alertView.alertContentLabel.text = alert.content
+        alertView.dateLabel.text = alert.date
+        //alertView.goButton.setTitle(alert.buttonText, for: .normal)
+        
+        
     }
 
 
