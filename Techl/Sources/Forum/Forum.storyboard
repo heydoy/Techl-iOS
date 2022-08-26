@@ -253,10 +253,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6J-E8-5Nb">
-                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="746" width="414" height="150"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsK-Sl-dii">
-                                        <rect key="frame" x="20" y="16" width="24" height="24"/>
+                                        <rect key="frame" x="20" y="84" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="lUj-cu-Z7x"/>
                                             <constraint firstAttribute="height" constant="24" id="nKf-kT-UAD"/>
@@ -268,16 +268,25 @@
                                             <action selector="cameraButtonTapped:" destination="hnq-Tr-H7P" eventType="touchUpInside" id="86S-d3-58X"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e8h-dK-30h">
+                                        <rect key="frame" x="20" y="15" width="61" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="e8h-dK-30h" secondAttribute="height" multiplier="1:1" id="kZ7-5h-ySw"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="VCv-Lh-dmT"/>
-                                    <constraint firstItem="DsK-Sl-dii" firstAttribute="top" secondItem="o6J-E8-5Nb" secondAttribute="top" constant="16" id="axQ-AI-zky"/>
+                                    <constraint firstItem="e8h-dK-30h" firstAttribute="leading" secondItem="DsK-Sl-dii" secondAttribute="leading" id="Hpc-XG-Ecu"/>
+                                    <constraint firstAttribute="height" constant="150" id="VCv-Lh-dmT"/>
+                                    <constraint firstItem="DsK-Sl-dii" firstAttribute="top" secondItem="e8h-dK-30h" secondAttribute="bottom" constant="8" symbolic="YES" id="dDg-Xl-Gxp"/>
                                     <constraint firstItem="DsK-Sl-dii" firstAttribute="leading" secondItem="o6J-E8-5Nb" secondAttribute="leading" constant="20" id="dF1-e9-4R1"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="DsK-Sl-dii" secondAttribute="bottom" id="wSJ-Ib-GDh"/>
+                                    <constraint firstItem="e8h-dK-30h" firstAttribute="top" secondItem="o6J-E8-5Nb" secondAttribute="top" constant="15" id="yFD-cE-VsO"/>
                                 </constraints>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pR1-Kj-xuC">
-                                <rect key="frame" x="0.0" y="104" width="414" height="712"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="642"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">
 
@@ -355,12 +364,13 @@
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="DsK-Sl-dii" id="rRY-O6-sy7"/>
+                        <outlet property="imageView" destination="e8h-dK-30h" id="fCy-PJ-EEA"/>
                         <outlet property="userTextView" destination="pR1-Kj-xuC" id="BzI-PT-SlW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9K-yq-Zvd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952" y="-372"/>
+            <point key="canvasLocation" x="950.72463768115949" y="-372.32142857142856"/>
         </scene>
     </scenes>
     <resources>
