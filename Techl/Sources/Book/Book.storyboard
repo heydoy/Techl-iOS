@@ -13,7 +13,7 @@
         <!--Book Info View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="BookInfoViewController" automaticallyAdjustsScrollViewInsets="NO" id="Y6W-OH-hqX" customClass="BookInfoViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookInfoViewController" automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="BookInfoViewController" customModule="Techl" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,17 +24,17 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bzs-dy-CQo">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1800"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_thumbnail_2" translatesAutoresizingMaskIntoConstraints="NO" id="wbj-rJ-a8s">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_thumbnail_1" translatesAutoresizingMaskIntoConstraints="NO" id="wbj-rJ-a8s">
                                                 <rect key="frame" x="146" y="16" width="122" height="153"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="wbj-rJ-a8s" secondAttribute="height" multiplier="4:5" id="pG6-c8-e0o"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="nT5-PC-fpz">
-                                                <rect key="frame" x="75" y="185" width="264" height="75.5"/>
+                                                <rect key="frame" x="34" y="185" width="346" height="75.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tGy-n2-D1d">
-                                                        <rect key="frame" x="34.5" y="0.0" width="195" height="20"/>
+                                                        <rect key="frame" x="75.5" y="0.0" width="195" height="20"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="처음부터 시작하는 딥러닝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nh-Oi-HnF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="171" height="20"/>
@@ -57,15 +57,13 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세스 웨이드먼 | 2020.08.19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2S-f9-3md">
-                                                        <rect key="frame" x="65" y="26" width="134" height="14.5"/>
+                                                        <rect key="frame" x="106" y="26" width="134" height="14.5"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpD-JW-y1F">
-                                                        <rect key="frame" x="0.0" y="46.5" width="264" height="29"/>
-                                                        <string key="text">딥러닝의 기초부터 고급 신경망 구조까지 폭넓게 배우고, 
-딥러닝 모델을 직접 구현하는 개념서</string>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="클린 코드를 만드는 최상의 애자일 기법을 소개하고 있다. 소프트웨어 장인 정신의 가치를 심어 주며 프로그래밍 실력을 높여줄 것이다. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpD-JW-y1F">
+                                                        <rect key="frame" x="0.0" y="46.5" width="346" height="29"/>
                                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -86,10 +84,12 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vax-bg-dP9">
-                                                <rect key="frame" x="321.5" y="311.5" width="72.5" height="31"/>
+                                                <rect key="frame" x="325" y="312" width="69" height="30"/>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="모두보기"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="모두보기">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                </buttonConfiguration>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fvV-Ed-aJj">
                                                 <rect key="frame" x="0.0" y="377" width="414" height="80"/>
@@ -168,41 +168,37 @@
                                                     <constraint firstAttribute="height" constant="12" id="fok-9b-Akb"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0q3-7b-DAf">
-                                                <rect key="frame" x="364" y="16" width="30" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="bt1-Rk-qGx"/>
-                                                    <constraint firstAttribute="width" constant="30" id="kf4-sj-bP4"/>
-                                                </constraints>
-                                                <color key="tintColor" name="secondaryColor"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
-                                            </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9oY-9a-Ta9">
-                                                <rect key="frame" x="0.0" y="687" width="414" height="1113"/>
+                                                <rect key="frame" x="0.0" y="686.5" width="414" height="1113.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FV4-cz-Vna">
-                                                    <size key="itemSize" width="128" height="128"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FV4-cz-Vna">
+                                                    <size key="itemSize" width="374" height="87"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="20"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WuM-lO-byl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <rect key="frame" x="20" y="0.0" width="374" height="87"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xq7-Zo-Vdi">
-                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="87"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </collectionViewCellContentView>
+                                                        <size key="customSize" width="374" height="87"/>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWP-cP-ENU">
-                                                <rect key="frame" x="321.5" y="641" width="72.5" height="31"/>
+                                                <rect key="frame" x="325" y="641.5" width="69" height="30"/>
                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="모두보기"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="모두보기">
+                                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="viewForumButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ReM-Gk-pc6"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="포럼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRw-s1-xUf">
                                                 <rect key="frame" x="20" y="646" width="29.5" height="20.5"/>
@@ -216,10 +212,8 @@
                                             <constraint firstAttribute="trailing" secondItem="fvV-Ed-aJj" secondAttribute="trailing" id="0O9-ug-jK3"/>
                                             <constraint firstItem="nT5-PC-fpz" firstAttribute="centerX" secondItem="Bzs-dy-CQo" secondAttribute="centerX" id="1fC-Gh-Kx5"/>
                                             <constraint firstItem="Wih-18-vlq" firstAttribute="leading" secondItem="Bzs-dy-CQo" secondAttribute="leading" constant="20" id="33s-8G-Wu8"/>
-                                            <constraint firstAttribute="trailing" secondItem="0q3-7b-DAf" secondAttribute="trailing" constant="20" id="6YK-mP-ra8"/>
                                             <constraint firstAttribute="trailing" secondItem="B7r-Uk-Fbc" secondAttribute="trailing" id="9wO-ur-1JI"/>
                                             <constraint firstItem="VRw-s1-xUf" firstAttribute="top" secondItem="B7r-Uk-Fbc" secondAttribute="bottom" constant="28" id="A1w-WJ-oaJ"/>
-                                            <constraint firstItem="0q3-7b-DAf" firstAttribute="top" secondItem="wbj-rJ-a8s" secondAttribute="top" id="ApW-Es-igc"/>
                                             <constraint firstItem="T2F-gL-tlC" firstAttribute="leading" secondItem="Wih-18-vlq" secondAttribute="leading" id="Bdn-Ky-ate"/>
                                             <constraint firstItem="sWP-cP-ENU" firstAttribute="trailing" secondItem="Vax-bg-dP9" secondAttribute="trailing" id="CcN-Rv-yo1"/>
                                             <constraint firstAttribute="bottom" secondItem="9oY-9a-Ta9" secondAttribute="bottom" id="Fy6-gq-Wec"/>
@@ -238,7 +232,7 @@
                                             <constraint firstItem="Vax-bg-dP9" firstAttribute="centerY" secondItem="Wih-18-vlq" secondAttribute="centerY" id="au6-af-73S"/>
                                             <constraint firstItem="wbj-rJ-a8s" firstAttribute="centerX" secondItem="Bzs-dy-CQo" secondAttribute="centerX" id="cnZ-g5-yhh"/>
                                             <constraint firstItem="9oY-9a-Ta9" firstAttribute="leading" secondItem="Bzs-dy-CQo" secondAttribute="leading" id="coe-FZ-LvL"/>
-                                            <constraint firstItem="9oY-9a-Ta9" firstAttribute="top" secondItem="VRw-s1-xUf" secondAttribute="bottom" constant="20.5" id="dfA-dD-uOp"/>
+                                            <constraint firstItem="9oY-9a-Ta9" firstAttribute="top" secondItem="VRw-s1-xUf" secondAttribute="bottom" constant="20" id="dfA-dD-uOp"/>
                                             <constraint firstItem="Zx5-XO-kh4" firstAttribute="top" secondItem="fvV-Ed-aJj" secondAttribute="bottom" constant="24" id="e67-xj-hEg"/>
                                             <constraint firstAttribute="trailing" secondItem="V9A-XV-le0" secondAttribute="trailing" id="h3h-NG-bx9"/>
                                             <constraint firstItem="Wih-18-vlq" firstAttribute="top" secondItem="V9A-XV-le0" secondAttribute="bottom" constant="24" id="lDg-D1-4xc"/>
@@ -276,8 +270,11 @@
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="V2S-f9-3md" id="B3u-y2-PQH"/>
+                        <outlet property="bookclubFinishedCollectionView" destination="oiK-28-sUf" id="UQl-hV-CJQ"/>
+                        <outlet property="bookclubOngoingCollectionView" destination="fvV-Ed-aJj" id="6pe-Rv-Aaz"/>
                         <outlet property="coverImageView" destination="wbj-rJ-a8s" id="6Ud-Mp-8NU"/>
                         <outlet property="descriptionLabel" destination="lpD-JW-y1F" id="3VO-UY-9cH"/>
+                        <outlet property="forumListCollectionView" destination="9oY-9a-Ta9" id="suZ-u2-hm5"/>
                         <outlet property="titleLabel" destination="0Nh-Oi-HnF" id="K2N-UR-LAe"/>
                     </connections>
                 </viewController>
@@ -287,8 +284,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="book_thumbnail_2" width="400" height="513"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="book_thumbnail_1" width="458" height="603"/>
         <image name="link" catalog="system" width="128" height="122"/>
         <namedColor name="secondaryColor">
             <color red="1" green="0.35686274509803922" blue="0.082352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
