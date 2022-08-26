@@ -8,13 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6BC792FE6EDDE9663D08A231 /* Pods_Techl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC52AF2B4CA789A8688A12D4 /* Pods_Techl.framework */; };
+		A2054CF228B6509E000DCBCD /* AddNewClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2054CF128B6509E000DCBCD /* AddNewClubViewController.swift */; };
 		A20C85CB28A1C6010012AAC8 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C85CA28A1C6010012AAC8 /* MainTabBarViewController.swift */; };
 		A20C85CD28A1D93B0012AAC8 /* ForumPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C85CC28A1D93B0012AAC8 /* ForumPostViewController.swift */; };
 		A20C85D028A1DA0B0012AAC8 /* PostArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C85CE28A1DA0B0012AAC8 /* PostArticleTableViewCell.swift */; };
 		A20C85D128A1DA0B0012AAC8 /* PostArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20C85CF28A1DA0B0012AAC8 /* PostArticleTableViewCell.xib */; };
 		A20C85DB28A1EF610012AAC8 /* PostReplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20C85D928A1EF610012AAC8 /* PostReplyTableViewCell.swift */; };
 		A20C85DC28A1EF610012AAC8 /* PostReplyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A20C85DA28A1EF610012AAC8 /* PostReplyTableViewCell.xib */; };
+		A21AFC1428B6466400539AFB /* ClubDetailHeadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21AFC1228B6466400539AFB /* ClubDetailHeadTableViewCell.swift */; };
+		A21AFC1528B6466400539AFB /* ClubDetailHeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21AFC1328B6466400539AFB /* ClubDetailHeadTableViewCell.xib */; };
+		A21AFC1A28B6487B00539AFB /* ClubDetailBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21AFC1828B6487B00539AFB /* ClubDetailBodyTableViewCell.swift */; };
+		A21AFC1B28B6487B00539AFB /* ClubDetailBodyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21AFC1928B6487B00539AFB /* ClubDetailBodyTableViewCell.xib */; };
 		A21BB1E6289275D600B3F325 /* NXMLSearchCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21BB1E5289275D600B3F325 /* NXMLSearchCollectionReusableView.swift */; };
+		A23EF5F828B51A53002FF336 /* AlertModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EF5F728B51A53002FF336 /* AlertModel.swift */; };
+		A23EF5FA28B580DA002FF336 /* ClubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EF5F928B580DA002FF336 /* ClubModel.swift */; };
+		A23EF60028B5F110002FF336 /* CircleImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EF5FE28B5F110002FF336 /* CircleImageCollectionViewCell.swift */; };
+		A23EF60128B5F110002FF336 /* CircleImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A23EF5FF28B5F110002FF336 /* CircleImageCollectionViewCell.xib */; };
+		A23EF60428B5F401002FF336 /* ForumListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EF60228B5F401002FF336 /* ForumListCollectionViewCell.swift */; };
+		A23EF60528B5F401002FF336 /* ForumListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A23EF60328B5F401002FF336 /* ForumListCollectionViewCell.xib */; };
 		A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2429B89288E657A003E3573 /* HomeViewController.swift */; };
 		A2429B8C288E65A6003E3573 /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2429B8B288E65A6003E3573 /* HomeBannerCollectionViewCell.swift */; };
 		A2429B8E288E65F9003E3573 /* BookListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2429B8D288E65F9003E3573 /* BookListCollectionViewCell.swift */; };
@@ -31,6 +42,7 @@
 		A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A246BFC42896AA1000BE564C /* MyPage.storyboard */; };
 		A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246BFC62896AB8500BE564C /* BannerDetailViewController.swift */; };
 		A246BFD22896C43100BE564C /* Documents.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246BFD12896C43100BE564C /* Documents.swift */; };
+		A2580E0228B28A7F00F701BA /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = A2580E0128B28A7F00F701BA /* YPImagePicker */; };
 		A2595382288300300065791E /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = A2595381288300300065791E /* TextFieldEffects */; };
 		A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FA56228A1B5DE00AB46DF /* ConciergeViewController.swift */; };
 		A25FA56628A1B6B800AB46DF /* LandscapeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FA56528A1B6B800AB46DF /* LandscapeManager.swift */; };
@@ -76,6 +88,7 @@
 		A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501528903497000436FC /* NXMLSearchViewController.swift */; };
 		A2D5501828903F91000436FC /* NXMLBookSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501728903F91000436FC /* NXMLBookSearchResult.swift */; };
 		A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D5501928903FF1000436FC /* NXMLSearchCollectionViewCell.swift */; };
+		A2D58D7928B6434200485822 /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D58D7828B6434200485822 /* ClubDetailViewController.swift */; };
 		A2D84333287F8EA1007BFF73 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A2E6E18C2898D90300844770 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = A2E6E18B2898D90300844770 /* Toast */; };
 		A2E6E18F2898E80900844770 /* BookClubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */; };
@@ -123,13 +136,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A2054CF128B6509E000DCBCD /* AddNewClubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewClubViewController.swift; sourceTree = "<group>"; };
 		A20C85CA28A1C6010012AAC8 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		A20C85CC28A1D93B0012AAC8 /* ForumPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPostViewController.swift; sourceTree = "<group>"; };
 		A20C85CE28A1DA0B0012AAC8 /* PostArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostArticleTableViewCell.swift; sourceTree = "<group>"; };
 		A20C85CF28A1DA0B0012AAC8 /* PostArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostArticleTableViewCell.xib; sourceTree = "<group>"; };
 		A20C85D928A1EF610012AAC8 /* PostReplyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReplyTableViewCell.swift; sourceTree = "<group>"; };
 		A20C85DA28A1EF610012AAC8 /* PostReplyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostReplyTableViewCell.xib; sourceTree = "<group>"; };
+		A21AFC1228B6466400539AFB /* ClubDetailHeadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailHeadTableViewCell.swift; sourceTree = "<group>"; };
+		A21AFC1328B6466400539AFB /* ClubDetailHeadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClubDetailHeadTableViewCell.xib; sourceTree = "<group>"; };
+		A21AFC1828B6487B00539AFB /* ClubDetailBodyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailBodyTableViewCell.swift; sourceTree = "<group>"; };
+		A21AFC1928B6487B00539AFB /* ClubDetailBodyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClubDetailBodyTableViewCell.xib; sourceTree = "<group>"; };
 		A21BB1E5289275D600B3F325 /* NXMLSearchCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchCollectionReusableView.swift; sourceTree = "<group>"; };
+		A23EF5F728B51A53002FF336 /* AlertModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModel.swift; sourceTree = "<group>"; };
+		A23EF5F928B580DA002FF336 /* ClubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubModel.swift; sourceTree = "<group>"; };
+		A23EF5FE28B5F110002FF336 /* CircleImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		A23EF5FF28B5F110002FF336 /* CircleImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		A23EF60228B5F401002FF336 /* ForumListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumListCollectionViewCell.swift; sourceTree = "<group>"; };
+		A23EF60328B5F401002FF336 /* ForumListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForumListCollectionViewCell.xib; sourceTree = "<group>"; };
 		A2429B89288E657A003E3573 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A2429B8B288E65A6003E3573 /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2429B8D288E65F9003E3573 /* BookListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -188,6 +212,7 @@
 		A2D5501528903497000436FC /* NXMLSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchViewController.swift; sourceTree = "<group>"; };
 		A2D5501728903F91000436FC /* NXMLBookSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLBookSearchResult.swift; sourceTree = "<group>"; };
 		A2D5501928903FF1000436FC /* NXMLSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXMLSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2D58D7828B6434200485822 /* ClubDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
 		A2E6E18D2898E80900844770 /* BookClubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClubCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2E6E18E2898E80900844770 /* BookClubCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookClubCollectionViewCell.xib; sourceTree = "<group>"; };
 		A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClubListViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +259,7 @@
 				A246BFB92896737000BE564C /* Alamofire in Frameworks */,
 				6BC792FE6EDDE9663D08A231 /* Pods_Techl.framework in Frameworks */,
 				A2A5585F28A541CB000E6F0A /* SwiftyJSON in Frameworks */,
+				A2580E0228B28A7F00F701BA /* YPImagePicker in Frameworks */,
 				A2595382288300300065791E /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +317,13 @@
 		A246BFBE2896A98500BE564C /* Club */ = {
 			isa = PBXGroup;
 			children = (
+				A2D58D7828B6434200485822 /* ClubDetailViewController.swift */,
 				A246BFBF2896A99C00BE564C /* Club.storyboard */,
+				A2054CF128B6509E000DCBCD /* AddNewClubViewController.swift */,
+				A21AFC1228B6466400539AFB /* ClubDetailHeadTableViewCell.swift */,
+				A21AFC1328B6466400539AFB /* ClubDetailHeadTableViewCell.xib */,
+				A21AFC1828B6487B00539AFB /* ClubDetailBodyTableViewCell.swift */,
+				A21AFC1928B6487B00539AFB /* ClubDetailBodyTableViewCell.xib */,
 				A2E6E1912898EBEB00844770 /* BookClubListViewController.swift */,
 			);
 			path = Club;
@@ -397,8 +429,10 @@
 			isa = PBXGroup;
 			children = (
 				A2C27A0228A21C3A0016E150 /* ForumModel.swift */,
+				A23EF5F928B580DA002FF336 /* ClubModel.swift */,
 				A2C27A0528A226D10016E150 /* BookModel.swift */,
 				A2A5586328A5425C000E6F0A /* UserModel.swift */,
+				A23EF5F728B51A53002FF336 /* AlertModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -479,6 +513,10 @@
 			isa = PBXGroup;
 			children = (
 				A2E6E1932898EFBE00844770 /* Book.storyboard */,
+				A23EF60228B5F401002FF336 /* ForumListCollectionViewCell.swift */,
+				A23EF60328B5F401002FF336 /* ForumListCollectionViewCell.xib */,
+				A23EF5FE28B5F110002FF336 /* CircleImageCollectionViewCell.swift */,
+				A23EF5FF28B5F110002FF336 /* CircleImageCollectionViewCell.xib */,
 				A2E6E1972898F06F00844770 /* BookInfoViewController.swift */,
 			);
 			path = Book;
@@ -642,6 +680,7 @@
 				A2A5585E28A541CB000E6F0A /* SwiftyJSON */,
 				A2A5586128A541DA000E6F0A /* Kingfisher */,
 				A2EF816828ACA1370019BA72 /* Tabman */,
+				A2580E0128B28A7F00F701BA /* YPImagePicker */,
 			);
 			productName = Techl;
 			productReference = A2AFB26F28766D240091C123 /* Techl.app */;
@@ -678,6 +717,7 @@
 				A2A5585D28A541CB000E6F0A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				A2A5586028A541DA000E6F0A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				A2EF816728ACA1370019BA72 /* XCRemoteSwiftPackageReference "Tabman" */,
+				A2580E0028B28A7F00F701BA /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = A2AFB27028766D240091C123 /* Products */;
 			projectDirPath = "";
@@ -703,6 +743,8 @@
 				A2AE1DB128A392A300202218 /* SectionTitle.xib in Resources */,
 				A20C85D128A1DA0B0012AAC8 /* PostArticleTableViewCell.xib in Resources */,
 				A246BFC52896AA1000BE564C /* MyPage.storyboard in Resources */,
+				A21AFC1B28B6487B00539AFB /* ClubDetailBodyTableViewCell.xib in Resources */,
+				A23EF60528B5F401002FF336 /* ForumListCollectionViewCell.xib in Resources */,
 				A246BFB62896732700BE564C /* Home.storyboard in Resources */,
 				A2AFB28728766DB10091C123 /* Authentication.storyboard in Resources */,
 				A246BFC22896A9DE00BE564C /* Forum.storyboard in Resources */,
@@ -711,6 +753,8 @@
 				A2AFB28928766E620091C123 /* Onboarding.storyboard in Resources */,
 				A246BFC02896A99C00BE564C /* Club.storyboard in Resources */,
 				A2AFB27F28766D250091C123 /* LaunchScreen.storyboard in Resources */,
+				A21AFC1528B6466400539AFB /* ClubDetailHeadTableViewCell.xib in Resources */,
+				A23EF60128B5F110002FF336 /* CircleImageCollectionViewCell.xib in Resources */,
 				A2E6E1902898E80900844770 /* BookClubCollectionViewCell.xib in Resources */,
 				A2AFB27C28766D250091C123 /* Assets.xcassets in Resources */,
 				A2E6E1C62899F91B00844770 /* .gitignore in Resources */,
@@ -780,6 +824,7 @@
 				A2A5587528A663DA000E6F0A /* AgreementViewController.swift in Sources */,
 				A2AE1DC128A4580C00202218 /* OnboardingCollectionViewCell.swift in Sources */,
 				A20C85CB28A1C6010012AAC8 /* MainTabBarViewController.swift in Sources */,
+				A23EF5F828B51A53002FF336 /* AlertModel.swift in Sources */,
 				A2E6E18F2898E80900844770 /* BookClubCollectionViewCell.swift in Sources */,
 				A2C27A0328A21C3A0016E150 /* ForumModel.swift in Sources */,
 				A20C85CD28A1D93B0012AAC8 /* ForumPostViewController.swift in Sources */,
@@ -796,19 +841,23 @@
 				A2A5586428A5425C000E6F0A /* UserModel.swift in Sources */,
 				A2EF814828AB90F00019BA72 /* NewHomeViewController.swift in Sources */,
 				A2A5588028AA4B87000E6F0A /* ProfileSelectionViewController.swift in Sources */,
+				A2054CF228B6509E000DCBCD /* AddNewClubViewController.swift in Sources */,
 				A2EF817128ACB4B80019BA72 /* AlertContainerViewController.swift in Sources */,
 				A2EF814E28AB9B0C0019BA72 /* ForumTableViewCell.swift in Sources */,
 				A25FA56328A1B5DE00AB46DF /* ConciergeViewController.swift in Sources */,
 				A2429B8A288E657A003E3573 /* HomeViewController.swift in Sources */,
 				A246BFC72896AB8500BE564C /* BannerDetailViewController.swift in Sources */,
+				A23EF60028B5F110002FF336 /* CircleImageCollectionViewCell.swift in Sources */,
 				A2A5587728A815CE000E6F0A /* FirstSignUpViewController.swift in Sources */,
 				A2A5585C28A53F11000E6F0A /* AuthenticationManager.swift in Sources */,
 				A2EF814A28AB98C60019BA72 /* BannerTableViewCell.swift in Sources */,
 				A246BFBB2896827000BE564C /* ClubListCollectionViewCell.swift in Sources */,
+				A21AFC1428B6466400539AFB /* ClubDetailHeadTableViewCell.swift in Sources */,
 				A2EF817728ACE2D90019BA72 /* AlertTableViewCell.swift in Sources */,
 				A2D5501A28903FF1000436FC /* NXMLSearchCollectionViewCell.swift in Sources */,
 				A2A809DE2898D37E0013EA6F /* ForumDetailListCollectionViewCell.swift in Sources */,
 				A2E6E1922898EBEB00844770 /* BookClubListViewController.swift in Sources */,
+				A2D58D7928B6434200485822 /* ClubDetailViewController.swift in Sources */,
 				A2C279FE28A21AB80016E150 /* APIManager.swift in Sources */,
 				A2A5587928A816D0000E6F0A /* SecondSignupViewController.swift in Sources */,
 				A269EB1928986F4C00C03DDB /* UIViewController+Extension.swift in Sources */,
@@ -829,11 +878,14 @@
 				A2EF815028ABA8320019BA72 /* BookCardCollectionViewCell.swift in Sources */,
 				A246BFD22896C43100BE564C /* Documents.swift in Sources */,
 				A2A5586E28A5CCCB000E6F0A /* BannerView.swift in Sources */,
+				A21AFC1A28B6487B00539AFB /* ClubDetailBodyTableViewCell.swift in Sources */,
 				A2B1389B289ECFFE004241D0 /* PreferredITFieldViewController.swift in Sources */,
+				A23EF5FA28B580DA002FF336 /* ClubModel.swift in Sources */,
 				A2EF816F28ACB2910019BA72 /* BookmarkAlertViewController.swift in Sources */,
 				A20C85DB28A1EF610012AAC8 /* PostReplyTableViewCell.swift in Sources */,
 				A2EF816D28ACB25C0019BA72 /* AllAlertViewController.swift in Sources */,
 				A2D5501628903497000436FC /* NXMLSearchViewController.swift in Sources */,
+				A23EF60428B5F401002FF336 /* ForumListCollectionViewCell.swift in Sources */,
 				A2EF816B28ACA16C0019BA72 /* AlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1074,6 +1126,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		A2580E0028B28A7F00F701BA /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		A2595380288300300065791E /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/raulriera/TextFieldEffects";
@@ -1121,6 +1181,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A246BFB72896737000BE564C /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		A2580E0128B28A7F00F701BA /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A2580E0028B28A7F00F701BA /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
 		};
 		A2595381288300300065791E /* TextFieldEffects */ = {
 			isa = XCSwiftPackageProductDependency;
