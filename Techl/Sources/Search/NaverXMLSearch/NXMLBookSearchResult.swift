@@ -6,8 +6,8 @@
 //
 
 
-// 네이버 책 상세검색
-// https://openapi.naver.com/v1/search/book_adv.xml
+/// 네이버 책 기본검색
+/// https://openapi.naver.com/v1/search/book.json
 
 
 import Foundation

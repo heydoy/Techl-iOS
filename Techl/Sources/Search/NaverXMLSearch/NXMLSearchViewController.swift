@@ -77,15 +77,15 @@ class NXMLSearchViewController: UIViewController{
     func fetchSearchResult(
         completionHandler: @escaping (Result<NXMLBookSearchResult, Error>)-> Void
     ) {
-        let url = "https://openapi.naver.com/v1/search/book_adv"
+        let url = "https://openapi.naver.com/v1/search/book.json"
         let headers: HTTPHeaders = [
             "X-Naver-Client-Id" : NaverAPI.Id,
             "X-Naver-Client-Secret" : NaverAPI.Secret
         ]
         let body: Parameters = [
-            "d_titl": self.query,
-            "d_catg" : self.d_catg,
-            "start" : self.start
+            "query": self.query,
+            "start" : self.start,
+            "display" : 100
         ]
         
         
