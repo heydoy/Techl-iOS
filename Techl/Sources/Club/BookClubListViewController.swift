@@ -14,11 +14,16 @@ class BookClubListViewController: UIViewController {
     
     @IBOutlet weak var otherClubCollectionView: UICollectionView!
     
+    @IBOutlet weak var makeClubButton: UIButton!
+    
+    var clubList: [ClubModel] = ClubModel.list
     
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        makeClubButton.layer.cornerRadius = makeClubButton.frame.width/2
         
         // 콜렉션 뷰 등록
         myClubCollectionView.dataSource = self
@@ -38,6 +43,16 @@ class BookClubListViewController: UIViewController {
     
     // MARK: - Actions
     
+    @IBAction func addNewClubButtonTapped(_ sender: UIButton) {
+        
+        let sb = UIStoryboard(name: "Club", bundle: nil)
+        
+        let vc = sb.instantiateViewController(withIdentifier: AddNewClubViewController.identifier) as! AddNewClubViewController
+        
+        vc.modalPresentationStyle = .overFullScreen
+                
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     
     
@@ -76,6 +91,17 @@ extension BookClubListViewController: UICollectionViewDataSource, UICollectionVi
             default:
                 print("wrong")
                 return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == myClubCollectionView {
+            
+            let sb = UIStoryboard(name: "Club", bundle: nil)
+            
+            let vc = sb.instantiateViewController(withIdentifier: "ClubDetailViewController")
+            
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
