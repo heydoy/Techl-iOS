@@ -148,6 +148,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             
         default:
             assert(false, "Invalid element type")
+            return 0
         }
     }
     // 아이템 데이터
@@ -173,6 +174,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             
         default:
             assert(false, "Invalid element type")
+            return UICollectionViewCell()
         }
     }
 
