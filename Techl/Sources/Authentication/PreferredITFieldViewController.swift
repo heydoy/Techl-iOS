@@ -114,10 +114,6 @@ class PreferredITFieldViewController: UIViewController {
             }
         }
         
-        
-        
-        
-        
     }
     
     
@@ -185,7 +181,6 @@ extension PreferredITFieldViewController: UICollectionViewDelegate, UICollection
             cell.configure()
         }
                 
-
         return cell
     }
     
